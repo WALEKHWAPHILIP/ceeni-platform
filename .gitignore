@@ -5,6 +5,7 @@
 __pycache__/               # Python cache files
 *.py[codz]                 # Compiled Python files
 *$py.class                 # PyInstaller class artifacts
+**/__pycache__/            # Nested Python cache files
 
 ##########################################
 # 🔗 C Extensions
