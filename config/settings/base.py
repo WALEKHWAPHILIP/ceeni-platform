@@ -32,9 +32,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # CEENI apps
-    # 'users',
-    # 'projects',
+# ------------------------------------------------------------------------------
+# CEENI Custom Apps
+# ------------------------------------------------------------------------------
+    'user_accounts.apps.UserAccountsConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -78,6 +80,7 @@ DATABASES = {
     }
 }
 
+
 # ------------------------------------------------------------------------------
 # PASSWORD VALIDATION
 # ------------------------------------------------------------------------------
@@ -107,9 +110,11 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 # ------------------------------------------------------------------------------
-# AUTH CONFIG
+# AUTH CONFIGURATION
 # ------------------------------------------------------------------------------
-# AUTH_USER_MODEL = "accounts.CustomUser"
+
+# Specify the custom user model to replace Django's default User
+AUTH_USER_MODEL = "user_accounts.CustomUser"
 
 # ------------------------------------------------------------------------------
 # DEFAULT PRIMARY KEY FIELD TYPE
