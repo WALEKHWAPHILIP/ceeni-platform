@@ -1,0 +1,66 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}CEENI Platform{% endblock %}</title>
+
+  <!-- Font Awesome 5.15.4 (Legacy Compatible) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-dyZ88n1Unv8N1+I3h2Xl72g+6E3bG3mZD0psESYxl5jVzD8wZ5BZbS5p+IQDbYhxYQBdJrZ7tQ2lMZhQx1v4Gw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+  <!-- Load Tailwind CSS build -->
+  {% tailwind_css %}
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/kenya_colors.css' %}"> <!-- Optional fallback if needed -->
+
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-black text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 py-3">
+      <a href="/" class="ceeni-logo-wrapper">
+        <span class="ceeni-logo-text">CEENI</span>
+        <span class="ceeni-logo-flag">
+          <span class="ceeni-flag-black"></span>
+          <span class="ceeni-flag-red"></span>
+          <span class="ceeni-flag-green"></span>
+        </span>
+      </a>
+
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#bill:viewer'" class="hover:underline">The Bill</a>
+        <a href="{% url 'user_accounts:register' %}" class="hover:underline">Register</a>
+        <a href="{% url 'user_accounts:login' %}" class="hover:underline">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HORIZONTAL KENYAN COLOR BAR -->
+  <div class="flex h-2">
+    <div class="flex-1 bg-black"></div>
+    <div class="flex-1 bg-red-600"></div>
+    <div class="flex-1 bg-green-600"></div>
+    <div class="flex-1 bg-white"></div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <main class="py-8 px-4 sm:px-8">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- FOOTER -->
+  {% include "landing/partials/_footer.html" %}
+
+
+</body>
+</html>

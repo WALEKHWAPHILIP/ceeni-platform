@@ -1,0 +1,6 @@
+/* Optional fallback for Kenyan flag style bar, or gradients */
+
+.kenya-stripe {
+  height: 4px;
+  background: linear-gradient(to right, black 25%, red 25% 50%, green 50% 75%, white 75%);
+}

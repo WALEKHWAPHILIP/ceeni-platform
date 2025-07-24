@@ -1,0 +1,75 @@
+
+{% load static %}
+
+{# Kenyan Flag Stripe (5px each) - Top of Navbar #}
+<div class="w-full">
+  <div class="h-[5px] bg-black"></div>
+  <div class="h-[5px] bg-white"></div>
+  <div class="h-[5px] bg-red-700"></div>
+  <div class="h-[5px] bg-white"></div>
+  <div class="h-[5px] bg-green-700"></div>
+</div>
+
+<nav class="bg-black text-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <img class="h-8 w-auto" src="{% static 'shared/images/flag_of_kenya.png' %}" alt="Kenyan Flag">
+        <span class="ml-2 font-bold text-white text-lg">CEENI</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="hidden sm:flex sm:space-x-8 items-center">
+        <a href="#url 'read_the_bill'#" class="hover:underline font-medium">The Bill</a>
+
+        {% if user.is_authenticated %}
+          <!-- Avatar dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-2 focus:outline-none">
+              <img src="{{ user.userprofile.profile_image.url|default:'https://placehold.co/32x32' }}" alt="Avatar" class="h-8 w-8 rounded-full border border-white">
+              <span class="text-sm text-white">{{ user.nickname }}</span>
+            </button>
+            <div class="absolute right-0 mt-2 hidden group-hover:block bg-white text-black border rounded shadow-lg z-20">
+              <a href="# url 'user_dashboard' #" class="block px-4 py-2 text-sm hover:bg-green-50">Dashboard</a>
+              <form method="post" action="# url 'logout' #">
+                {% csrf_token %}
+                <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50">Logout</button>
+              </form>
+            </div>
+          </div>
+        {% else %}
+          <!-- Register/Login buttons -->
+          <a href="{% url 'user_accounts:register' %}" class="text-sm hover:underline font-medium">Register</a>
+          <a href="{% url 'user_accounts:login' %}" class="ml-2 text-sm font-semibold py-1.5 px-4 bg-white text-black rounded-full hover:bg-gray-100">Login</a>
+        {% endif %}
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="sm:hidden flex items-center">
+        <button type="button" class="hover:text-green-200 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="px-4 pt-4 pb-3 space-y-2 text-white">
+      <a href="# url 'read_the_bill' #" class="block hover:underline">The Bill</a>
+      {% if user.is_authenticated %}
+        <a href="# url 'user_dashboard' #" class="block">Dashboard</a>
+        <form method="post" action="# url 'logout' #">
+          {% csrf_token %}
+          <button type="submit" class="text-left w-full text-red-200 hover:underline">Logout</button>
+        </form>
+      {% else %}
+        <a href="{% url 'user_accounts:register' %}" class="block hover:underline">Register</a>
+        <a href="{% url 'user_accounts:login' %}" class="block px-3 py-2 bg-white text-black rounded hover:bg-gray-100">Login</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

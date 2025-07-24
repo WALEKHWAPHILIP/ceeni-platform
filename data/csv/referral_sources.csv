@@ -1,0 +1,22 @@
+code,label,category
+friend_family,Friend or Family,Offline
+community_meeting,Community Meeting,Offline
+public_baraza,Public Baraza or Townhall,Offline
+religious_group,Religious Group,Offline
+school_university,School or University,Offline
+partner_cso,CBO/NGO/CSO Partner,Partner
+local_leader,Local Leader (e.g. Chief or MCA),Government
+flyer_poster,Flyer or Poster,Offline
+radio,Radio,Media
+tv,TV,Media
+sms_campaign,SMS Campaign,Digital
+facebook,Facebook,Social Media
+twitter,Twitter/X,Social Media
+whatsapp,WhatsApp,Social Media
+youtube,YouTube,Social Media
+tiktok,TikTok,Social Media
+telegram,Telegram,Social Media
+email_invite,Email Invitation,Digital
+news_portal,Online News Portal,Media
+influencer,Influencer or Content Creator,Social Media
+other,Other,Misc

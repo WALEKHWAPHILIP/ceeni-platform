@@ -1,0 +1,77 @@
+# ===============================
+# Core Line Ending Normalization
+# ===============================
+
+# Normalize all text files automatically
+* text=auto
+
+# Explicit Unix-style (LF) line endings for code and config files
+*.py     text eol=lf
+*.sh     text eol=lf
+*.env*   text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.js     text eol=lf
+*.ts     text eol=lf
+*.vue    text eol=lf
+*.jsx    text eol=lf
+*.tsx    text eol=lf
+
+# Windows-specific files should retain CRLF line endings
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+# ===============================
+# Binary Files (no diff/merge)
+# ===============================
+
+# Image formats
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.svg    binary
+
+# Document formats
+*.pdf    binary
+*.docx   binary
+*.xlsx   binary
+*.pptx   binary
+
+# Font and media files
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.mp3    binary
+*.mp4    binary
+
+# Archive/compressed formats
+*.zip    binary
+*.tar.gz binary
+*.rar    binary
+
+# ===============================
+# Git Attributes for Consistency
+# ===============================
+
+# Make diff cleaner for lock files
+*.lock   text eol=lf
+
+# Disable merge on lock files (optional)
+package-lock.json merge=union
+yarn.lock merge=union
+
+# Optional: Treat shell scripts as executable (useful in CI/CD)
+*.sh     text eol=lf
+*.sh     eol=lf diff=astextplain
+
+# Optional: Normalize Jupyter Notebooks if you use Python notebooks
+*.ipynb  text
+

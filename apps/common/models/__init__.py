@@ -1,0 +1,1 @@
+from .blocked import BlockedNickname

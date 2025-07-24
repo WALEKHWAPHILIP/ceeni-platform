@@ -1,0 +1,73 @@
+{% extends "user_accounts/base/registration_screens_base.html" %}
+{% load static %}
+
+{% block title %}Complete Your Profile – CEENI{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-xl shadow-md border border-green-600">
+
+  <!-- Flag Stripe -->
+  <div class="flex w-full h-2 mb-4 rounded overflow-hidden">
+    <div class="w-1/5 bg-black"></div>
+    <div class="w-1/5 bg-red-700"></div>
+    <div class="w-1/5 bg-white"></div>
+    <div class="w-1/5 bg-green-700"></div>
+    <div class="w-1/5 bg-black"></div>
+  </div>
+
+  <!-- Title -->
+  <h2 class="text-center text-2xl font-bold text-black sm:text-3xl mb-2">Complete Your Profile</h2>
+  <p class="text-sm text-center text-gray-600 mb-4">
+    Your civic profile is {{ completion }}% complete.<br>
+    Complete it to unlock features like voting, commenting, and proposing bills.
+  </p>
+
+
+<!-- ✅ Kenya Progress Bar: Completion -->
+<div class="w-full bg-gray-300 rounded-full h-4 shadow-inner mb-4 border border-black">
+  <div class="bg-green-600 text-xs text-white h-4 text-center rounded-full transition-all duration-500"
+       style="width: {{ completion }}%;">
+    {{ completion }}%
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Progress Bar -->
+  <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+    <div class="bg-green-600 h-3 rounded-full" style="width: {{ completion }}%;"></div>
+  </div>
+
+  <!-- Form: Shows only missing fields -->
+  <form method="post" class="space-y-4">
+    {% csrf_token %}
+    {% for field in form %}
+      <div>
+        <label for="{{ field.id_for_label }}" class="block text-sm font-semibold text-gray-700">
+          {{ field.label }}
+        </label>
+        {{ field }}
+        {% if field.help_text %}
+          <p class="text-xs text-gray-500 italic">{{ field.help_text }}</p>
+        {% endif %}
+        {% for error in field.errors %}
+          <p class="text-sm text-red-600">{{ error }}</p>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+    <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-2 rounded-xl">
+      Update My Profile
+    </button>
+  </form>
+
+  <!-- Motivation -->
+  <p class="text-xs text-center text-gray-500 mt-4">
+    🔐 We respect your privacy. Your information is used solely to verify eligibility for civic participation.
+  </p>
+
+</div>
+{% endblock %}

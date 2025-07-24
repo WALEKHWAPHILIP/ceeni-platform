@@ -1,0 +1,237 @@
+{% extends 'landing/base/landing_base.html' %}
+
+{% block title %}Welcome to CEENI – A Fairer Kenya Begins Here{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto flex flex-col gap-12">
+
+  <!-- HERO -->
+  <section class="text-center">
+    <h1 class="gradient-h1">
+      Let’s Build a Kenya That Includes All of Us
+    </h1>
+
+    <!-- Clarifying CEENI’s Identity -->
+    <div class="mt-4 border-l-4 border-red-700 bg-green-50 p-4 rounded text-left sm:text-center shadow-sm">
+      <p class="text-black text-base leading-relaxed">
+        <strong class="text-red-700">CEENI</strong>
+        (<strong>Commission for Ethnic Equity and National Inclusion</strong>) is not a political party, not an organization, and not a movement.
+        It is a citizen-led initiative behind the <span class="font-semibold text-green-800">Ethnic Equity and Public Representation Bill, 2025</span> -
+        a legislative proposal to ensure that no tribe dominates, and no community is excluded.
+        This Bill will ensure that public jobs reflect Kenya’s population - fairly, transparently, and equitably.
+      </p>
+    </div>
+
+
+    <!-- Call-to-actions -->
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4 text-center">
+
+      <!-- Read the Bill -->
+      <a href="#'bill:viewer'"
+        aria-label="Read the Ethnic Equity Bill"
+        class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+        <!-- Heroicon: document-text -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" />
+        </svg>
+        Read the Bill
+      </a>
+
+      <!-- Register -->
+      <a href="{% url 'user_accounts:register' %}"
+        aria-label="Create a new account"
+        class="bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+        <!-- Heroicon: user-plus -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 14a4 4 0 10-8 0m8 0v4a4 4 0 01-4 4H4a4 4 0 01-4-4v-4a4 4 0 014-4h8m6 0h2m-1-1v2" />
+        </svg>
+        Create an Account
+      </a>
+
+      <!-- Login -->
+      <a href="{% url 'user_accounts:login' %}"
+        aria-label="Login to vote and access dashboard"
+        class="bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+        <!-- Heroicon: arrow-right-on-rectangle -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1" />
+        </svg>
+        Login to Participate
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- INSTITUTIONAL ARCHITECTURE SECTION -->
+  <section class="mt-16 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-black">
+        How It Will Work - <span class="text-green-700">The Institutions That Will Make Equity Real</span>
+      </h2>
+      <p class="mt-2 text-gray-600 max-w-2xl mx-auto">
+        From the grassroots to Parliament - these are the structures that will turn the Ethnic Equity Bill into action.
+      </p>
+    </div>
+
+    <!-- Responsive grid of cards -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" x-data x-intersect="$el.classList.add('fade-in')">
+
+      <!-- CEENI -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-green-700 shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.75 3v1.5m4.5-1.5V4.5M4.5 7.5h15m-1.5 0V18a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 016 18V7.5h12z"/></svg>
+          <h3 class="font-bold text-lg">CEENI</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          Independent commission to monitor fairness, publish reports, and enforce compliance across public institutions.
+        </p>
+      </div>
+
+      <!-- KPEID -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-black shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-black">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg>
+          <h3 class="font-bold text-lg">KPEID Dashboard</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          A live, public dashboard showing how fairly ministries, counties, and agencies reflect Kenya’s diversity.
+        </p>
+      </div>
+
+      <!-- Equity Scorecard -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-red-700 shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-red-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 11V6m0 5a4 4 0 100 8 4 4 0 000-8z"/></svg>
+          <h3 class="font-bold text-lg">Equity Scorecard</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          Annual grading system for public institutions based on ethnic inclusion and hiring fairness.
+        </p>
+      </div>
+
+      <!-- CEENI Tribunal -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-black shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-black">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-3-3v6m9-6a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <h3 class="font-bold text-lg">CEENI Tribunal</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          Legal arm to hear complaints, enforce rulings, and hold institutions accountable under the new law.
+        </p>
+      </div>
+
+      <!-- Public Reporting Portal -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-green-700 shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M5 13l4 4L19 7"/></svg>
+          <h3 class="font-bold text-lg">Citizen Reporting Portal</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          Citizens can safely report bias, exclusion, or unfair hiring — anonymously and with protection.
+        </p>
+      </div>
+
+      <!-- Parliament & Executive -->
+      <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-red-700 shadow-sm rounded-lg p-5">
+        <div class="flex items-center gap-3 mb-3 text-red-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 10h18M6 6h12M6 14h12M6 18h12"/></svg>
+          <h3 class="font-bold text-lg">Parliament & Cabinet</h3>
+        </div>
+        <p class="text-sm text-gray-700">
+          Parliament receives CEENI’s reports. Cabinet implements them. Together, they make equity actionable.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- PARTICIPATION SECTION -->
+  <section class="mt-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-black">
+        What Can You Do as a Citizen?
+      </h2>
+      <p class="mt-2 text-gray-600 max-w-2xl mx-auto">
+        CEENI only works when citizens are informed, involved, and vocal. Here's how you can take part today.
+      </p>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+
+      <!-- Read the Bill -->
+      <div class="bg-white border-l-4 border-red-700 p-6 rounded-lg shadow hover:shadow-md transition">
+        <div class="flex items-center gap-3 mb-3 text-red-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
+          <h3 class="text-lg font-bold">Read the Bill</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-2">
+          Understand what the Ethnic Equity Bill actually says — and why it matters to every Kenyan.
+        </p>
+        <a href="#'bill:viewer'" class="text-red-700 font-medium underline">📄 Full Text of the Bill</a>
+      </div>
+
+      <!-- Track Equity Data -->
+      <div class="bg-white border-l-4 border-black p-6 rounded-lg shadow hover:shadow-md transition">
+        <div class="flex items-center gap-3 mb-3 text-black">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg>
+          <h3 class="text-lg font-bold">Track Equity Data</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-2">
+          Live charts, maps, and scorecards are coming soon to show how equity is practiced nationwide.
+        </p>
+        <div class="text-sm italic text-gray-400">Interactive dashboard launching soon</div>
+      </div>
+
+      <!-- Vote & Participate -->
+      <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
+        <div class="flex items-center gap-3 mb-3 text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M5 13l4 4L19 7"/></svg>
+          <h3 class="text-lg font-bold">Vote & Participate</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-2">
+          Cast your vote when polls open. Your input shapes the final equity benchmarks.
+        </p>
+        <a href="{% url 'user_accounts:login' %}" class="text-green-700 font-medium underline">🗳 Log In to Vote</a>
+      </div>
+
+      <!-- Share Your Voice -->
+      <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
+        <div class="flex items-center gap-3 mb-3 text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+              d="M7 8h10M7 12h8m-5 8l-5-4H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v8a2 2 0 01-2 2h-3l-5 4z"/></svg>
+          <h3 class="text-lg font-bold">Share Your Voice</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-2">
+          Tell your story. Submit a public comment on fairness and inclusion in Kenya today.
+        </p>
+        <a href="# 'views_submission:submit'#" class="text-green-700 font-medium underline">💬 Submit a Comment</a>
+      </div>
+
+    </div>
+  </section>
+
+
+</div>
+{% endblock %}
