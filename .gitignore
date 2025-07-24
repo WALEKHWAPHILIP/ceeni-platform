@@ -1,0 +1,250 @@
+##########################################
+# 🐍 Python Bytecode and Caches
+##########################################
+
+# Python cache files
+__pycache__/
+# Compiled Python files
+*.py[codz]
+# PyInstaller class artifacts
+*$py.class
+# Nested Python cache files
+**/__pycache__/
+
+##########################################
+# 🔗 C Extensions
+##########################################
+
+# Shared objects (compiled C extensions)
+*.so
+
+##########################################
+# 📦 Build and Distribution Artifacts
+##########################################
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+##########################################
+# ⚙️ PyInstaller
+# Files generated when building standalone executables
+##########################################
+
+*.manifest
+*.spec
+
+##########################################
+# 📋 Installer Logs
+##########################################
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+##########################################
+# ✅ Unit Tests, Coverage, and Hypothesis
+##########################################
+
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+##########################################
+# 🌍 Internationalization Files
+##########################################
+
+*.mo
+*.pot
+
+##########################################
+# 🌐 Django-Specific Ignored Files
+##########################################
+
+# App/server logs
+*.log
+# Local config overrides
+local_settings.py
+# Default development DB
+db.sqlite3
+# SQLite journaling
+db.sqlite3-journal
+
+##########################################
+# 🌐 Flask / Web Cache
+##########################################
+
+instance/
+.webassets-cache
+
+##########################################
+# 🕷 Scrapy
+##########################################
+
+.scrapy
+
+##########################################
+# 📚 Sphinx Documentation
+##########################################
+
+docs/_build/
+
+##########################################
+# 🧱 PyBuilder
+##########################################
+
+.pybuilder/
+target/
+
+##########################################
+# 📓 Jupyter + IPython
+##########################################
+
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+##########################################
+# 🧪 Environment Managers
+##########################################
+
+# Environment file (Django secrets)
+.env
+.envrc
+# Common virtualenv dirs
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# Project-specific environment
+ceeni_venv/
+
+##########################################
+# 🧪 Dependency Managers (pipenv, poetry, etc.)
+##########################################
+
+# pipenv lock file (optional)
+# Pipfile.lock
+# poetry lock files
+# poetry.lock
+# poetry.toml
+# pdm build directory
+.pdm-python
+.pdm-build/
+# pixi cache directory
+.pixi
+# PEP 582 packages
+__pypackages__/
+
+##########################################
+# 🕰️ Task Queues & Async (Celery)
+##########################################
+
+celerybeat-schedule
+celerybeat.pid
+
+##########################################
+# 🧠 Static Type Checkers
+##########################################
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+##########################################
+# 🧬 Cython
+##########################################
+
+cython_debug/
+
+##########################################
+# 🧠 IDEs and Editors
+##########################################
+
+# VS Code settings
+.vscode/
+# PyCharm / JetBrains settings
+# .idea/
+# Spyder settings
+.spyderproject
+.spyproject
+# Rope settings
+.ropeproject
+
+##########################################
+# 🛠️ Site Builders / Docs / Tools
+##########################################
+
+/site
+
+##########################################
+# 🧪 Linters & Formatters
+##########################################
+
+.ruff_cache/
+
+##########################################
+# 📦 PyPI Upload Config
+##########################################
+
+.pypirc
+
+##########################################
+# ✨ AI Tools (Cursor, Marimo)
+##########################################
+
+.cursorignore
+.cursorindexingignore
+# Marimo internal files
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+##########################################
+# 📊 Streamlit Secrets
+##########################################
+
+.streamlit/secrets.toml
+
+##########################################
+# 🤖 CEENI Project-Specific Additions
+##########################################
+
+# Tailwind build artifacts
+apps/theme/static_src/node_modules/
+static/css/dist/
+# User‑uploaded media
+media/
+# SQLite and SQL dumps
+*.sqlite3
+*.sql
+# Sensitive docs (local only)
+docs_sensitive/
