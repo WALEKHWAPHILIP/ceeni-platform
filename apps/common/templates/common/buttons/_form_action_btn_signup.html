@@ -1,0 +1,10 @@
+{# apps/common/templates/common/buttons/_form_action_btn_signup.html #}
+<a href="#"
+   onclick="this.closest('form').submit(); return false;"
+   aria-label="Submit to create a new account"
+   class="{% if full_width %}w-full{% else %}max-w-xs{% endif %} bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+  
+  {% include 'common/icons/_icon_signup.html' %}
+  Create Account
+  {% include 'common/partials/_kenya_flag_pill.html' %}
+</a>

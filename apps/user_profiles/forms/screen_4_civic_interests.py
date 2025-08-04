@@ -1,8 +1,3 @@
-# ──────────────────────────────────────────────────────────────────────────
-# FILE: apps/user_profiles/forms/screen_4_civic_interests.py
-# PURPOSE: Step 4 – Civic Interests & Participation Form
-# ──────────────────────────────────────────────────────────────────────────
-
 from django import forms
 from apps.user_profiles.models import UserProfile
 
@@ -11,7 +6,7 @@ class Screen4CivicInterestsForm(forms.ModelForm):
     """
     Step 4: Civic Interests & Participation
     - Captures user civic interests and engagement familiarity.
-    - Uses checkboxes + radio buttons with proper conversion.
+    - Uses checkboxes and radio buttons with proper coercion to booleans.
     """
 
     YES_NO_CHOICES = [
@@ -22,7 +17,7 @@ class Screen4CivicInterestsForm(forms.ModelForm):
     has_voted_before = forms.TypedChoiceField(
         label="Have you voted before?",
         choices=YES_NO_CHOICES,
-        coerce=lambda x: x == "True",
+        coerce=lambda x: x in [True, "True", "true", "1", 1],
         widget=forms.RadioSelect(attrs={"class": "flex flex-col gap-2"}),
         required=True,
     )
@@ -30,7 +25,7 @@ class Screen4CivicInterestsForm(forms.ModelForm):
     knows_voting_process = forms.TypedChoiceField(
         label="Do you understand the voting process?",
         choices=YES_NO_CHOICES,
-        coerce=lambda x: x == "True",
+        coerce=lambda x: x in [True, "True", "true", "1", 1],
         widget=forms.RadioSelect(attrs={"class": "flex flex-col gap-2"}),
         required=True,
     )
@@ -58,10 +53,9 @@ class Screen4CivicInterestsForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['civic_interest_areas'].required = True
-        
+
     def clean_civic_interest_areas(self):
         interests = self.cleaned_data.get('civic_interest_areas')
         if interests and interests.count() > 5:
             raise forms.ValidationError("You can select up to 5 civic interests.")
         return interests
-            

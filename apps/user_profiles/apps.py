@@ -14,4 +14,4 @@ class UserProfilesConfig(AppConfig):
 
     def ready(self):
         # Import signal handlers when app is ready — critical for profile auto-creation
-        import apps.user_profiles.signals
+        import apps.user_profiles.signals.auto_user_profile_creator

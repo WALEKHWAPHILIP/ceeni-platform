@@ -1,32 +1,22 @@
-/* ────────────────────────────────────────────────────────────── */
-/* CEENI Platform – Tailwind CSS Base (Lightning CSS Architecture)
-/* File: apps/theme/static_src/styles.css
-/* Purpose: Entry point for Tailwind CSS compilation using django-tailwind v4+
-/* Build system: Lightning CSS (no Node.js/PostCSS required)
-/* Last updated: 2025-07-21
-/* ────────────────────────────────────────────────────────────── */
+/* =========================================
+   CEENI Platform Tailwind Entry (LightningCSS)
+   File: apps/theme/static_src/src/styles.css
+   -----------------------------------------
+   Purpose:
+   - Entry point for Tailwind CSS compilation
+   - Clean architecture using @apply + @plugin + @source
+   - Uses DaisyUI for prebuilt components
+   ========================================= */
 
-/* Tailwind's core layers: base, components, utilities */
+/* Tailwind base layers */
 @import "tailwindcss";
-
-/* DaisyUI plugin for prebuilt component styling (buttons, alerts, etc.) */
 @plugin "daisyui";
-
-/**
- * A catch-all path to Django template files, JavaScript, and Python files
- * that contain Tailwind CSS classes and will be scanned by Tailwind to generate the final CSS file.
- *
- * If your final CSS file is not being updated after code changes, you may want to broaden or narrow
- * the scope of this path.
- */
 @source "../../../**/*.{html,py,js}";
 
 
-/* ────────────────────────────────────────────────────────────── */
-/* 🧩 Custom Utility Classes (DRY, Semantic, Reusable)
-/* Use @apply to bundle Tailwind classes into semantic, maintainable tokens
-/* These can be reused across templates and views for consistent UX
-/* ────────────────────────────────────────────────────────────── */
+/* =========================================
+   ✅ Typography & Hero Sections
+   ========================================= */
 
 /* 🇰🇪 Gradient Header (Black → Red → Green) for Civic Hero Titles */
 .gradient-h1 {
@@ -34,17 +24,29 @@
 }
 
 
-/* ────────────────────────────────────────────────────────────── */
-/* CEENI Logo Mark – White Pill with Flag Accent
-/* Description: Encloses CEENI text and vertical flag bars in white pill with Kenyan-colored border
-/* Placement: In navbar, on black background
-/* Updated: 2025-07-22
-/* ────────────────────────────────────────────────────────────── */
+/* =========================================
+   ✅ Custom Animations
+   ========================================= */
+
+/* Fade-in animation for subtle, elegant entry */
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(0.25rem); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.ceeni-fade-in {
+  animation: fade-in 0.8s ease-out both;
+}
+
+
+/* =========================================
+   ✅ Logo Elements
+   ========================================= */
 
 .ceeni-logo-wrapper {
   @apply inline-flex items-center px-2 py-1 rounded-full border text-black bg-white;
   border-width: 2px;
-  border-color: #047857; /* Tailwind's green-700 or red-700 if preferred */
+  border-color: #047857; /* green-700 */
 }
 
 .ceeni-logo-text {
@@ -58,5 +60,3 @@
 .ceeni-flag-black { @apply bg-black h-1/3 w-full; }
 .ceeni-flag-red { @apply bg-red-700 h-1/3 w-full; }
 .ceeni-flag-green { @apply bg-green-700 h-1/3 w-full; }
-
-

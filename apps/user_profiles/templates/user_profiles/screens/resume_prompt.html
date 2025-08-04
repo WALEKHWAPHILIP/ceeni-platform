@@ -1,0 +1,28 @@
+{% extends "user_profiles/base/resume_base.html" %}
+
+{% block resume_content %}
+  <div class="
+    bg-yellow-50
+    border-l-4 border-yellow-400
+    p-6 rounded-lg shadow-lg
+    animate-fade-in transition-transform transform
+  ">
+    <h2 class="text-lg font-semibold flex items-center text-yellow-800">
+      <!-- Heroicon: User Circle -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A9 9 0 1112 21a8.963 8.963 0 01-6.879-3.196zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      Welcome back, <span class="uppercase font-mono tracking-wide ml-1">{{ user.username }}</span>!
+    </h2>
+
+    <p class="mt-2 text-sm text-yellow-900">
+      You last visited on <strong>{{ profile.last_wizard_login_at|date:"F j, Y" }}</strong>,
+      and it looks like you didn’t complete your profile.
+    </p>
+
+    <p class="text-sm mt-2 text-yellow-900">
+      Would you like to continue where you left off?
+    </p>
+  </div>
+{% endblock %}

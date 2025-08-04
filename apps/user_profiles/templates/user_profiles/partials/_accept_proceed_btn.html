@@ -1,0 +1,33 @@
+{# templates/user_profiles/partials/_accept_proceed_btn.html #}
+{% comment %}
+"Yes, continue" button styled like wizard next, with check icon
+{% endcomment %}
+
+<button name="continue" type="submit"
+        class="group flex overflow-hidden rounded-lg shadow-md transition-all duration-150">
+  <!-- Red stripe -->
+  <div class="w-1 bg-red-700"></div>
+
+  <!-- Label with check icon -->
+  <span class="bg-green-700 border-b-4 border-green-800
+               group-hover:bg-green-800 group-hover:border-green-900
+               text-white font-bold px-4 py-2 transition-all duration-150 flex items-center space-x-2">
+    <!-- Heroicon: Check -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+    <span>Yes, continue</span>
+  </span>
+
+  <!-- Right black segment -->
+  <span class="bg-black border-b-4 border-gray-900
+               group-hover:bg-gray-900 group-hover:border-gray-800
+               text-white px-3 flex items-center transition-all duration-150">
+    <!-- Heroicon: ChevronRight -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5l7 7-7 7" />
+    </svg>
+  </span>
+</button>

@@ -1,3 +1,5 @@
+# apps > user_profiles > models > profile.py
+
 from django.db import models
 from django.contrib.auth import get_user_model
 from django_countries.fields import CountryField
@@ -47,6 +49,15 @@ class UserProfile(models.Model):
         )
     )
 
+    # --------------------------------------------------------------------------
+    # Cached completion percentage (0–100)
+    # --------------------------------------------------------------------------
+    completion_percentage = models.PositiveSmallIntegerField(
+        default=0,
+        editable=False,
+        db_index=True,
+        help_text="Snapshot of profile completion (0–100)."
+    )
 
     # --------------------------------------------------------------------------
     # Demographic fields
@@ -67,7 +78,6 @@ class UserProfile(models.Model):
         on_delete=models.SET_NULL,
         help_text="Select the county where you are registered as a voter."
     )
-
     constituency = models.ForeignKey(
         Constituency,
         null=True,
@@ -75,7 +85,6 @@ class UserProfile(models.Model):
         on_delete=models.SET_NULL,
         help_text="Select your constituency (filtered based on county)."
     )
-
     ward = models.ForeignKey(
         Ward,
         null=True,
@@ -83,7 +92,6 @@ class UserProfile(models.Model):
         on_delete=models.SET_NULL,
         help_text="Select your ward (filtered based on constituency)."
     )
-
     county_of_origin = models.ForeignKey(
         County,
         null=True,
@@ -92,7 +100,6 @@ class UserProfile(models.Model):
         on_delete=models.SET_NULL,
         help_text="(Optional) County you consider your ancestral or cultural origin."
     )
-
     current_country_of_residence = CountryField(
         null=True,
         blank=True,
@@ -107,22 +114,18 @@ class UserProfile(models.Model):
         blank=True,
         help_text="Select your key areas of civic interest (max 3–5 recommended)."
     )
-
     has_voted_before = models.BooleanField(
         null=True,
         blank=True,
         default=None,
         help_text="Let us know if you have voted before."
     )
-
     knows_voting_process = models.BooleanField(
         null=True,
         blank=True,
         default=None,
         help_text="Tell us if you understand how voting works."
     )
-
-
     wants_bill_notifications = models.BooleanField(
         null=True,
         blank=True,
@@ -134,7 +137,6 @@ class UserProfile(models.Model):
         )
     )
 
-
     # --------------------------------------------------------------------------
     # Contact & registration metadata
     # --------------------------------------------------------------------------
@@ -143,8 +145,6 @@ class UserProfile(models.Model):
         editable=False,
         default="undetermined"
     )
-
-
     whatsapp_opt_in_number = models.CharField(
         max_length=20,
         blank=True,
@@ -155,9 +155,21 @@ class UserProfile(models.Model):
             "Leave blank if you prefer not to receive notifications."
         )
     )
+    
+    
 
     registered_at = models.DateTimeField(auto_now_add=True)
     registration_ip = models.GenericIPAddressField(null=True, blank=True)
+
+    # --------------------------------------------------
+    # Track last time user resumed profile wizard
+    # --------------------------------------------------
+    last_wizard_login_at = models.DateTimeField(
+        null=True,
+        blank=True,
+        help_text="Timestamp of last time user returned to resume an incomplete profile."
+    )
+    
 
     # --------------------------------------------------------------------------
     # Model validation
@@ -166,79 +178,122 @@ class UserProfile(models.Model):
         """
         Validates hierarchical consistency between county → constituency → ward.
         """
-        if self.constituency and self.county:
-            if self.constituency.county != self.county:
-                raise ValidationError("Selected constituency does not belong to the selected county.")
-
-        if self.ward and self.constituency:
-            if self.ward.constituency != self.constituency:
-                raise ValidationError("Selected ward does not belong to the selected constituency.")
+        if self.constituency and self.county and self.constituency.county != self.county:
+            raise ValidationError("Selected constituency does not belong to the selected county.")
+        if self.ward and self.constituency and self.ward.constituency != self.constituency:
+            raise ValidationError("Selected ward does not belong to the selected constituency.")
 
     def __str__(self):
         return f"Profile of {self.user.username}"
+
+
 
     # =============================
     # Profile Completion Utilities
     # =============================
 
-    # --- Civic Participation Completeness Check ---
-
-    def has_required_profile_fields(self):
+    def calculate_completion(self) -> int:
         """
-        Returns True if the user has completed all mandatory profile fields
-        required for participation in civic features like voting or commenting.
+        Calculates percentage of completed profile fields.
+        - Treats BooleanFields like has_voted_before and wants_bill_notifications
+        as complete even when False (i.e., valid 'No' answer).
+        - Only counts ManyToMany fields if profile instance exists (has PK).
         """
-        return all([
-            self.age_range_id,
-            self.gender_id,
-            self.education_level_id,
-            self.residency_type_id,
-            self.referral_source_id,
-            self.county_id,
-            self.constituency_id,
-            self.ward_id,
-            self.county_of_origin_id,
-            self.current_country_of_residence,
-            self.civic_interest_areas.exists(),
-            self.has_voted_before is not None,
-            self.knows_voting_process is not None,
-        ])
-
-    # --- Profile Completion Percentage Calculator ---
-
-    def completion_percentage(self):
-        """
-        Calculates the percentage of completed profile fields based on
-        mandatory civic participation attributes (excluding optional ones).
-        """
-        fields = [
-            'age_range',
-            'gender',
-            'education_level',
-            'residency_type',
-            'referral_source',
-            'county',
-            'constituency',
-            'ward',
-            'county_of_origin',
-            'current_country_of_residence',
-            'has_voted_before',
-            'knows_voting_process',
+        scalar_fields = [
+            'age_range', 'gender', 'education_level',
+            'residency_type', 'referral_source',
+            'county', 'constituency', 'ward',
+            'county_of_origin', 'current_country_of_residence',
+            'has_voted_before', 'knows_voting_process',
+            'wants_bill_notifications', 'profile_image',
         ]
 
-        # Count how many of the above fields are filled (non-empty)
-        filled = sum(1 for f in fields if getattr(self, f))
+        filled = 0
+        for field in scalar_fields:
+            value = getattr(self, field, None)
 
-        # Count civic interest areas separately if at least one exists
-        if self.civic_interest_areas.exists():
+            # Treat False as a valid (filled) value — do NOT count only truthy
+            if value is not None and value != '':
+                filled += 1
+
+        # Count civic_interest_areas (M2M) only if profile has been saved
+        if self.pk and self.civic_interest_areas.exists():
             filled += 1
 
-        # Total fields measured: 13 + 1 (civic interest areas)
-        return int((filled / (len(fields) + 1)) * 100)
+        total = len(scalar_fields) + 1  # +1 for the M2M field
+        return int((filled / total) * 100)
+
+
+    def save(self, *args, **kwargs):
+        """
+        Override save to recalculate and persist completion_percentage.
+        """
+        new_pct = self.calculate_completion()
+        if new_pct != self.completion_percentage:
+            self.completion_percentage = new_pct
+        super().save(*args, **kwargs)
+        
+    # =============================
+    # Completion Status Utility
+    # =============================
+    def is_complete(self) -> bool:
+        """
+        Returns True if the user's profile is 100% complete.
+        This uses the cached 'completion_percentage' field,
+        which is updated automatically on save().
+
+        Use this method to redirect users based on completion status:
+        e.g., incomplete users → profile wizard, complete users → dashboard.
+        """
+        return self.completion_percentage == 100
+    
 
     # =============================
-    # Model Meta Configuration
+    # Profile Wizard Screen Mapping
     # =============================
+    SCREEN_FIELD_MAP: list[tuple[str, list[str]]] = [
+        ('user_profiles:screen_1', ['age_range', 'gender', 'education_level']),
+        ('user_profiles:screen_2', ['county', 'constituency', 'ward']),
+        ('user_profiles:screen_3', ['county_of_origin', 'current_country_of_residence', 'residency_type']),
+        ('user_profiles:screen_4', ['civic_interest_areas', 'has_voted_before', 'knows_voting_process']),
+        ('user_profiles:screen_5', ['wants_bill_notifications', 'whatsapp_opt_in_number']),
+        ('user_profiles:screen_6', ['referral_source']),
+        # screen_7 is assumed final confirmation
+    ]
+
+
+    # =============================
+    # Next Step Resolution Utility
+    # =============================
+    def get_next_incomplete_screen(self) -> str:
+        """
+        Determines the next screen based on missing profile fields.
+        Handles special logic like optional WhatsApp number.
+        """
+        for screen_name, fields in self.SCREEN_FIELD_MAP:
+            for field in fields:
+                value = getattr(self, field, None)
+
+                # Special case: civic_interest_areas (M2M)
+                if hasattr(value, 'exists') and not value.exists():
+                    return screen_name
+
+                # Special case: whatsapp number is only required if user opted in
+                if field == 'whatsapp_opt_in_number':
+                    wants = getattr(self, 'wants_bill_notifications', None)
+                    if wants is True and not value:
+                        return screen_name
+                    # If wants is False or None, empty number is fine
+                    continue
+
+                # Normal fields: treat None, '', [], but NOT False, as missing
+                if value in [None, '', []]:
+                    return screen_name
+
+        return 'user_profiles:screen_7'
+
+    
+        
 
     class Meta:
         verbose_name = "User Profile"

@@ -1,0 +1,36 @@
+{% extends "user_accounts/base/registration_screens_base.html" %}
+
+{% block content %}
+<div class="max-w-xl mx-auto mt-20 text-center space-y-6">
+
+  <!-- Kenyan Flag Color Headline -->
+  <h1 class="text-3xl font-black text-black mb-2">
+    You're already signed in
+  </h1>
+
+  <!-- User Identity Block -->
+  <p class="text-gray-700 text-base leading-relaxed">
+    Logged in as:
+    <span class="text-green-700 font-bold tracking-wide uppercase">{{ ceeni_user.username }}</span><br>
+    (Phone ending in
+    <span class="text-black font-bold">
+      {{ ceeni_user.phone_number|slice:'-4:' }}
+    </span>)
+  </p>
+
+  <!-- Purpose -->
+  <p class="text-gray-600 text-sm italic max-w-prose mx-auto">
+    Trying to register someone else? If you're on a shared device - like in a classroom, youth center, or helping another citizen - you can 
+    <strong>log out and register a new participant</strong>. Or simply <strong>resume your profile setup</strong> below.
+  </p>
+
+
+
+  <!-- Action Buttons -->
+  <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+    {% include "common/buttons/_btn_logout_then_signup.html" %}
+    {% include "common/buttons/_btn_resume_profile.html" %}
+  </div>
+
+</div>
+{% endblock %}

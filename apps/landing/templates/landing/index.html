@@ -1,4 +1,5 @@
 {% extends 'landing/base/landing_base.html' %}
+{% load static %}
 
 {% block title %}Welcome to CEENI – A Fairer Kenya Begins Here{% endblock %}
 
@@ -11,55 +12,65 @@
       Let’s Build a Kenya That Includes All of Us
     </h1>
 
-    <!-- Clarifying CEENI’s Identity -->
-    <div class="mt-4 border-l-4 border-red-700 bg-green-50 p-4 rounded text-left sm:text-center shadow-sm">
-      <p class="text-black text-base leading-relaxed">
-        <strong class="text-red-700">CEENI</strong>
-        (<strong>Commission for Ethnic Equity and National Inclusion</strong>) is not a political party, not an organization, and not a movement.
-        It is a citizen-led initiative behind the <span class="font-semibold text-green-800">Ethnic Equity and Public Representation Bill, 2025</span> -
-        a legislative proposal to ensure that no tribe dominates, and no community is excluded.
-        This Bill will ensure that public jobs reflect Kenya’s population - fairly, transparently, and equitably.
+    <div class="w-full mt-2">
+      <p class="text-right md:text-right text-center text-lg md:text-xl italic text-green-700 font-medium px-4 md:px-0 ceeni-fade-in">
+        <span class="inline-block bg-white bg-opacity-80 px-3 py-1 rounded-lg shadow-md border border-green-700">
+          Where <span class="font-bold text-red-700">Fairness</span> Is the Rule - Not the Reward
+        </span>
       </p>
     </div>
 
 
-    <!-- Call-to-actions -->
-    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4 text-center">
+    <!-- Clarifying CEENI’s Identity -->
+    <div class="mt-4 border-l-4 border-red-700 bg-green-50 p-4 rounded text-left sm:text-center shadow-sm">
 
-      <!-- Read the Bill -->
-      <a href="#'bill:viewer'"
-        aria-label="Read the Ethnic Equity Bill"
-        class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
-        <!-- Heroicon: document-text -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" />
-        </svg>
-        Read the Bill
-      </a>
+      <p class="text-base sm:text-lg md:text-base lg:text-lg leading-relaxed text-center text-gray-700 max-w-2xl lg:max-w-4xl mx-auto px-2 lg:px-0 ceeni-fade-in">
+        <strong class="text-red-700">CEENI</strong> (<strong>Commission for Ethnic Equity and National Inclusion</strong>) is Kenya’s bold, data-driven step away from tribal arithmetic and toward institutional fairness.
+        This platform supports the <span class="text-green-800 font-semibold">Ethnic Equity and Public Representation Bill, 2025 (EEPR Bill, 2025)</span> - a law designed to end ethnic exclusion, regulate tribal campaigning, and guarantee public jobs reflect Kenya’s full face: diverse, proportional, and just.
+        <br class="hidden sm:inline" />
+        <span class="block mt-3 font-medium text-black">
+          <span class="text-black">No more domination.</span>
+          <span class="text-red-700"> No more tokenism. No more fear every five years.</span>
+          <br />
+          <span class="text-green-700">Just truth in data, power in unity, and dignity in how we govern - for every Kenyan, in every county.</span>
+        </span>
+      </p>
 
-      <!-- Register -->
-      <a href="{% url 'user_accounts:register' %}"
-        aria-label="Create a new account"
-        class="bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
-        <!-- Heroicon: user-plus -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 14a4 4 0 10-8 0m8 0v4a4 4 0 01-4 4H4a4 4 0 01-4-4v-4a4 4 0 014-4h8m6 0h2m-1-1v2" />
-        </svg>
-        Create an Account
-      </a>
+      <!-- Narrative Call-to-Action using DaisyUI Alert -->
+      <div class="w-full mt-4 text-center ceeni-fade-in">
+        <a href="{% url 'landing:why_this_bill_matters' %}" aria-label="Explore the 9 key civic narratives"
+          class="inline-flex items-center gap-2 bg-white bg-opacity-90 px-4 py-2 rounded-full border border-green-700 shadow-md hover:shadow-lg hover:bg-opacity-100 transition duration-300">
 
-      <!-- Login -->
-      <a href="{% url 'user_accounts:login' %}"
-        aria-label="Login to vote and access dashboard"
-        class="bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
-        <!-- Heroicon: arrow-right-on-rectangle -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1" />
-        </svg>
-        Login to Participate
-      </a>
+          <!-- Heroicon: Book Open -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6v6m0 0a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+
+          <span class="text-sm sm:text-base font-semibold text-green-800">
+            Why This Bill Matters
+          </span>
+
+          <!-- Heroicon: Arrow Right -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
 
     </div>
+
+
+        
+    <!-- Call-to-actions -->
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4 text-center">
+      {# Hero Button Row: Read | Signup | Login #}
+      {% include 'common/buttons/_action_btn_row_homepage.html' %}
+    </div>
+
   </section>
 
 
@@ -138,7 +149,7 @@
           <h3 class="font-bold text-lg">Citizen Reporting Portal</h3>
         </div>
         <p class="text-sm text-gray-700">
-          Citizens can safely report bias, exclusion, or unfair hiring — anonymously and with protection.
+          Citizens can safely report bias, exclusion, or unfair hiring - anonymously and with protection.
         </p>
       </div>
 
@@ -158,8 +169,6 @@
     </div>
   </section>
 
-
-
   <!-- PARTICIPATION SECTION -->
   <section class="mt-16">
     <div class="text-center mb-10">
@@ -171,67 +180,97 @@
       </p>
     </div>
 
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-2">
       <!-- Read the Bill -->
       <div class="bg-white border-l-4 border-red-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-red-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
+          {% include "common/icons/_icon_presentation_chart.html" %}
           <h3 class="text-lg font-bold">Read the Bill</h3>
         </div>
-        <p class="text-sm text-gray-700 mb-2">
-          Understand what the Ethnic Equity Bill actually says — and why it matters to every Kenyan.
+        <p class="text-sm text-gray-700 mb-4">
+          Understand what the Ethnic Equity Bill actually says - and why it matters to every Kenyan.
         </p>
-        <a href="#'bill:viewer'" class="text-red-700 font-medium underline">📄 Full Text of the Bill</a>
+        {% include "common/buttons/_action_btn_read_bill.html" %}
       </div>
 
       <!-- Track Equity Data -->
       <div class="bg-white border-l-4 border-black p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-black">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg>
+          {% include "common/icons/_icon_data_equity.html" %}
           <h3 class="text-lg font-bold">Track Equity Data</h3>
         </div>
-        <p class="text-sm text-gray-700 mb-2">
-          Live charts, maps, and scorecards are coming soon to show how equity is practiced nationwide.
+        <p class="text-sm text-gray-700 mb-4">
+          See live data on ethnic representation, service delivery equity, and transparency in public appointments.
         </p>
-        <div class="text-sm italic text-gray-400">Interactive dashboard launching soon</div>
+        {% include "common/buttons/_action_btn_dashboard.html" %}
       </div>
 
       <!-- Vote & Participate -->
       <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M5 13l4 4L19 7"/></svg>
+          {% include "common/icons/_icon_tribal_fairness.html" %}
           <h3 class="text-lg font-bold">Vote & Participate</h3>
         </div>
-        <p class="text-sm text-gray-700 mb-2">
+        <p class="text-sm text-gray-700 mb-4">
           Cast your vote when polls open. Your input shapes the final equity benchmarks.
         </p>
-        <a href="{% url 'user_accounts:login' %}" class="text-green-700 font-medium underline">🗳 Log In to Vote</a>
+        {% include "common/buttons/_action_btn_login.html" %}
       </div>
 
       <!-- Share Your Voice -->
       <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M7 8h10M7 12h8m-5 8l-5-4H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v8a2 2 0 01-2 2h-3l-5 4z"/></svg>
+          {% include "common/icons/_icon_chat_bubble_heart.html" %}
           <h3 class="text-lg font-bold">Share Your Voice</h3>
         </div>
-        <p class="text-sm text-gray-700 mb-2">
+        <p class="text-sm text-gray-700 mb-4">
           Tell your story. Submit a public comment on fairness and inclusion in Kenya today.
         </p>
-        <a href="# 'views_submission:submit'#" class="text-green-700 font-medium underline">💬 Submit a Comment</a>
+        {% include "common/buttons/_action_btn_comment.html" %}
       </div>
 
     </div>
   </section>
 
 
+
 </div>
+
+<section class="mt-20 px-4 sm:px-6 text-center">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-6">
+    <span class="text-black">What</span>
+    <span class="text-red-700">Kenyans</span>
+    <span class="text-green-700">Are Saying</span>
+  </h2>
+
+
+  <div class="max-w-3xl mx-auto bg-white border-l-4 border-green-700 rounded-lg shadow-md p-6">
+
+    <!-- Rectangular image -->
+    <div class="flex justify-center mb-4">
+      <img src="{% static 'shared/images/kenya_citizen.png' %}" alt="Kenyan citizen testimonial"
+           class="w-28 sm:w-36 border-2 border-red-700 rounded-lg shadow object-cover" />
+    </div>
+
+    <!-- Blockquote -->
+    <blockquote class="italic text-gray-700 leading-relaxed">
+      “<span class="text-black font-semibold">This Bill speaks to the wounds of our past</span> - and the hope for our children.
+      <br class="hidden sm:inline" />
+      <span class="text-green-700 font-medium">CEENI is not just a policy tool</span>, it’s <span class="text-red-700">a moral compass.</span>”
+    </blockquote>
+
+    <footer class="mt-4 text-sm text-gray-600 font-medium">
+      - A citizen from <span class="text-black">Busia County</span>
+    </footer>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 {% endblock %}

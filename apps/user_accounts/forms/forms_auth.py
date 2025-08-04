@@ -28,24 +28,33 @@ class RegistrationForm(forms.ModelForm):
 
     # Validates phone number in E.164 format (e.g., +254712345678)
     phone_number = forms.CharField(
-        help_text="Must be valid. Format: +254712345678 - used for OTP and login security.",
+        help_text="Must be valid. Format: +254712345678. This number will be used for OTP verification and login security - please use a number you own and can easily remember.",
         validators=[validate_phone_e164],
         widget=forms.TextInput(attrs={
             "class": "input input-bordered w-full",
             "placeholder": "e.g. +254712345678"
         })
     )
-
+    
     # Nickname with custom validation (length and uniqueness)
     nickname = forms.CharField(
         min_length=3,
         max_length=10,
+        help_text=(
+            "Choose a short, unique name (3-10 characters). "
+            "This name will represent you on the Ceeni platform - make it memorable. "
+            "Example: JB Baraka. "
+            "We’ll automatically append system-generated characters to ensure global uniqueness "
+            "(e.g., jb-baraka-t4c754)."
+        ),
         validators=[validate_nickname],
         widget=forms.TextInput(attrs={
             "class": "input input-bordered w-full",
-            "placeholder": "Pick a unique nickname"
+            "placeholder": "e.g. JB Baraka"
         })
     )
+
+
 
     # Primary password field
     password = forms.CharField(
@@ -130,7 +139,7 @@ class LoginForm(AuthenticationForm):
 
         # Override username to be phone number
         self.fields["username"].label = "Phone Number"
-        self.fields["username"].help_text = "Use the phone number you registered with (E.164 format)."
+        self.fields["username"].help_text = "Use the phone number you registered with (E.164 format say eg. +254712345678)"
         self.fields["username"].widget.attrs.update({
             "class": "input input-bordered w-full",
             "placeholder": "+254712345678",

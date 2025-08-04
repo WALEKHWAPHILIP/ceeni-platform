@@ -1,5 +1,8 @@
 from django.urls import path
-from . import views
+from .views import (
+    index_view,
+    why_this_bill_matters_view,
+)
 
 # ───────────────────────────────────────────────────────────────────────────────
 # FILE: apps/landing/urls.py
@@ -11,13 +14,12 @@ from . import views
 app_name = "landing"  # Namespacing for reverse URL resolution (e.g., 'landing:index')
 
 urlpatterns = [
-    # ------------------------------------------------------------------------------
-    # Homepage Route
-    # ------------------------------------------------------------------------------
-    # Maps the root URL ('/') to the Landing Page View.
-    # This is the CEENI public-facing homepage with motivational civic content.
-    path('', views.index, name='index'),
-    
+    # Homepage
+    path('', index_view, name='index'),
+
+    # Narratives page
+    path("why-this-bill-matters/", why_this_bill_matters_view, name="why_this_bill_matters"),
+
     # Example future routes (uncomment or add as needed)
     # path('about/', views.about, name='about'),
     # path('contact/', views.contact, name='contact'),

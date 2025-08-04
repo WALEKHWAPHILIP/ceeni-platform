@@ -1,0 +1,10 @@
+{# apps/common/templates/common/partials/_action_btn_signup.html #}
+<a href="{% url 'user_accounts:signup_entry' %}"
+   aria-label="Create a new account"
+   class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 14a4 4 0 10-8 0m8 0v4a4 4 0 01-4 4H4a4 4 0 01-4-4v-4a4 4 0 014-4h8m6 0h2m-1-1v2" />
+  </svg>
+  Create an Account
+  {% include 'common/partials/_kenya_flag_pill.html' %}
+</a>

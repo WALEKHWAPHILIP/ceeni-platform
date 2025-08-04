@@ -1,0 +1,24 @@
+{% extends "user_profiles/base/shared_base/startup_screens_base.html" %}
+
+{% block title %}CEENI Profile Wizard{% endblock %}
+
+{% block form_fields %}
+  <p class="text-sm font-medium text-gray-700 text-center">
+    Step {{ step_number }} of {{ total_steps }}
+  </p>
+
+  {# Graphical progress bar (driven by a single `completion` value 0–100) #}
+  {% include 'user_profiles/partials/_progress_bar.html' with completion=completion %}
+
+  {% block wizard_content %}{% endblock %}
+{% endblock %}
+
+{% block form_buttons %}
+  {% block wizard_nav %}{% endblock %}
+{% endblock %}
+
+
+
+
+
+

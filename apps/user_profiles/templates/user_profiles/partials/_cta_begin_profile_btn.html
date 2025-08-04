@@ -1,0 +1,21 @@
+{# templates/user_profiles/partials/_cta_begin_profile_btn.html #}
+{# CTA button to begin profile setup after registration #}
+<a href="{% url 'user_profiles:screen_1' %}"
+   class="group flex overflow-hidden rounded-lg shadow-md transition duration-150">
+  <!-- Left Stripe -->
+  <div class="w-1 bg-green-700"></div>
+
+  <!-- Label -->
+  <span class="bg-green-700 hover:bg-green-800 text-white font-bold px-4 py-2 transition">
+    Begin Profile Setup
+  </span>
+
+  <!-- Chevron Icon -->
+  <span class="bg-black text-white px-3 flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5l7 7-7 7" />
+    </svg>
+  </span>
+</a>

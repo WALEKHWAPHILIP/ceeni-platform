@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'user_accounts.apps.UserAccountsConfig',     # Handles user registration, login, authentication, roles, and permissions
     'user_profiles.apps.UserProfilesConfig',     # Manages user profile data (e.g. bio, avatar, preferences, demographics)
     'landing.apps.LandingConfig',                # Landing page views, templates, public homepage, and static content
+    'dashboard.apps.DashboardConfig',            # Dashboard landing & post-onboarding views
 
 ]
 
@@ -115,6 +116,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # CEENI user context processor
+                'apps.common.context_processors.ceeni_user_data.global_user_data',
             ],
         },
     },

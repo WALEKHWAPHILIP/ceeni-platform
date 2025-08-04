@@ -1,0 +1,29 @@
+{# Reusable Footer with Privacy and Home links using Heroicons #}
+<div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-6 text-xs text-gray-500">
+
+  <!-- Privacy Policy -->
+  <a href="#privacy_policy" class="flex items-center space-x-1 hover:text-green-700 transition">
+    <!-- Heroicon: Shield Check -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-700" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 4.354l6.364 2.12A1 1 0 0119 7.405V12a7 7 0 11-14 0V7.405a1 1 0 01.636-.931L12 4.354z" />
+    </svg>
+    <span>Privacy Policy</span>
+  </a>
+
+  <!-- Divider -->
+  <span class="text-gray-300 hidden sm:inline">|</span>
+
+  <!-- Home Link -->
+  <a href="/" class="flex items-center space-x-1 hover:text-blue-700 transition">
+    <!-- Heroicon: Home -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 9.75L12 4l9 5.75M4.5 10v8.25A1.25 1.25 0 005.75 19.5h3.5A1.25 1.25 0 0010.5 18.25V14a1.25 1.25 0 011.25-1.25h.5A1.25 1.25 0 0113.5 14v4.25a1.25 1.25 0 001.25 1.25h3.5A1.25 1.25 0 0019.5 18.25V10" />
+    </svg>
+    <span>Home</span>
+  </a>
+
+</div>

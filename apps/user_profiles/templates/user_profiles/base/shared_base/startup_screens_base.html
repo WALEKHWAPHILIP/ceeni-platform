@@ -1,0 +1,33 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-black">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}CEENI Civic Platform{% endblock %}</title>
+    {% tailwind_css %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  </head>
+
+  <body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 bg-white text-black">
+
+    <main class="w-full max-w-md sm:max-w-xl bg-white border border-gray-200 rounded-2xl shadow-md p-6 space-y-6">
+
+      {% include "user_profiles/partials/_ceeni_logo_flag_block.html" %}
+
+      <form method="post" class="space-y-6 mt-4">
+        {% csrf_token %}
+        {% block form_fields %}{% endblock %}
+        <div class="flex justify-between mt-4">
+          {% block form_buttons %}{% endblock %}
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="mt-6 max-w-md">
+    {% include "user_profiles/partials/_startup_screens_footer_links.html" %}
+    </footer>
+
+  </body>
+</html>

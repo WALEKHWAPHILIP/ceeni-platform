@@ -1,0 +1,35 @@
+{# templates/user_profiles/screens/s6_referral_source.html #}
+{% extends "user_profiles/base/wizard_base.html" %}
+
+{% block title %}Step 6 — How Did You Hear About CEENI?{% endblock %}
+
+{% block wizard_content %}
+  {% for field in form %}
+    <div>
+      <label for="{{ field.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-1">
+        {{ field.label }}
+      </label>
+      {{ field }}
+      {% if field.help_text %}
+        <p class="text-xs text-gray-500 italic mt-1">{{ field.help_text }}</p>
+      {% endif %}
+      {% for error in field.errors %}
+        <p class="text-sm text-red-600 mt-1">{{ error }}</p>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  {# Kenya-flag HR separator #}
+  {% include "user_profiles/partials/_kenya_flag_hr_separator.html" %}
+{% endblock %}
+
+{% block wizard_nav %}
+  {# Resolve the back URL #}
+  {% url 'user_profiles:screen_5' as back_url %}
+
+  {# Left: DRY’d Back button #}
+  {% include "user_profiles/partials/_wizard_back_button.html" with back_url=back_url %}
+
+  {# Right: DRY’d Save & Continue button #}
+  {% include "user_profiles/partials/_wizard_button.html" %}
+{% endblock %}

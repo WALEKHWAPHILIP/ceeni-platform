@@ -1,0 +1,150 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}Why the EEPR Bill, 2025 Matters – CEENI{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Title -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">Why This Bill Matters</h1>
+    <p class="text-sm text-gray-500">
+      Ethnic Equity and Public Representation Bill (EEPR Bill, 2025)
+    </p>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      These are the nine civic narratives that make the <strong>EEPR Bill</strong> not just a law - but a national turning point.
+    </p>
+    <div class="mt-4 flex justify-center">
+      {% include 'common/buttons/_action_btn_read_bill.html' %}
+    </div>
+
+  </header>
+
+  <h2 class="text-2xl sm:text-3xl font-extrabold text-green-700 text-center mt-14 flex justify-center items-center gap-3">
+    {% include 'common/icons/_icon_section_header.html' %}
+    <span>The 9 Civic Transformations at the Heart of the EEPR Bill</span>
+  </h2>
+
+
+
+  <!-- Narratives Grid -->
+  <section class="space-y-10">
+
+    <div class="border-l-4 border-green-700 bg-gray-50 shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_tribal_fairness.html' %}
+        <h2 class="text-xl font-bold text-black">From Tribal Capture to National Fairness</h2>
+      </div>
+      <p class="text-gray-700">
+        This Bill ends the idea that government is a prize for the tribe in power. It redefines public service as a national trust —
+        where all communities are included, respected, and protected under law.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-red-700 bg-white shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_fear_to_issues.html' %}
+        <h2 class="text-xl font-bold text-black">From Fear-Based Politics to Issue-Based Campaigns</h2>
+      </div>
+      <p class="text-gray-700">
+        With CEENI in place, tribal incitement becomes pointless. Politicians must now talk about jobs, schools, and healthcare — not ethnicity.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-black bg-gray-50 shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_turn_to_belong.html' %}
+        <h2 class="text-xl font-bold text-black">From “Our Turn to Eat” to “Everyone’s Turn to Belong”</h2>
+      </div>
+      <p class="text-gray-700">
+        This Bill guarantees small tribes a seat at the table. Big tribes still qualify — but based on merit, not tribal loyalty.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-green-700 bg-white shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_data_equity.html' %}
+        <h2 class="text-xl font-bold text-black">From Cosmetic Diversity to Data-Driven Equity</h2>
+      </div>
+      <p class="text-gray-700">
+        CEENI introduces annual scorecards and public dashboards. Equity is no longer a vague promise — it’s measurable and enforceable.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-red-700 bg-gray-50 shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_unity_to_inclusion.html' %}
+        <h2 class="text-xl font-bold text-black">From Talk About Unity to Enforced Inclusion</h2>
+      </div>
+      <p class="text-gray-700">
+        Article 10 of our Constitution promised fairness. The EEPR Bill makes that promise real — with audits, sanctions, and timelines.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-green-700 bg-white shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_hate_to_hope.html' %}
+        <h2 class="text-xl font-bold text-black">From Hate Speech to Hope Speech</h2>
+      </div>
+      <p class="text-gray-700">
+        Politicians who can’t deliver services often stoke ethnic fears. This Bill removes public office as a tribal prize — silencing hate at its root.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-black bg-gray-50 shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_cynicism_to_empowerment.html' %}
+        <h2 class="text-xl font-bold text-black">From Voter Cynicism to Civic Empowerment</h2>
+      </div>
+      <p class="text-gray-700">
+        Citizens will report violations, track compliance, and shape equity benchmarks through CEENI’s dashboard and mobile feedback tools.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-red-700 bg-white shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_youth_to_justice.html' %}
+        <h2 class="text-xl font-bold text-black">From Youth Disillusionment to Generational Justice</h2>
+      </div>
+      <p class="text-gray-700">
+        Young Kenyans want merit, not last names. This law levels the field — so talent finally outranks tribe.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-green-700 bg-gray-50 shadow-md rounded-md p-6">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_ethnic_to_accountability.html' %}
+        <h2 class="text-xl font-bold text-black">From Ethnic Arithmetic to Institutional Accountability</h2>
+      </div>
+      <p class="text-gray-700">
+        The EEPR Bill forces every ministry, county, and agency to report — and fix — ethnic imbalances. No more guessing. No more excuses.
+      </p>
+    </div>
+
+  </section>
+
+
+  {% if not request.user.is_authenticated %}
+  <div class="bg-green-700 text-white text-center p-6 rounded-lg shadow-md mt-20">
+    <p class="text-lg font-semibold">Fairness is not a favor — it’s a right.</p>
+    <div class="mt-4 space-x-4">
+      <a href="{% url 'user_accounts:signup_entry' %}" class="inline-flex items-center gap-2 bg-white text-green-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 14a4 4 0 10-8 0m8 0v4a4 4 0 01-4 4H4a4 4 0 01-4-4v-4a4 4 0 014-4h8m6 0h2m-1-1v2" />
+        </svg>
+        Join the Movement
+      </a>
+      <a href="{% url 'user_accounts:login' %}" class="inline-flex items-center gap-2 bg-white text-green-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1" />
+        </svg>
+        Already Registered? Log In
+      </a>
+    </div>
+  </div>
+  {% endif %}
+  
+  {% include 'common/buttons/_global_back_home_btn.html' %}
+</div>
+{% endblock %}

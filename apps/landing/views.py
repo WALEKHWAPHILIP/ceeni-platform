@@ -7,7 +7,7 @@ from django.shortcuts import render
 #   - Provides an entry point for civic engagement and motivational content.
 # ───────────────────────────────────────────────────────────────────────────────
 
-def index(request):
+def index_view(request):
     """
     Public Homepage View (Landing Page)
 
@@ -26,3 +26,22 @@ def index(request):
         HttpResponse with rendered landing page template.
     """
     return render(request, 'landing/index.html')
+
+
+def why_this_bill_matters_view(request):
+    """
+    Narrative Detail Page View
+
+    Renders the explanatory page showing the 9 civic narratives
+    behind the Ethnic Equity and Public Representation Bill (EEPR Bill).
+
+    Template:
+        landing/why_this_bill_matters.html
+
+    Context:
+        None (static content for now)
+
+    Returns:
+        HttpResponse with rendered narrative page
+    """
+    return render(request, 'landing/why_this_bill_matters.html')

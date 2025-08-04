@@ -1,0 +1,36 @@
+{# templates/user_profiles/partials/_wizard_button.html #}
+{% comment %}
+Reusable "Save & Continue" / "Finish & Save" button partial for the onboarding wizard.
+Context variables expected:
+- step_number: current wizard step (1–total_steps)
+- total_steps: total wizard steps (7)
+{% endcomment %}
+
+<button type="submit" formmethod="post"
+        class="group flex overflow-hidden rounded-lg shadow-md transition-all duration-150">
+  <!-- Red stripe -->
+  <div class="w-1 bg-red-700"></div>
+
+  <!-- Label segment -->
+  <span class="bg-green-700 border-b-4 border-green-800 
+               group-hover:bg-green-800 group-hover:border-green-900 
+               text-white font-bold px-4 py-2 transition-all duration-150">
+    {% if step_number < total_steps %}
+      Save&nbsp;&amp;&nbsp;Continue
+    {% else %}
+      Finish&nbsp;&amp;&nbsp;Save
+    {% endif %}
+  </span>
+
+  <!-- Icon segment -->
+  <span class="bg-black border-b-4 border-gray-900 
+               group-hover:bg-gray-900 group-hover:border-gray-800 
+               text-white px-3 flex items-center transition-all duration-150">
+    <!-- Heroicon: ChevronRight -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5l7 7-7 7" />
+    </svg>
+  </span>
+</button>

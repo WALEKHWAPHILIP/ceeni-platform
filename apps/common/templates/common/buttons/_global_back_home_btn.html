@@ -1,0 +1,16 @@
+<div class="pt-12 flex justify-center">
+  <a href="{% url 'landing:index' %}"
+     class="inline-flex items-center gap-3 bg-black text-white font-semibold px-5 py-3 rounded-full shadow-md border border-green-700 hover:bg-gray-900 transition-transform hover:scale-105">
+
+    <!-- Heroicon: Arrow Left -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+
+    <span class="tracking-wide">Back to Home</span>
+
+    <!-- Kenyan Flag Pill -->
+    {% include 'common/partials/_kenya_flag_pill.html' %}
+
+  </a>
+</div>

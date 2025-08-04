@@ -37,7 +37,8 @@ urlpatterns = [
     # --------------------------------------------------------------------------
     # Handles HTMX-based endpoints for user profile interactivity (e.g. inline
     # updates, conditional field rendering, async validation, etc.)
-    path("htmx/user-profiles/", include("apps.user_profiles.urls_htmx")),
+    path("profile/", include("apps.user_profiles.urls_htmx")),
+
 
     # --------------------------------------------------------------------------
     # User Accounts App Routing
@@ -58,6 +59,13 @@ urlpatterns = [
     # Routes root domain (`/`) to the public-facing landing app
     # Example: homepage, about, contact, etc.
     path('', include("apps.landing.urls")),
+    
+    
+    
+
+    
+    
+    path('dashboard/', include('apps.dashboard.urls', namespace='dashboard')),
 ]
 
 # ==============================================================================

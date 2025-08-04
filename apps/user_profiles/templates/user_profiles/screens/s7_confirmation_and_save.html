@@ -1,0 +1,85 @@
+{# templates/user_profiles/screens/s7_confirmation_and_save.html #}
+{% extends "user_profiles/base/wizard_base.html" %}
+
+{% block title %}Step 7 — Confirm & Finish | CEENI Profile{% endblock %}
+
+{% block wizard_content %}
+  <h2 class="text-xl font-semibold text-center mb-6">Review & Confirm Your Information</h2>
+
+  {# Demographics #}
+  <div class="space-y-2">
+    <p><strong>Age Range:</strong> {{ profile.age_range }}</p>
+    <p><strong>Gender:</strong> {{ profile.gender }}</p>
+    <p><strong>Education Level:</strong> {{ profile.education_level }}</p>
+  </div>
+  {% include "user_profiles/partials/_kenya_flag_hr_separator.html" %}
+
+  {# Location #}
+  <div class="space-y-2">
+    <p><strong>County (voter):</strong> {{ profile.county }}</p>
+    <p><strong>Constituency:</strong> {{ profile.constituency }}</p>
+    <p><strong>Ward:</strong> {{ profile.ward }}</p>
+  </div>
+  {% include "user_profiles/partials/_kenya_flag_hr_separator.html" %}
+
+  {# Origin & Residency #}
+  <div class="space-y-2">
+    <p><strong>County of Origin:</strong> {{ profile.county_of_origin }}</p>
+    <p><strong>Country of Residence:</strong> {{ profile.current_country_of_residence }}</p>
+    <p><strong>Residency Type:</strong> {{ profile.residency_type }}</p>
+  </div>
+  {% include "user_profiles/partials/_kenya_flag_hr_separator.html" %}
+
+  {# Civic Interests #}
+  <div class="space-y-2">
+    <p><strong>Interests:</strong> {{ profile.civic_interest_areas.all|join:", " }}</p>
+    <p><strong>Voted Before:</strong> {{ profile.has_voted_before|yesno:"Yes,No" }}</p>
+    <p><strong>Knows Voting Process:</strong> {{ profile.knows_voting_process|yesno:"Yes,No" }}</p>
+  </div>
+  {% include "user_profiles/partials/_kenya_flag_hr_separator.html" %}
+
+  {# Communication & Referral #}
+  <div class="space-y-2">
+    <p><strong>Bill Notifications:</strong> {{ profile.wants_bill_notifications|yesno:"Yes,No" }}</p>
+    {% if profile.whatsapp_opt_in_number %}
+      <p><strong>WhatsApp:</strong> {{ profile.whatsapp_opt_in_number }}</p>
+    {% endif %}
+    <p><strong>Referral Source:</strong> {{ profile.referral_source }}</p>
+  </div>
+{% endblock %}
+
+{% block wizard_nav %}
+  {# Back button #}
+  {% url 'user_profiles:screen_6' as back_url %}
+  {% include "user_profiles/partials/_wizard_back_button.html" with back_url=back_url %}
+
+  {# Finish button as a direct link into dashboard.home #}
+  <a href="{% url 'dashboard:home' %}"
+     class="group flex overflow-hidden rounded-lg shadow-md transition-all duration-150">
+    <!-- red stripe -->
+    <div class="w-1 bg-red-700"></div>
+
+    <!-- green label with bevel -->
+    <span class="bg-green-700 border-b-4 border-green-800
+                 group-hover:bg-green-800 group-hover:border-green-900
+                 text-white font-bold px-4 py-2 transition-all duration-150">
+      Finish&nbsp;&amp;&nbsp;Save
+    </span>
+
+    <!-- icon segment -->
+    <span class="bg-black border-b-4 border-gray-900
+                 group-hover:bg-gray-900 group-hover:border-gray-800
+                 text-white px-3 flex items-center transition-all duration-150">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           class="h-5 w-5"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke="currentColor">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7" />
+      </svg>
+    </span>
+  </a>
+{% endblock %}

@@ -1,0 +1,10 @@
+{# apps/common/templates/common/partials/_action_btn_read_bill.html #}
+<a href="# url 'bill:viewer' %}"
+   aria-label="Read the Ethnic Equity Bill"
+   class="bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" />
+  </svg>
+  Read the Bill
+  {% include 'common/partials/_kenya_flag_pill.html' %}
+</a>

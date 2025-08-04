@@ -1,0 +1,29 @@
+{# templates/user_profiles/partials/_cancel_logout_btn.html #}
+{% comment %}
+"Cancel & Log out" button styled like wizard back, with Kenyan color palette and logout icon.
+{% endcomment %}
+
+<button name="cancel" type="submit"
+        class="group flex overflow-hidden rounded-lg shadow-md transition-all duration-150">
+  <!-- Black stripe (Kenyan flag black) -->
+  <div class="w-1 bg-black"></div>
+
+  <!-- Label with logout icon -->
+  <span class="bg-white border-b-4 border-red-700
+               group-hover:bg-gray-50 group-hover:border-red-800
+               text-red-700 font-semibold px-4 py-2 transition-all duration-150 flex items-center space-x-2">
+    <!-- Heroicon: Logout (ArrowLeftOnRectangle) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v1" />
+    </svg>
+    <span>Cancel & Log out</span>
+  </span>
+
+  <!-- Right green segment -->
+  <span class="bg-green-700 border-b-4 border-green-800
+               group-hover:bg-green-800 group-hover:border-green-900
+               text-white px-3 flex items-center transition-all duration-150">
+    <!-- empty or decorative -->
+  </span>
+</button>

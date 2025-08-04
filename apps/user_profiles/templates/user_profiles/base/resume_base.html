@@ -1,0 +1,12 @@
+{% extends "user_profiles/base/shared_base/startup_screens_base.html" %}
+
+{% block title %}Resume Your Profile — CEENI{% endblock %}
+
+{% block form_fields %}
+  {% block resume_content %}{% endblock %}
+{% endblock %}
+
+{% block form_buttons %}
+  {% include "user_profiles/partials/_cancel_logout_btn.html" %}
+  {% include "user_profiles/partials/_accept_proceed_btn.html" %}
+{% endblock %}

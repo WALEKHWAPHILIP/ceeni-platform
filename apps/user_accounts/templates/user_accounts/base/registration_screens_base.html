@@ -14,33 +14,24 @@
 
     <!-- HTMX: Enables dynamic page updates via HTML attributes (AJAX without JS) -->
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
-
   </head>
 
   <body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 bg-white text-black">
 
     <!-- Page Content Block -->
     <main class="w-full max-w-md sm:max-w-xl bg-white border border-gray-200 rounded-2xl shadow-md p-6 space-y-6">
-      {% block content %}
-      {% endblock %}
+
+      {# ✅ Reusable CEENI Logo + Flag Block #}
+      {% include "user_profiles/partials/_ceeni_logo_flag_block.html" %}
+
+      {# 🔓 Content block for screen-specific content #}
+      {% block content %}{% endblock %}
     </main>
 
     <!-- Footer -->
-    <footer class="mt-8 text-center text-xs text-gray-500 space-y-2 max-w-md">
-
-      <!-- 🔒 Trust & Phone Assurance -->
-      <p>
-        🔒 We respect your privacy. Valid numbers help protect your voice.
-        <a href="#'privacy_policy'" class="text-green-700 underline">Privacy Policy</a>
-      </p>
-
-      <!-- 📍 Platform Note -->
-      <p class="pt-1 border-t border-gray-200 text-[11px] text-gray-400">
-        © 2025 CEENI Platform · Built with ❤️ in Kenya
-      </p>
-
+    <footer class="mt-6 max-w-md">
+      {% include "user_profiles/partials/_startup_screens_footer_links.html" %}
     </footer>
-
 
 
   </body>

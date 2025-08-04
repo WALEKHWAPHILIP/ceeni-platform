@@ -1,57 +1,98 @@
 {% extends "user_accounts/base/registration_screens_base.html" %}
-{% load static %}
-
-{% block title %}Registration Successful – CEENI{% endblock %}
+{% block title %}Welcome to CEENI, {{ ceeni_user.username|upper }}{% endblock %}
 
 {% block content %}
-<div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-xl shadow-md border border-green-600">
+<div class="space-y-6 text-left">
 
-  <!-- 🇰🇪 Flag Stripe -->
-  <div class="flex w-full h-2 mb-4 rounded overflow-hidden">
-    <div class="w-1/5 bg-black"></div>
-    <div class="w-1/5 bg-red-700"></div>
-    <div class="w-1/5 bg-white"></div>
-    <div class="w-1/5 bg-green-700"></div>
-    <div class="w-1/5 bg-black"></div>
-  </div>
-
-  <!-- Success Icon -->
-  <div class="flex justify-center">
-    <div class="rounded-full bg-green-100 p-4">
-      <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
-           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
-      </svg>
+  <!-- Welcome Banner -->
+  <div class="text-center space-y-3">
+    <div class="rounded-full bg-green-100 p-4 inline-block">
+      {% include "common/icons/_icon_success_tick.html" %}
     </div>
+    <h2 class="text-2xl font-bold text-green-700">
+      You're in, <span class="uppercase font-mono tracking-wider text-red-700">{{ ceeni_user.username }}</span>!
+    </h2>
+    <p class="text-sm text-gray-700 leading-relaxed">
+      You've joined thousands of citizens working to bring <strong>fairness, dignity, and visibility</strong> to all communities in Kenya.
+    </p>
   </div>
 
-  <!-- Success Message -->
-  <h2 class="text-center text-2xl font-bold text-black mt-4">
-    Registration Successful!
-  </h2>
-  <p class="text-center text-sm text-gray-600 mt-1">
-    Welcome to the CEENI Platform Network.
-  </p>
+  <!-- Bill Awareness Message -->
+  <!-- CEENI Awareness Snapshot -->
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-900 text-sm p-4 rounded-md leading-relaxed space-y-2">
+    <p>
+      <strong>CEENI is not just a bill - it’s a civic tool.</strong>
+      The <em>Ethnic Equity and Public Representation Bill, 2025</em> helps ensure that Kenya’s public jobs reflect our real population - not political deals.
+    </p>
+    <p>
+      If passed, it will end tribal favoritism, expose exclusion, and make fairness measurable. With your profile and participation, you’re now part of that change.
+    </p>
+    <div class="text-right pt-1">
+      <a href="{% url 'landing:why_this_bill_matters' %}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-yellow-800 hover:underline font-semibold text-sm">
+        Learn more
+        {% include "common/icons/_icon_interest_info.html" %}
+      </a>
+    </div>
 
-  <!-- Username Highlight -->
-  <div class="text-center mt-3 text-sm">
-    Your unique public username is:
-    <span class="font-mono font-semibold text-green-700">
-      {{ username }}
-    </span>
   </div>
 
-  <!-- Privacy Notice -->
-  <p class="text-xs text-gray-500 text-center mt-4">
-  Your phone number is private and will never be shown or shared. Only your username is public.
-  Please store your username and password safely — you’ll need your registered phone number and password every time you log in.
-  </p>
 
-  <!-- CTA -->
-  <div class="mt-6">
-    <a href="{% url 'user_accounts:login' %}" class="w-full block text-center bg-green-700 hover:bg-green-800 text-white font-bold py-2 rounded-xl">
-      Proceed to Login
-    </a>
+  <!-- Profile Setup Preview -->
+  <div class="text-sm text-gray-800 leading-relaxed space-y-2">
+    <p class="text-center">
+      To participate fully, we’ll help you complete a short civic profile.
+    </p>
+    <ul class="space-y-2">
+      <li class="flex items-center gap-2">
+        {% include "common/icons/_icon_location_pin.html" %}
+        Where you vote and live
+      </li>
+      <li class="flex items-center gap-2">
+        {% include "common/icons/_icon_interest_info.html" %}
+        Your interests in public affairs
+      </li>
+      <li class="flex items-center gap-2">
+        {% include "common/icons/_icon_notification_bell.html" %}
+        How you'd like to get updates
+      </li>
+    </ul>
+    <p class="text-xs text-gray-500 italic text-center">
+      We don’t ask for tribe. This is about voice - not identity.
+    </p>
   </div>
+
+  <!-- Login & Privacy Info -->
+  <div class="bg-gray-50 border border-gray-200 rounded-md p-4 text-sm text-gray-700 space-y-1">
+    <p>
+      You’re already logged in. In future, you’ll use your phone number <span class="text-green-700 font-bold">{{ ceeni_user.phone_number }}</span>
+      and your password to access your account. We’ll identify you using your CEENI platform's nickname: <span class="text-red-700 font-bold uppercase font-mono">{{ ceeni_user.username }}</span>.
+    </p>
+    <p class="text-xs text-gray-500 italic">
+      Your phone number will never be made public, sold, or shared with third parties. We take privacy seriously.
+    </p>
+  </div>
+
+  <!-- Legislative Clarity Note -->
+  <div class="bg-white text-sm text-gray-800">
+    <p class="text-center leading-relaxed">
+      After public participation, we expect a refined version of this Bill to be formally introduced in Parliament.
+      This platform helps us build the case - with real data, real people, and real voices.
+    </p>
+  </div>
+
+  <!-- Begin Profile CTA Button -->
+  <div class="flex justify-center">
+    {% include "user_profiles/partials/_cta_begin_profile_btn.html" %}
+  </div>
+
 </div>
+{% endblock %}
+
+{% block footer %}
+  <footer class="mt-6 max-w-md">
+    {% include "user_profiles/partials/_startup_screens_footer_links.html" %}
+  </footer>
 {% endblock %}
