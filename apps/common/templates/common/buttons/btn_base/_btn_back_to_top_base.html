@@ -1,0 +1,22 @@
+<a href="{{ target_id|default:'#top' }}"
+   class="inline-block rounded-full shadow-sm overflow-hidden focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-green-700 hover:opacity-95 transition"
+   title="Back to Top" aria-label="Back to Top">
+  <span class="grid grid-cols-[1fr_2px_1fr_2px_1fr] items-stretch h-6">
+    <!-- Black stripe (empty) -->
+    <span class="bg-black" aria-hidden="true"></span>
+
+    <!-- 2px white separator -->
+    <span class="w-[2px] bg-white" aria-hidden="true"></span>
+
+    <!-- Red stripe with smaller icon -->
+    <span class="flex items-center justify-center bg-red-700 text-white">
+      {% include 'common/icons/_icon_top.html' with icon_classes="w-4 h-4" %}
+    </span>
+
+    <!-- 2px white separator -->
+    <span class="w-[2px] bg-white" aria-hidden="true"></span>
+
+    <!-- Green stripe (empty) -->
+    <span class="bg-green-700" aria-hidden="true"></span>
+  </span>
+</a>

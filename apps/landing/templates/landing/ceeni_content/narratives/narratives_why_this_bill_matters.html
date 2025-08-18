@@ -1,0 +1,300 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}Why the EEPR Bill, 2025 Matters – CEENI{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Title -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">Why This Bill Matters</h1>
+    <p class="text-sm text-gray-500">
+      Ethnic Equity and Public Representation (EEPR) Bill, 2025
+    </p>
+
+
+
+    <!-- Intro from PDF - Kenyan Red Variant -->
+    <section class="relative bg-green-50 border border-red-200 rounded-lg shadow-sm py-8 px-6 my-12 pl-8 kenya-left-red">
+
+    
+      <div class="prose prose-gray w-full">
+        <p class="font-semibold text-green-700">
+          <strong class="text-red-700">The EEPR Bill, 2025 is more than a piece of legislation</strong>.
+          It is a turning point in Kenya's journey toward fairness, unity, and national dignity.
+          For decades, public service in Kenya has too often been shaped by tribal capture, political bargaining, and a winner-takes-all mentality. 
+          The result? Communities left out. Talented citizens overlooked. Institutions seen as serving some, but not all.
+          The EEPR Bill changes this story; not with promises, but with 
+          binding rules, transparent data, and real enforcement.
+          These are the nine civic transformations that the Bill will deliver: 
+          each one a shift from old habits that divide us, to new norms that unite us. 
+          Together, they redefine public service as a national trust that belongs equally to all Kenyans.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Link to CEENI Documents List -->
+  <div class="text-center my-8">
+    {% url 'landing:docs_list' as ceeni_docs_url %}
+    {% include "common/buttons/_btn_ceeni_docs.html" with href=ceeni_docs_url label="Explore More CEENI Documents" %}
+  </div>
+
+  <!-- Section Header -->
+  <div id="the-narratives-header" class="scroll-mt-24">   
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-green-700 text-center mt-14 flex justify-center items-center gap-3">
+      {% include 'common/icons/_icon_section_header.html' %}
+      <span>The 9 Civic Transformations at the Heart of the EEPR Bill</span>
+    </h2>
+  </div>
+
+  <!-- Optional quick in-page nav -->
+  {% include "landing/partials/_quick_nav_narratives.html" with items=narratives_quick_nav variant="chips" nav_label="EEPR narratives quick links" %}
+
+
+
+  <!-- Narratives Grid -->
+  <section class="space-y-10">
+
+    <!-- 1 -->
+    <div id="tribal-to-fairness" class="border-l-4 border-green-700 bg-gray-50 shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n1-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_tribal_fairness.html' %}
+        <h3 id="n1-title" class="text-xl font-bold text-black">From Tribal Capture to National Fairness</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          For years, winning national elections was treated like winning a prize for one community:
+          top jobs flowed to the tribe in power while others felt like outsiders in their own country.
+          The EEPR Bill ends this zero-sum game by redefining public service as a national trust - 
+          not a political reward. Each group's share of public jobs aligns with its population - no more,
+          no less - so ministries, counties, and agencies mirror Kenya's true diversity. As representation
+          becomes fair and visible from Turkana to Taita-Taveta and Mandera to Migori, trust in the state
+          grows - and unity follows.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 2 -->
+    <div id="fear-to-issues" class="border-l-4 border-red-700 bg-white shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n2-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_fear_to_issues.html' %}
+        <h3 id="n2-title" class="text-xl font-bold text-black">From Fear-Based Politics to Issue-Based Campaigns</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Too often campaigns have been poisoned by ethnic fearmongering: “If they win, you lose.”
+          With CEENI in place and appointments governed by a transparent formula, public jobs can't be
+          traded as tribal rewards. That takes away the fuel for incitement. Politicians must compete
+          on schools, healthcare, roads, and youth opportunities - on solutions, not surnames. When elections
+          are about ideas and delivery, Kenya wins.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 3 -->
+    <div id="turn-to-belong" class="border-l-4 border-black bg-gray-50 shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n3-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_turn_to_belong.html' %}
+        <h3 id="n3-title" class="text-xl font-bold text-black">From “Our Turn to Eat” to “Everyone's Turn to Belong”</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          The mindset of “ni wakati wetu wa kula” turns government into a feast for a few and leaves
+          millions outside the door. The EEPR Bill breaks that cycle by guaranteeing proportional
+          representation in public offices. Small tribes gain a permanent seat at the table; large tribes
+          remain represented - through merit and fairness, not political loyalty. Whether El Molo or Luhya,
+          Pokomo or Kikuyu, every Kenyan belongs in public service. Fair access becomes a lawful
+          entitlement - not a favour from those in power.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 4 -->
+    <div id="cosmetic-to-data" class="border-l-4 border-green-700 bg-white shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n4-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_data_equity.html' %}
+        <h3 id="n4-title" class="text-xl font-bold text-black">From Cosmetic Diversity to Data-Driven Equity</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Token appointments can't hide skewed departments. The EEPR Bill replaces optics with evidence:
+          every public body must publish staffing by ethnicity, gender, and other indicators; the KPEID
+          Dashboard exposes the numbers; and annual Equity Scorecards rate compliance. With measurable,
+          public data, inclusivity becomes a standard that can be verified and enforced - not just claimed.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 5 -->
+    <div id="unity-to-inclusion" class="border-l-4 border-red-700 bg-gray-50 shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n5-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_unity_to_inclusion.html' %}
+        <h3 id="n5-title" class="text-xl font-bold text-black">From Talk About Unity to Enforced Inclusion</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Unity speeches are not enough. The EEPR Bill gives CEENI power to audit every public body,
+          issue compliance orders with deadlines, and impose penalties for ignoring the law - grounding
+          Article 10's values in enforceable practice. If an institution is over-represented, it must fix
+          the imbalance. True unity becomes a legal duty, not a rhetorical flourish.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 6 -->
+    <div id="hate-to-hope" class="border-l-4 border-green-700 bg-white shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n6-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_hate_to_hope.html' %}
+        <h3 id="n6-title" class="text-xl font-bold text-black">From Hate Speech to Hope Speech</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Some careers have thrived on dividing Kenyans and warning of doom if “they” take power.
+          By removing public offices as tribal prizes, the EEPR Bill undercuts the payoff for stoking fear.
+          Leaders must compete on vision, policy, and results. The public square shifts from threats to
+          possibility - hope replacing suspicion.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 7 -->
+    <div id="cynicism-to-empowerment" class="border-l-4 border-black bg-gray-50 shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n7-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_cynicism_to_empowerment.html' %}
+        <h3 id="n7-title" class="text-xl font-bold text-black">From Voter Cynicism to Civic Empowerment</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          When citizens see appointments reward political friends, cynicism grows and participation drops.
+          The EEPR Bill restores power to the people through the KPEID Dashboard and CEENI Citizen
+          Reporting Portal: anyone can check compliance, report violations safely and anonymously, and
+          track corrective actions. Democracy becomes continuous oversight - not just a vote every five years.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 8 -->
+    <div id="youth-to-justice" class="border-l-4 border-red-700 bg-white shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n8-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_youth_to_justice.html' %}
+        <h3 id="n8-title" class="text-xl font-bold text-black">From Youth Disillusionment to Generational Justice</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Young Kenyans have watched opportunities go to the “right” last names. The EEPR Bill levels the
+          field: within a proportional framework, selection is by merit, not networks. A graduate from
+          Garissa has the same shot as one from Kericho or Kiambu. Your skills and commitment - not your
+          surname - determine your path in public service.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+    <!-- 9 -->
+    <div id="arithmetic-to-accountability" class="border-l-4 border-green-700 bg-gray-50 shadow-md rounded-md p-6 scroll-mt-24" aria-labelledby="n9-title">
+      <div class="flex items-center gap-2 mb-2">
+        {% include 'common/icons/_icon_ethnic_to_accountability.html' %}
+        <h3 id="n9-title" class="text-xl font-bold text-black">From Ethnic Arithmetic to Institutional Accountability</h3>
+      </div>
+      <div class="prose prose-gray max-w-none">
+        <p>
+          Politics has long reduced governance to post-election sharing: how many ministries, parastatals,
+          and posts each bloc gets. The EEPR Bill ends the shadow bargaining. Every institution must publish
+          its staffing composition, measure it against the proportional formula, and correct imbalances on
+          a set timeline. CEENI tracks, verifies, and reports publicly, shifting focus from “What did our
+          side get?” to “Is our public service fair and effective for everyone?”
+        </p>
+      </div>
+    </div>
+
+    <!-- Back to Top button (Kenyan flag stripes, icon in red section) -->
+    <div class="flex justify-end">
+      {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+    </div>
+
+
+  </section>
+
+  <!-- Closing call-to-action from PDF (above auth buttons) -->
+  <section class="bg-green-50 border border-green-200 rounded-lg p-6 shadow-sm">
+    <div class="prose prose-gray max-w-none">
+      <p class="font-semibold text-green-800">
+        The EEPR Bill is a reset - from exclusion to inclusion, division to dignity, promises to proof.
+        These nine transformations are practical and enforceable; they will touch every ministry,
+        county, and public office. This is not about helping one group over another - it's about a Kenya
+        where every citizen belongs, every community is respected, and every institution reflects the
+        face of the nation. Fairness isn't a favour - it's a right. The time to claim it is now.
+        Join the movement. Support the EEPR Bill. Let's make history together.
+      </p>
+    </div>
+  </section>
+
+
+
+  <div id="more-ceeni-docs" class="mt-20">
+    {# Document link navigation: show other documents except this one (why_this_bill_matters) #}
+    {% include "landing/partials/_doc_links.html" with current_page='why_this_bill_matters' %}
+  </div>
+
+
+  <!-- Auth-aware call-to-action section:
+      Shows signup/login buttons if user is not authenticated,
+      otherwise shows dashboard button. -->
+  {% include "landing/partials/_auth_gate_cta.html" %}
+
+
+
+  <div class="flex justify-center">
+    {% include 'common/buttons/_global_back_home_btn.html' %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}Read the EEPR Bill, 2025 – CEENI{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Header -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">The EEPR Bill, 2025</h1>
+    <p class="text-sm text-gray-500">
+      Full legislative text of the Ethnic Equity and Public Representation Bill, 2025
+    </p>
+  </header>
+
+  <!-- Intro Block -->
+  <section class="relative bg-green-50 border border-green-200 rounded-lg shadow-sm py-8 px-6 my-12 pl-8 kenya-left-green">
+    <div class="prose prose-gray w-full">
+      <p class="font-semibold text-green-800">
+        <strong class="text-green-900">This Bill is a turning point in Kenya’s history.</strong>
+        It lays the legal foundation for ethnic fairness in public appointments, data transparency, and real accountability through CEENI. 
+        Every Kenyan can now read, follow, and shape how justice is done across all communities.
+        <strong class="text-green-900">You are not just a bystander — this is your law too.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- Link to CEENI Documents List -->
+  <div class="text-center my-8">
+    {% url 'landing:docs_list' as ceeni_docs_url %}
+    {% include "common/buttons/_btn_ceeni_docs.html" with href=ceeni_docs_url label="Explore More CEENI Documents" %}
+  </div>
+
+  <!-- Section Header -->
+  <div id="read-bill-section-header" class="scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-green-700 text-center mt-14 flex justify-center gap-3 text-left leading-snug">
+      <span class="mt-1.5 shrink-0">
+        {% include 'common/icons/landing/_icon_document_text.html' %}
+      </span>
+      <span class="inline-block">
+        Ethnic Equity and Public Representation Bill, 2025 – Full Text
+      </span>
+    </h2>
+
+    <!-- Long Title -->
+    <div class="prose prose-gray text-center mt-4">
+      <p class="italic text-sm text-gray-600 max-w-3xl mx-auto">
+        A Bill for<br>
+        An Act of Parliament to give effect to Articles 10, 27, 56, and 232 of the Constitution of Kenya; to promote equitable representation of Kenya’s ethnic communities in public appointments and institutions of governance; to provide for the monitoring, reporting, and enforcement of ethnic equity standards in public service; to establish the Commission for Ethnic Equity and National Inclusion; and for connected purposes.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Quick Nav: Scroll to Parts of the Bill -->
+  {% include "landing/partials/_quick_nav_history.html" with items=bill_quick_nav variant="chips" nav_label="Jump to Bill Sections" %}
+
+  <!-- All Modular Sections -->
+  {% include "landing/ceeni_content/bill_eepr_2025/partials/_all_read_bill_doc_sections.html" %}
+
+  <!-- CEENI Docs Navigator (exclude this page) -->
+  <div id="more-ceeni-docs" class="mt-20">
+    {% include "landing/partials/_doc_links.html" with current_page='read_bill' %}
+  </div>
+
+  <!-- Call to Action for Authenticated Participation -->
+  {% include "landing/partials/_auth_gate_cta.html" %}
+
+  <div class="flex justify-center">
+    {% include 'common/buttons/_global_back_home_btn.html' %}
+  </div>
+</div>
+{% endblock %}

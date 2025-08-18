@@ -1,0 +1,73 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}Historical Background – EEPR Bill, 2025{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Section -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">The Historical Roots of the EEPR Bill</h1>
+    <p class="text-sm text-gray-500">
+      How Kenya’s history shaped the need for the Ethnic Equity and Public Representation Bill, 2025
+    </p>
+
+    <!-- Intro block -->
+    <section class="relative bg-red-50 border border-red-200 rounded-lg shadow-sm py-8 px-6 my-12 pl-8 kenya-left-red">
+      <div class="prose prose-gray w-full">
+        <p class="font-semibold text-green-800">
+          <strong class="text-green-900">Ethnic exclusion has deep roots in Kenya’s public life.</strong>
+          From post-independence centralisation to post-election patronage, ethnic identity has long shaped access to jobs, power, and services.
+          <strong class="text-green-900">The EEPR Bill, 2025 turns those ideals into action</strong> —
+          through clear targets, binding obligations, and public accountability.
+          Understanding this history is the first step to building a fairer future.
+        </p>
+      </div>
+    </section>
+  </header>
+
+
+  <!-- Link to CEENI Documents List -->
+  <div class="text-center my-8">
+    {% url 'landing:docs_list' as ceeni_docs_url %}
+    {% include "common/buttons/_btn_ceeni_docs.html" with href=ceeni_docs_url label="Explore More CEENI Documents" %}
+  </div>
+  
+
+  
+  <!-- Section Header -->
+  <div id="history-section-header" class="scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-green-700 text-center mt-14 flex justify-center gap-3 text-left leading-snug">
+      <span class="mt-1.5 shrink-0">
+        {% include 'common/icons/landing/_icon_history.html' %}
+      </span>
+      <span class="inline-block">
+        Historical Background and Policy Rationale
+      </span>
+    </h2>
+  </div>
+
+  <!-- Quick in-page nav -->
+  {% include "landing/partials/_quick_nav_history.html" with items=history_quick_nav variant="chips" nav_label="Jump to Historical Sections" %}
+
+  <!-- Modular Sections Grid -->
+  <section class="space-y-10">
+    {% include "landing/ceeni_content/bill_history/partials/_all_historical_doc_sections.html" %}
+  </section>
+
+  <div id="more-ceeni-docs" class="mt-20">
+    {# Document link navigation: show other documents except this one (ll_history) #}
+    {% include "landing/partials/_doc_links.html" with current_page='bill_history' %}
+  </div>
+
+  <!-- Auth-aware call-to-action section:
+      Shows signup/login buttons if user is not authenticated,
+      otherwise shows dashboard button. -->
+  {% include "landing/partials/_auth_gate_cta.html" %}
+
+  <div class="flex justify-center">
+    {% include 'common/buttons/_global_back_home_btn.html' %}
+  </div>
+</div>
+{% endblock %}

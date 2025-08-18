@@ -1,0 +1,93 @@
+{% comment %} Section 12: Fifth Schedule — Ethnic Representation Allocation Formula (Sections 15(2), 19(2), and 38) {% endcomment %}
+<section id="section-12" class="scroll-mt-24 border-l-4 {{ border_class|default:'border-red-700' }} {{ bg_class }} shadow-md rounded-md p-6">
+  <div class="flex items-start gap-2 mb-2">
+    {% include 'common/icons/_icon_section_header.html' %}
+    <div>
+      <h3 class="text-xl font-bold text-black">
+        12. Fifth Schedule — Ethnic Representation Allocation Formula
+      </h3>
+      <span class="text-gray-600 text-base font-normal">
+        (Sections 15(2), 19(2), and 38)
+      </span>
+    </div>
+  </div>
+
+  <div class="prose prose-gray max-w-none space-y-4">
+    <p><strong>1. Purpose</strong></p>
+    <p>The purpose of this Schedule is to establish a clear, objective, and enforceable method for determining the proportional allocation of positions in public institutions in accordance with the ethnic composition of Kenya, as required by this Act.</p>
+
+    <p><strong>2. Data Source</strong></p>
+    <p>The basis for allocation shall be the most recent Kenya Population and Housing Census published by the Kenya National Bureau of Statistics (KNBS), which includes national percentages for each ethnic group.</p>
+    <p>For devolved units, county-level or regional census data may be used in addition to national data, provided that the national minimum equity thresholds are not undermined.</p>
+    <p>CEENI shall update and publish the official allocation percentages within twelve months of the release of any new census.</p>
+
+    <p><strong>3. Base Allocation Formula</strong></p>
+    <p>For each ethnic group <em>i</em>, the target allocation shall be calculated as:</p>
+    <p class="text-center font-mono text-sm bg-gray-100 p-3 rounded">
+      Target Positions<sub>i</sub> = ( Population%<sub>i</sub> / 100 ) × Total Positions
+    </p>
+    <p>Where:</p>
+    <p>(a) Population%<sub>i</sub> = percentage share of ethnic group <em>i</em> in the most recent KNBS census;</p>
+    <p>(b) Total Positions = total number of positions in the institution;</p>
+    <p>(c) Target allocations shall be rounded using the largest remainder method to ensure the sum of allocations equals the total number of positions.</p>
+
+    <p><strong>4. Adjustment Factors</strong></p>
+    <p>(a) <strong>Underrepresentation Priority</strong><br>
+    If an ethnic group’s current share in the institution’s workforce is below its target allocation, recruitment, promotion, and appointment decisions shall first prioritise qualified candidates from that group until parity is achieved.</p>
+
+    <p>(b) <strong>Marginalised Group Bonus</strong><br>
+    Ethnic communities recognised under Article 56 of the Constitution, or designated by CEENI as marginalised, shall receive an additional ten per cent (10%) to their calculated target allocation until their representation meets or exceeds their national population share.</p>
+
+    <p>(c) <strong>Special Skills Exception</strong><br>
+    Where a position requires rare or highly specialised skills not reasonably available among underrepresented groups, the appointing authority may recruit outside the target allocation, provided—</p>
+    <p>– such exceptions are documented in writing; and<br>
+    – a report is submitted to CEENI within 30 days of the appointment.</p>
+
+    <p><strong>5. Recruitment Application</strong></p>
+    <p>Before each recruitment or promotion round, the appointing authority shall—</p>
+    <p>(a) determine the institution’s current ethnic composition;</p>
+    <p>(b) calculate the variance from target allocations; and</p>
+    <p>(c) allocate available positions in a manner that moves the composition toward targets.</p>
+    <p>All recruitment advertisements shall include a statement on the institution’s equity obligations and an invitation for applications from underrepresented groups.</p>
+
+    <p><strong>6. Worked Example</strong></p>
+    <p>Using the 2019 KNBS census and an institution with 100 positions, the national-level allocations would be:</p>
+
+    <table class="table-auto border w-full text-sm my-4">
+    <thead>
+        <tr class="bg-gray-100">
+        <th class="border px-2 py-1">Ethnic Group</th>
+        <th class="border px-2 py-1">% of Population</th>
+        <th class="border px-2 py-1">Target Positions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td class="border px-2 py-1">Kikuyu</td><td class="border px-2 py-1">17.13%</td><td class="border px-2 py-1">17</td></tr>
+        <tr><td class="border px-2 py-1">Luhya</td><td class="border px-2 py-1">14.35%</td><td class="border px-2 py-1">14</td></tr>
+        <tr><td class="border px-2 py-1">Kalenjin</td><td class="border px-2 py-1">13.37%</td><td class="border px-2 py-1">13</td></tr>
+        <tr><td class="border px-2 py-1">Luo</td><td class="border px-2 py-1">10.65%</td><td class="border px-2 py-1">11</td></tr>
+        <tr><td class="border px-2 py-1">Kamba</td><td class="border px-2 py-1">9.81%</td><td class="border px-2 py-1">10</td></tr>
+        <tr><td class="border px-2 py-1">Somali</td><td class="border px-2 py-1">5.85%</td><td class="border px-2 py-1">6</td></tr>
+        <tr><td class="border px-2 py-1">Kisii</td><td class="border px-2 py-1">5.68%</td><td class="border px-2 py-1">6</td></tr>
+        <tr><td class="border px-2 py-1">Mijikenda</td><td class="border px-2 py-1">5.23%</td><td class="border px-2 py-1">5</td></tr>
+        <tr><td class="border px-2 py-1">Meru</td><td class="border px-2 py-1">4.15%</td><td class="border px-2 py-1">4</td></tr>
+        <tr><td class="border px-2 py-1">Other*</td><td class="border px-2 py-1">13.78%</td><td class="border px-2 py-1">14</td></tr>
+        <tr class="font-semibold bg-gray-50">
+        <td class="border px-2 py-1">Total</td>
+        <td class="border px-2 py-1">100.00%</td>
+        <td class="border px-2 py-1">100</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <p>*“Other” includes over 30 smaller ethnic groups such as Turkana, Maasai, Borana, Embu, Rendille, Swahili, etc.</p>
+
+    <p><strong>7. Monitoring and Enforcement</strong></p>
+    <p>CEENI shall produce an Ethnic Representation Gap Report annually for each institution, comparing actual representation with target allocations.</p>
+    <p>Any institution with a shortfall greater than 10% of target allocations for two consecutive years, without acceptable justification, shall be deemed to be in non-compliance and subject to enforcement measures under this Act.</p>
+
+    <p><strong>8. Legal Effect</strong></p>
+    <p>This Schedule has the force of law. All public institutions shall apply this formula in recruitment, promotion, and appointment decisions, subject to constitutional provisions on equality and non-discrimination.</p>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+{% comment %}
+   Props passed in context:
+   id: unique anchor ID
+   title: str
+   excerpt: str (HTML-safe)
+   left_color: 'green'|'red'|'black'
+   tinted: bool = False
+   compact: bool = False
+   icon_partial: template path (optional)
+   show_back_to_top: bool = True
+{% endcomment %}
+
+<div id="{{ id }}"
+     class="narrative-card kenya-left-{{ left_color }}
+            {% if tinted %}narrative-card--tint-{{ left_color }}{% else %}narrative-card--white{% endif %}
+            {% if compact %}narrative-card--compact{% else %}narrative-card--roomy{% endif %}
+            scroll-mt-24"
+     aria-labelledby="{{ id }}-title">
+
+  <div class="flex items-center gap-2 mb-2">
+    {% if icon_partial %}
+      <span class="narrative-card__icon">
+        {% include icon_partial %}
+      </span>
+    {% endif %}
+    <h3 id="{{ id }}-title" class="narrative-card__title">{{ title }}</h3>
+  </div>
+
+  <div class="prose prose-gray max-w-prose">
+    {{ excerpt|safe }}
+  </div>
+</div>
+
+{% if show_back_to_top %}
+  <div class="flex justify-end mt-2">
+    {% include 'common/buttons/_btn_back_to_top_narratives_header.html' %}
+  </div>
+{% endif %}

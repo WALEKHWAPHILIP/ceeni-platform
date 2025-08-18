@@ -9,7 +9,7 @@
   <!-- HERO -->
   <section class="text-center">
     <h1 class="gradient-h1">
-      Let’s Build a Kenya That Includes All of Us
+      Let's Build a Kenya That Includes All of Us
     </h1>
 
     <div class="w-full mt-2">
@@ -41,12 +41,8 @@
         <a href="{% url 'landing:why_this_bill_matters' %}" aria-label="Explore the 9 key civic narratives"
           class="inline-flex items-center gap-2 bg-white bg-opacity-90 px-4 py-2 rounded-full border border-green-700 shadow-md hover:shadow-lg hover:bg-opacity-100 transition duration-300">
 
-          <!-- Heroicon: Book Open -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-700" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 6v6m0 0a4 4 0 100 8 4 4 0 000-8z" />
-          </svg>
+          {# Icon: Why This Bill Matters — Document with question mark #}
+          {% include 'common/icons/landing/_icon_why_bill_matters.html' %}
 
           <span class="text-sm sm:text-base font-semibold text-green-800">
             Why This Bill Matters
@@ -91,9 +87,8 @@
       <!-- CEENI -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-green-700 shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M9.75 3v1.5m4.5-1.5V4.5M4.5 7.5h15m-1.5 0V18a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 016 18V7.5h12z"/></svg>
+          {# Include icon: Commission #}
+          {% include 'common/icons/landing/_icon_ceeni_commission.html' %}
           <h3 class="font-bold text-lg">CEENI</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -104,9 +99,7 @@
       <!-- KPEID -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-black shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-black">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg>
+          {% include 'common/icons/landing/_icon_kpeid_dashboard.html' %}
           <h3 class="font-bold text-lg">KPEID Dashboard</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -117,9 +110,7 @@
       <!-- Equity Scorecard -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-red-700 shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-red-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M11 11V6m0 5a4 4 0 100 8 4 4 0 000-8z"/></svg>
+          {% include 'common/icons/landing/_icon_equity_scorecard.html' %}
           <h3 class="font-bold text-lg">Equity Scorecard</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -130,9 +121,7 @@
       <!-- CEENI Tribunal -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-black shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-black">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12h6m-3-3v6m9-6a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          {% include 'common/icons/landing/_icon_ceeni_tribunal.html' %}
           <h3 class="font-bold text-lg">CEENI Tribunal</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -143,9 +132,7 @@
       <!-- Public Reporting Portal -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-green-700 shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M5 13l4 4L19 7"/></svg>
+          {% include 'common/icons/landing/_icon_citizen_reporting.html' %}
           <h3 class="font-bold text-lg">Citizen Reporting Portal</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -156,9 +143,7 @@
       <!-- Parliament & Executive -->
       <div class="transition-transform duration-300 hover:scale-105 bg-white border-l-4 border-red-700 shadow-sm rounded-lg p-5">
         <div class="flex items-center gap-3 mb-3 text-red-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M3 10h18M6 6h12M6 14h12M6 18h12"/></svg>
+          {% include 'common/icons/landing/_icon_parliament_cabinet.html' %}
           <h3 class="font-bold text-lg">Parliament & Cabinet</h3>
         </div>
         <p class="text-sm text-gray-700">
@@ -184,7 +169,7 @@
       <!-- Read the Bill -->
       <div class="bg-white border-l-4 border-red-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-red-700">
-          {% include "common/icons/_icon_presentation_chart.html" %}
+          {% include 'common/icons/landing/_icon_read_bill.html' %}
           <h3 class="text-lg font-bold">Read the Bill</h3>
         </div>
         <p class="text-sm text-gray-700 mb-4">
@@ -196,7 +181,9 @@
       <!-- Track Equity Data -->
       <div class="bg-white border-l-4 border-black p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-black">
-          {% include "common/icons/_icon_data_equity.html" %}
+          {# Icon: Track Equity Data — Shows chart bars with a tracking indicator #}
+          {% include 'common/icons/landing/_icon_track_equity_data.html' %}
+
           <h3 class="text-lg font-bold">Track Equity Data</h3>
         </div>
         <p class="text-sm text-gray-700 mb-4">
@@ -208,7 +195,9 @@
       <!-- Vote & Participate -->
       <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          {% include "common/icons/_icon_tribal_fairness.html" %}
+          {# Icon: Vote & Participate — Ballot box with paper and checkmark #}
+          {% include 'common/icons/landing/_icon_vote_participate.html' %}
+
           <h3 class="text-lg font-bold">Vote & Participate</h3>
         </div>
         <p class="text-sm text-gray-700 mb-4">
@@ -220,7 +209,9 @@
       <!-- Share Your Voice -->
       <div class="bg-white border-l-4 border-green-700 p-6 rounded-lg shadow hover:shadow-md transition">
         <div class="flex items-center gap-3 mb-3 text-green-700">
-          {% include "common/icons/_icon_chat_bubble_heart.html" %}
+          {# Icon: Share Your Voice — Megaphone with sound waves #}
+          {% include 'common/icons/landing/_icon_share_your_voice.html' %}
+
           <h3 class="text-lg font-bold">Share Your Voice</h3>
         </div>
         <p class="text-sm text-gray-700 mb-4">

@@ -1,0 +1,23 @@
+{% comment %}
+Modular section includes for the 2010 Constitution overview page.
+Each section uses background and border classes for clarity and visual flow.
+{% endcomment %}
+
+<section class="space-y-10">
+
+  {% include 'landing/ceeni_content/the_2010_constitution/partials/_section_1.html' with bg_class='bg-gray-50' border_class='border-green-700' %}
+  <div class="flex justify-end">
+    {% include 'common/buttons/_btn_back_to_top_constitution_header.html' %}
+  </div>
+
+  {% include 'landing/ceeni_content/the_2010_constitution/partials/_section_2.html' with bg_class='bg-white' border_class='border-red-700' %}
+  <div class="flex justify-end">
+    {% include 'common/buttons/_btn_back_to_top_constitution_header.html' %}
+  </div>
+
+  {% include 'landing/ceeni_content/the_2010_constitution/partials/_section_3.html' with bg_class='bg-gray-50' border_class='border-black' %}
+  <div class="flex justify-end">
+    {% include 'common/buttons/_btn_back_to_top_constitution_header.html' %}
+  </div>
+
+</section>

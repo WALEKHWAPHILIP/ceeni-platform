@@ -1,0 +1,69 @@
+{% comment %} Section 8: First Schedule — Data Reporting Templates (Section 15(2)) {% endcomment %}
+<section id="section-8" class="scroll-mt-24 border-l-4 {{ border_class|default:'border-red-700' }} {{ bg_class }} shadow-md rounded-md p-6">
+    <div class="flex items-start gap-2 mb-2">
+    {% include 'common/icons/_icon_section_header.html' %}
+    <div>
+        <h3 class="text-xl font-bold text-black">
+        8. First Schedule — Data Reporting Templates
+        </h3>
+        <span class="text-gray-600 text-base font-normal">
+        (Section 15(2))
+        </span>
+    </div>
+    </div>
+
+
+  <div class="prose prose-gray max-w-none space-y-4">
+    <h4 class="text-lg font-semibold text-gray-800">Form EEPR–1: Workforce Composition Report</h4>
+    <p><em>To be submitted quarterly by all public institutions</em></p>
+
+    <table class="table-auto border w-full text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border px-2 py-1">Field</th>
+          <th class="border px-2 py-1">Description</th>
+          <th class="border px-2 py-1">Format</th>
+          <th class="border px-2 py-1">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-2 py-1">Institution Name</td><td class="border px-2 py-1">Full legal name</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1">Mandatory</td></tr>
+        <tr><td class="border px-2 py-1">Reporting Period</td><td class="border px-2 py-1">Quarter and year</td><td class="border px-2 py-1">Q#/YYYY</td><td class="border px-2 py-1">Mandatory</td></tr>
+        <tr><td class="border px-2 py-1">Total Employees</td><td class="border px-2 py-1">Headcount at end of period</td><td class="border px-2 py-1">Number</td><td class="border px-2 py-1"></td></tr>
+        <tr><td class="border px-2 py-1">Employees by Ethnic Group</td><td class="border px-2 py-1">Disaggregated by ethnic category as defined by the Commission</td><td class="border px-2 py-1">Table</td><td class="border px-2 py-1">Percentages + headcount</td></tr>
+        <tr><td class="border px-2 py-1">Employees by Gender</td><td class="border px-2 py-1">M/F/Other</td><td class="border px-2 py-1">Table</td><td class="border px-2 py-1">Disaggregated by ethnic group</td></tr>
+        <tr><td class="border px-2 py-1">Employees with Disabilities</td><td class="border px-2 py-1">Count + %</td><td class="border px-2 py-1">Number + %</td><td class="border px-2 py-1">Per ethnic group if possible</td></tr>
+        <tr><td class="border px-2 py-1">Leadership Positions</td><td class="border px-2 py-1">By ethnic group, gender, disability</td><td class="border px-2 py-1">Table</td><td class="border px-2 py-1">Include boards and top management</td></tr>
+        <tr><td class="border px-2 py-1">Recruitment & Promotions</td><td class="border px-2 py-1">New hires and promotions in period</td><td class="border px-2 py-1">Table</td><td class="border px-2 py-1">Disaggregated by ethnic group</td></tr>
+        <tr><td class="border px-2 py-1">Attrition</td><td class="border px-2 py-1">Exits in period</td><td class="border px-2 py-1">Table</td><td class="border px-2 py-1">Disaggregated by ethnic group</td></tr>
+        <tr><td class="border px-2 py-1">Notes</td><td class="border px-2 py-1">Qualitative explanations for significant changes</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1">Optional</td></tr>
+      </tbody>
+    </table>
+
+    <h4 class="text-lg font-semibold text-gray-800 mt-8">Form EEPR–2: Service Delivery Equity Report</h4>
+    <p><em>To be submitted annually</em></p>
+
+    <table class="table-auto border w-full text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border px-2 py-1">Field</th>
+          <th class="border px-2 py-1">Description</th>
+          <th class="border px-2 py-1">Format</th>
+          <th class="border px-2 py-1">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-2 py-1">Institution Name</td><td class="border px-2 py-1">Full legal name</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1">Mandatory</td></tr>
+        <tr><td class="border px-2 py-1">Services Provided</td><td class="border px-2 py-1">Brief description</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1"></td></tr>
+        <tr><td class="border px-2 py-1">Service Coverage by Region</td><td class="border px-2 py-1">Map/table showing beneficiary distribution</td><td class="border px-2 py-1">Table/Map</td><td class="border px-2 py-1">Compare to population distribution</td></tr>
+        <tr><td class="border px-2 py-1">Equity Challenges Identified</td><td class="border px-2 py-1">Description</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1"></td></tr>
+        <tr><td class="border px-2 py-1">Measures Taken</td><td class="border px-2 py-1">Actions to improve equity</td><td class="border px-2 py-1">Text</td><td class="border px-2 py-1"></td></tr>
+      </tbody>
+    </table>
+
+    <p class="mt-6">
+      This Schedule ensures uniform, comparable data from all public institutions, feeding directly into the
+      <em>Kenya Public Equity and Inclusion Data (KPEID)</em> Dashboard and Equity Scorecard.
+    </p>
+  </div>
+</section>

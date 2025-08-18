@@ -7,7 +7,7 @@
   <!-- Welcome Banner -->
   <div class="text-center space-y-3">
     <div class="rounded-full bg-green-100 p-4 inline-block">
-      {% include "common/icons/_icon_success_tick.html" %}
+      {% include "common/icons/signup/_icon_success_tick.html" %}
     </div>
     <h2 class="text-2xl font-bold text-green-700">
       You're in, <span class="uppercase font-mono tracking-wider text-red-700">{{ ceeni_user.username }}</span>!
@@ -41,28 +41,37 @@
 
 
   <!-- Profile Setup Preview -->
-  <div class="text-sm text-gray-800 leading-relaxed space-y-2">
-    <p class="text-center">
-      To participate fully, we’ll help you complete a short civic profile.
-    </p>
-    <ul class="space-y-2">
-      <li class="flex items-center gap-2">
-        {% include "common/icons/_icon_location_pin.html" %}
-        Where you vote and live
-      </li>
-      <li class="flex items-center gap-2">
-        {% include "common/icons/_icon_interest_info.html" %}
-        Your interests in public affairs
-      </li>
-      <li class="flex items-center gap-2">
-        {% include "common/icons/_icon_notification_bell.html" %}
-        How you'd like to get updates
-      </li>
-    </ul>
-    <p class="text-xs text-gray-500 italic text-center">
-      We don’t ask for tribe. This is about voice - not identity.
-    </p>
-  </div>
+  <fieldset class="border border-green-300 bg-green-50 rounded-xl p-4 space-y-4 shadow-sm">
+    <legend class="text-base font-bold text-green-800 px-2 flex items-center gap-2">
+      {% include "common/icons/signup/_icon_profile_setup.html" %}
+      <span>Profile Setup</span>
+    </legend>
+
+    <!-- Profile Setup Preview -->
+    <div class="text-sm text-gray-800 leading-relaxed space-y-2">
+      <p class="text-left font-semibold text-gray-800">
+        To participate fully, we’ll help you complete a short civic profile.
+      </p>
+
+      <ul class="space-y-2">
+        <li class="flex items-center gap-2">
+          {% include "common/icons/_icon_location_pin.html" %}
+          Where you vote and live
+        </li>
+        <li class="flex items-center gap-2">
+          {% include "common/icons/_icon_interest_info.html" %}
+          Your interests in public affairs
+        </li>
+        <li class="flex items-center gap-2">
+          {% include "common/icons/_icon_notification_bell.html" %}
+          How you'd like to get updates
+        </li>
+      </ul>
+      <p class="text-xs text-gray-500 italic text-center">
+        We don’t ask for tribe. This is about voice - not identity.
+      </p>
+    </div>
+  </fieldset>
 
   <!-- Login & Privacy Info -->
   <div class="bg-gray-50 border border-gray-200 rounded-md p-4 text-sm text-gray-700 space-y-1">

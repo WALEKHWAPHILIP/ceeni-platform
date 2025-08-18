@@ -1,0 +1,23 @@
+from django.shortcuts import render
+
+def why_this_bill_matters_view(request):
+    """
+    Narrative Detail Page View
+    """
+    narratives_quick_nav = [
+        {"id": "tribal-to-fairness", "title": "From Tribal Capture to National Fairness"},
+        {"id": "fear-to-issues", "title": "From Fear-Based Politics to Issue-Based Campaigns"},
+        {"id": "turn-to-belong", "title": "From “Our Turn to Eat” to “Everyone’s Turn to Belong”"},
+        {"id": "cosmetic-to-data", "title": "From Cosmetic Diversity to Data-Driven Equity"},
+        {"id": "unity-to-inclusion", "title": "From Talk About Unity to Enforced Inclusion"},
+        {"id": "hate-to-hope", "title": "From Hate Speech to Hope Speech"},
+        {"id": "cynicism-to-empowerment", "title": "From Voter Cynicism to Civic Empowerment"},
+        {"id": "youth-to-justice", "title": "From Youth Disillusionment to Generational Justice"},
+        {"id": "arithmetic-to-accountability", "title": "From Ethnic Arithmetic to Institutional Accountability"},
+    ]
+
+    return render(
+        request,
+        'landing/ceeni_content/narratives/narratives_why_this_bill_matters.html',
+        {"narratives_quick_nav": narratives_quick_nav},
+    )

@@ -7,7 +7,7 @@
 <div class="space-y-6 text-left">
 
   <!-- Title -->
-  <h1 class="text-2xl font-bold text-black sm:text-3xl text-center">
+  <h1 class="text-2xl font-bold text-red-800 sm:text-3xl text-center">
     Create Your Account
   </h1>
   <p class="text-sm text-gray-600 text-center">
@@ -17,20 +17,37 @@
   <!-- Registration Form -->
   <form method="post" class="space-y-4">
     {% csrf_token %}
+
     {% for field in form %}
-      <div>
-        <label for="{{ field.id_for_label }}" class="block text-sm font-semibold text-gray-700">
-          {{ field.label }}
-        </label>
-        {{ field }}
-        {% if field.help_text %}
-          <p class="text-xs text-gray-500 italic">{{ field.help_text }}</p>
-        {% endif %}
-        {% for error in field.errors %}
-          <p class="text-sm text-red-600">{{ error }}</p>
-        {% endfor %}
-      </div>
+      {% if field.name != "captcha_slug" and field.name != "captcha_response" %}
+        <div>
+          <label for="{{ field.id_for_label }}" class="block text-base font-bold text-green-800 flex items-center gap-2">
+            {% if field.name == "phone_number" %}
+              {% include "common/icons/signup/_icon_phone_number.html" %}
+            {% elif field.name == "nickname" %}
+              {% include "common/icons/signup/_icon_nickname.html" %}
+            {% elif field.name == "password" %}
+              {% include "common/icons/signup/_icon_password.html" %}
+            {% elif field.name == "password_confirm" %}
+              {% include "common/icons/signup/_icon_password_repeat.html" %}
+            {% endif %}
+            <span>{{ field.label }}</span>
+          </label>
+
+          {{ field }}
+          {% if field.help_text %}
+            <p class="text-xs text-gray-500 italic">{{ field.help_text }}</p>
+          {% endif %}
+          {% for error in field.errors %}
+            <p class="text-sm text-red-600">{{ error }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
     {% endfor %}
+
+
+    <!-- Modular Captcha Partial -->
+    {% include "common/forms/partials/_captcha_block.html" %}
 
     <!-- Modular Kenyanized Submit Button -->
     <div class="flex justify-center">

@@ -1,0 +1,31 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}Explore CEENI Documents – CEENI Platform{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Section -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">Explore CEENI Documents</h1>
+    <p class="text-sm text-gray-500">
+      Rich civic materials to help you understand the Ethnic Equity and Public Representation Bill, 2025
+    </p>
+  </header>
+
+  <!-- Document list section -->
+   {% include "landing/ceeni_content/docs/_docs_list_grid.html" %}
+
+
+
+  <!-- Auth-aware call-to-action section -->
+  {% include "landing/partials/_auth_gate_cta.html" %}
+
+  <!-- Global back to home -->
+  <div class="flex justify-center">
+    {% include 'common/buttons/_global_back_home_btn.html' %}
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% comment %}
+  CEENI Docs Base Button
+  - Requires: href, label
+  - Design: Kenyanized
+    - Rounded corners
+    - Red border
+    - White background
+    - Black text
+    - Left Kenya flag pill
+    - Right green arrow
+{% endcomment %}
+
+<a href="{{ href }}"
+   class="inline-flex items-center justify-between w-full sm:w-auto gap-3 px-4 py-2 border-2 border-red-700 rounded-xl bg-white text-sm font-semibold text-black
+          hover:bg-green-50 hover:text-green-800 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-600">
+
+  <!-- Left Kenya Flag Pill -->
+  {% include "common/partials/_kenya_flag_pill.html" %}
+
+  <!-- Label -->
+  <span class="whitespace-nowrap">
+    {{ label }}
+  </span>
+
+  <!-- Right Icon (Arrow, green) -->
+  <span class="text-green-600">
+    {% include "common/icons/_icon_arrow_right.html" %}
+  </span>
+</a>

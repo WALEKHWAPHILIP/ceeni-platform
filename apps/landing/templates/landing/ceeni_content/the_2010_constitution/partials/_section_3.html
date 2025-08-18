@@ -1,0 +1,19 @@
+{% comment %} Section 3: View or Download the Full Constitution PDF {% endcomment %}
+{% load static %}
+
+<section id="section-3" class="scroll-mt-24 bg-red-50 border border-red-200 rounded-lg shadow-sm py-8 px-6 my-12 pl-8 kenya-left-red">
+  <div class="prose prose-gray w-full">
+    <p class="font-semibold text-red-800">
+      <strong class="text-red-900">The full text of the Constitution is available to every citizen.</strong>
+      This is your law — your rights, your responsibilities, and your vision for Kenya’s future.
+      Whether you're a student, a leader, or a concerned citizen, we encourage you to read it in full.
+    </p>
+
+    <p class="mt-4">
+      {% static 'documents/pdf_content_docs/constitution_of_kenya_2010.pdf' as constitution_pdf %}
+      <a href="{{ constitution_pdf }}" target="_blank" class="inline-block font-semibold text-white bg-red-600 hover:bg-green-600 px-5 py-3 rounded-lg transition">
+        📘 View / Download the Constitution of Kenya, 2010 (PDF)
+      </a>
+    </p>
+  </div>
+</section>

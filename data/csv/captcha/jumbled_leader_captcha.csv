@@ -1,0 +1,382 @@
+question_text,correct_answer,hint,explanation,difficulty,tags,active
+Re-arrange [Jomo Kaettyna] :- Was President of Kenya in (1969),Jomo Kenyatta,Initials J K,Jomo Kenyatta served as President of Kenya from 1964 to 1978.,1,"leaders,president,history,kenya",TRUE
+Re-arrange [Dieanl aarp Moi] :- Was President of Kenya in (1982),Daniel arap Moi,Initials D A M,Daniel arap Moi served as President of Kenya from 1978 to 2002.,1,"leaders,president,history,kenya",TRUE
+Re-arrange [Mawi Kkbaii] :- Was President of Kenya in (2008),Mwai Kibaki,Initials M K,Mwai Kibaki served as President of Kenya from 2002 to 2013.,1,"leaders,president,history,kenya",TRUE
+Re-arrange [Uhruu Kaettyna] :- Was President of Kenya in (2013),Uhuru Kenyatta,Initials U K,Uhuru Kenyatta served as President of Kenya from 2013 to 2022.,1,"leaders,president,history,kenya",TRUE
+Re-arrange [Wliliam Ruto] :- Was President of Kenya in (2022),William Ruto,Initials W R,William Ruto served as President of Kenya from 2022 to 2025.,1,"leaders,president,history,kenya",TRUE
+"Re-arrange [Kuraa] :- Was Kenya's Minister of Justice and Constitutional Affairs, first name Martha.",Karua,Starts with KAR,Martha Karua served as Kenya's Minister of Justice and Constitutional Affairs.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Ngilu] :- Was Kenya's Minister of Health, first name Charity.",Ngilu,Starts with NGI,Charity Ngilu served as Kenya's Minister of Health.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Oammo] :- Was Kenya's Minister of Defence, first name Raychelle.",Omamo,Starts with OMA,Raychelle Omamo served as Kenya's Minister of Defence.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Mehoamd] :- Was Kenya's Minister of Foreign Affairs, first name Amina.",Mohamed,Starts with MOH,Amina Mohamed served as Kenya's Minister of Foreign Affairs.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Kamar] :- Was Kenya's Minister of Education, first name Margaret.",Kamar,Starts with KAM,Margaret Kamar served as Kenya's Minister of Education.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Krkiaui] :- Was Kenya's Minister of Public Service, Youth and Gender Affairs, first name Sicily.",Kariuki,Starts with KAR,"Sicily Kariuki served as Kenya's Minister of Public Service, Youth and Gender Affairs.",2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Wirgauu] :- Was Kenya's Minister of Devolution and Planning, first name Anne.",Waiguru,Starts with WAI,Anne Waiguru served as Kenya's Minister of Devolution and Planning.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Aiyso] :- Was Kenya's Minister of Culture and Social Services, first name Phoebe.",Asiyo,Starts with ASI,Phoebe Asiyo served as Kenya's Minister of Culture and Social Services.,2,"leaders,women,minister,kenya",TRUE
+"Re-arrange [Stitoai] :- George once said ""There comes a time when the nation is more important than an individual.""",Saitoti,Starts with SAI,"George Saitoti is known for the quote ""There comes a time when the nation is more important than an individual.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Kaettyna] :- Jomo once said ""Our children may learn about the heroes of the past. Our task is to make ourselves the architects of the future.""",Kenyatta,Starts with KEN,"Jomo Kenyatta is known for the quote ""Our children may learn about the heroes of the past. Our task is to make ourselves the architects of the future.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Moi] :- Daniel once said ""Fellow Kenyans, I wish to assure you of my commitment to serve you.""",Moi,Starts with MOI,"Daniel Moi is known for the quote ""Fellow Kenyans, I wish to assure you of my commitment to serve you.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Odniga] :- Raila once said ""Kibaki tosha!"" ",Odinga,Starts with ODI,"Raila Odinga is known for the quote ""Kibaki tosha!""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Kaettyna] :- Uhuru once said ""We are one people, one nation, one destiny.""",Kenyatta,Starts with KEN,"Uhuru Kenyatta is known for the quote ""We are one people, one nation, one destiny.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Rout] :- William once said ""Hustler nation is unstoppable.""",Ruto,Starts with RUT,"William Ruto is known for the quote ""Hustler nation is unstoppable.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Mhaatai] :- Wangari once said ""You cannot protect the environment unless you empower people.""",Maathai,Starts with MAA,"Wangari Maathai is known for the quote ""You cannot protect the environment unless you empower people.""",3,"leaders,quotes,kenya",TRUE
+"Re-arrange [Kkbaii] :- Mwai once said ""Let us now move forward together as one nation.""",Kibaki,Starts with KIB,"Mwai Kibaki is known for the quote ""Let us now move forward together as one nation.""",3,"leaders,quotes,kenya",TRUE
+Re-arrange [Jmgraaoi Onigga] :- Was Vice President in (1965),Jaramogi Oginga,JAR--- OGI---,Jaramogi Oginga served as Vice President of Kenya from 1964 to 1966.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Jospeh Muubrmi] :- Was Vice President in (1967),Joseph Murumbi,JOS--- MUR---,Joseph Murumbi served as Vice President of Kenya from 1966 to 1967.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Dieanl Moi] :- Was Vice President in (1974),Daniel Moi,DAN--- MOI---,Daniel Moi served as Vice President of Kenya from 1967 to 1978.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Mawi Kkbaii] :- Was Vice President in (1986),Mwai Kibaki,MWA--- KIB---,Mwai Kibaki served as Vice President of Kenya from 1978 to 1988.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Jaehsopt Kajnara] :- Was Vice President in (1988),Josephat Karanja,JOS--- KAR---,Josephat Karanja served as Vice President of Kenya from 1988 to 1989.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Gogere Stitoai] :- Was Vice President in (1991),George Saitoti,GEO--- SAI---,George Saitoti served as Vice President of Kenya from 1989 to 1997.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Meciahl Wamwlaa] :- Was Vice President in (2003),Michael Wamalwa,MIC--- WAM---,Michael Wamalwa served as Vice President of Kenya from 2002 to 2003.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Moody Awori] :- Was Vice President in (2008),Moody Awori,MOO--- AWO---,Moody Awori served as Vice President of Kenya from 2003 to 2008.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Knazolo Mkyuosa] :- Was Vice President in (2012),Kalonzo Musyoka,KAL--- MUS---,Kalonzo Musyoka served as Vice President of Kenya from 2008 to 2013.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Wliliam Ruto] :- Was Vice President in (2015),William Ruto,WIL--- RUT---,William Ruto served as Vice President of Kenya from 2013 to 2022.,2,"leaders,vice_president,kenya",TRUE
+Re-arrange [Envas Kdeiro] :- Was Governor of Nairobi County in (2014),Evans Kidero,EVA--- KID---,Evans Kidero served as Governor of Nairobi County from 2013 to 2017.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Mkie Sokno] :- Was Governor of Nairobi County in (2020),Mike Sonko,MIK--- SON---,Mike Sonko served as Governor of Nairobi County from 2017 to 2020.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Anne Knaanu] :- Was Governor of Nairobi County in (2022),Anne Kananu,ANN--- KAN---,Anne Kananu served as Governor of Nairobi County from 2020 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Haassn Joho] :- Was Governor of Mombasa County in (2019),Hassan Joho,HAS--- JOH---,Hassan Joho served as Governor of Mombasa County from 2013 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Jack Rnmguaa] :- Was Governor of Kisumu County in (2015),Jack Ranguma,JAC--- RAN---,Jack Ranguma served as Governor of Kisumu County from 2013 to 2017.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Aynang' Nonyg'o] :- Was Governor of Kisumu County in (2020),Anyang' Nyong'o,ANY--- NYO---,Anyang' Nyong'o served as Governor of Kisumu County from 2017 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Kithunia Mguuba] :- Was Governor of Nakuru County in (2014),Kinuthia Mbugua,KIN--- MBU---,Kinuthia Mbugua served as Governor of Nakuru County from 2013 to 2017.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Lee Knijnuayi] :- Was Governor of Nakuru County in (2020),Lee Kinyanjui,LEE--- KIN---,Lee Kinyanjui served as Governor of Nakuru County from 2017 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Wliliam Kbogao] :- Was Governor of Kiambu County in (2017),William Kabogo,WIL--- KAB---,William Kabogo served as Governor of Kiambu County from 2013 to 2017.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Fainednrd Wttaiiu] :- Was Governor of Kiambu County in (2018),Ferdinand Waititu,FER--- WAI---,Ferdinand Waititu served as Governor of Kiambu County from 2017 to 2020.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Jaems Nyoro] :- Was Governor of Kiambu County in (2022),James Nyoro,JAM--- NYO---,James Nyoro served as Governor of Kiambu County from 2020 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Arlfed Muuta] :- Was Governor of Machakos County in (2021),Alfred Mutua,ALF--- MUT---,Alfred Mutua served as Governor of Machakos County from 2013 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Jckason Mdnagao] :- Was Governor of Uasin Gishu County in (2016),Jackson Mandago,JAC--- MAN---,Jackson Mandago served as Governor of Uasin Gishu County from 2013 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Anne Wirgauu] :- Was Governor of Kirinyaga County in (2017),Anne Waiguru,ANN--- WAI---,Anne Waiguru served as Governor of Kirinyaga County from 2017 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Peetr Muyna] :- Was Governor of Meru County in (2013),Peter Munya,PET--- MUN---,Peter Munya served as Governor of Meru County from 2013 to 2017.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Katriiu Muungri] :- Was Governor of Meru County in (2019),Kiraitu Murungi,KIR--- MUR---,Kiraitu Murungi served as Governor of Meru County from 2017 to 2022.,2,"leaders,governor,kenya",TRUE
+Re-arrange [Cthairy Ngilu] :- Was Governor of Kitui County in (2018),Charity Ngilu,CHA--- NGI---,Charity Ngilu served as Governor for Kitui County from 2017 to 2022.,2,"leaders,women,kenya",TRUE
+Re-arrange [Gldays Wnaga] :- Was Governor of Homa Bay County in (2023),Gladys Wanga,GLA--- WAN---,Gladys Wanga served as Governor for Homa Bay County from 2022 to 2025.,2,"leaders,women,kenya",TRUE
+Re-arrange [Futama Dlulo] :- Was Senator of Isiolo County in (2019),Fatuma Dullo,FAT--- DUL---,Fatuma Dullo served as Senator for Isiolo County from 2017 to 2022.,2,"leaders,women,kenya",TRUE
+Re-arrange [Aengs Knaidvu] :- Was Senator of Machakos County in (2024),Agnes Kavindu,AGN--- KAV---,Agnes Kavindu served as Senator for Machakos County from 2021 to 2025.,2,"leaders,women,kenya",TRUE
+Re-arrange [Estehr Pasaisrs] :- Was Woman Representative for Nairobi County in (2025),Esther Passaris,EST--- PAS---,Esther Passaris served as Woman Representative for Nairobi County from 2017 to 2025.,2,"leaders,women,kenya",TRUE
+Re-arrange [Gldays Sheloli] :- Was Woman Representative for Uasin Gishu County in (2017),Gladys Shollei,GLA--- SHO---,Gladys Shollei served as Woman Representative for Uasin Gishu County from 2013 to 2017.,2,"leaders,women,kenya",TRUE
+Re-arrange [Mlilie Odimbaho] :- Was Woman Representative for Homa Bay County in (2014),Millie Odhiambo,MIL--- ODH---,Millie Odhiambo served as Woman Representative for Homa Bay County from 2013 to 2017.,2,"leaders,women,kenya",TRUE
+Re-arrange [Mhtraa Kmooe] :- Was Chief Justice of Kenya in (2024),Martha Koome,MAR--- KOO---,Martha Koome served as Chief Justice of Kenya from 2021 to 2025.,3,"leaders,women,law,kenya",TRUE
+Re-arrange [Ncany Baraza] :- Was Deputy Chief Justice of Kenya in (2011),Nancy Baraza,NAN--- BAR---,Nancy Baraza served as Deputy Chief Justice of Kenya from 2011 to 2012.,3,"leaders,women,law,kenya",TRUE
+Re-arrange [Pionhemla Milwu] :- Was Deputy Chief Justice of Kenya in (2018),Philomena Mwilu,PHI--- MWI---,Philomena Mwilu served as Deputy Chief Justice of Kenya from 2016 to 2025.,3,"leaders,women,law,kenya",TRUE
+"Re-arrange [Jocye Alcuoh] :- Was Judge, International Criminal Court of Kenya in (2015)",Joyce Aluoch,JOY--- ALU---,"Joyce Aluoch served as Judge, International Criminal Court of Kenya from 2009 to 2018.",3,"leaders,women,law,kenya",TRUE
+Re-arrange [Aengs Muorgr] :- Was Court of Appeal Judge of Kenya in (2015),Agnes Murgor,AGN--- MUR---,Agnes Murgor served as Court of Appeal Judge of Kenya from 2012 to 2025.,3,"leaders,women,law,kenya",TRUE
+Re-arrange [Garce Ngnyee] :- Was High Court Judge of Kenya in (2015),Grace Ngenye,GRA--- NGE---,Grace Ngenye served as High Court Judge of Kenya from 2011 to 2025.,3,"leaders,women,law,kenya",TRUE
+Re-arrange [Resylon Nyumbae] :- Was Court of Appeal Judge of Kenya in (2008),Roselyn Nambuye,ROS--- NAM---,Roselyn Nambuye served as Court of Appeal Judge of Kenya from 2008 to 2025.,3,"leaders,women,law,kenya",TRUE
+Re-arrange [Cnhtraiee Mawinki] :- Was State Counsel / Prosecutor of Kenya in (2017),Catherine Mwaniki,CAT--- MWA---,Catherine Mwaniki served as State Counsel / Prosecutor of Kenya from 2010 to 2025.,3,"leaders,women,law,kenya",TRUE
+"Re-arrange [Voleit Mvaisi] :- Was Vice Chair, Kenya National Commission on Human Rights of Kenya in (2003)",Violet Mavisi,VIO--- MAV---,"Violet Mavisi served as Vice Chair, Kenya National Commission on Human Rights of Kenya from 2003 to 2008.",3,"leaders,women,law,kenya",TRUE
+"Re-arrange [Piractia Nanudyi] :- Was Registrar, Judiciary / CEO KNCHR of Kenya in (2015)",Patricia Nyaundi,PAT--- NYA---,"Patricia Nyaundi served as Registrar, Judiciary / CEO KNCHR of Kenya from 2011 to 2016.",3,"leaders,women,law,kenya",TRUE
+Re-arrange [Adalaga Bctaiere] :- May 2023 Vihiga - County Woman Rep (13th Parliament) Party (ANC),Adagala Beatrice,ADA--- BEA---,Adagala Beatrice was Vihiga - County Woman Rep (13th Parliament) - ANC,2,kenyan_cwr,TRUE
+Re-arrange [Coailrne Jetopo] :- May 2023 Elgeyo Marakwet - County Woman Rep (13th Parliament) Party (Independent),Caroline Jeptoo,CAR--- JEP---,Caroline Jeptoo was Elgeyo Marakwet - County Woman Rep (13th Parliament) - Independent,2,kenyan_cwr,TRUE
+Re-arrange [Mruabu Mcinaoh] :- May 2023 Lamu - County Woman Rep (13th Parliament) Party (Independent),Marubu Monicah,MAR--- MON---,Marubu Monicah was Lamu - County Woman Rep (13th Parliament) - Independent,2,kenyan_cwr,TRUE
+Re-arrange [Mmehoamd Futama] :- May 2023 Migori - County Woman Rep (13th Parliament) Party (Independent),Mohammed Fatuma,MOH--- FAT---,Mohammed Fatuma was Migori - County Woman Rep (13th Parliament) - Independent,2,kenyan_cwr,TRUE
+Re-arrange [Banyoa Mnmuia] :- May 2023 Isiolo - County Woman Rep (13th Parliament) Party (JP),Bonaya Mumina,BON--- MUM---,Bonaya Mumina was Isiolo - County Woman Rep (13th Parliament) - JP,2,kenyan_cwr,TRUE
+Re-arrange [Mngiona Jshreua] :- May 2023 Nyamira - County Woman Rep (13th Parliament) Party (JP),Mongina Jerusha,MON--- JER---,Mongina Jerusha was Nyamira - County Woman Rep (13th Parliament) - JP,2,kenyan_cwr,TRUE
+Re-arrange [Siayd Anmia] :- May 2023 Garissa - County Woman Rep (13th Parliament) Party (JP),Siyad Amina,SIY--- AMI---,Siyad Amina was Garissa - County Woman Rep (13th Parliament) - JP,2,kenyan_cwr,TRUE
+Re-arrange [Alulbadhi Anmia] :- May 2023 Tana River - County Woman Rep (13th Parliament) Party (KANU),Abdullahi Amina,ABD--- AMI---,Abdullahi Amina was Tana River - County Woman Rep (13th Parliament) - KANU,3,kenyan_cwr,TRUE
+Re-arrange [Kwsiaai Real] :- May 2023 West Pokot - County Woman Rep (13th Parliament) Party (KUP),Kasiwai Rael,KAS--- RAE---,Kasiwai Rael was West Pokot - County Woman Rep (13th Parliament) - KUP,2,kenyan_cwr,TRUE
+Re-arrange [Cihbma Zazamm] :- May 2023 Mombasa - County Woman Rep (13th Parliament) Party (ODM),Chimba Zamzam,CHI--- ZAM---,Chimba Zamzam was Mombasa - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Jehow Futama] :- May 2023 Wajir - County Woman Rep (13th Parliament) Party (ODM),Jehow Fatuma,JEH--- FAT---,Jehow Fatuma was Wajir - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Matiso Futama] :- May 2023 Kwale - County Woman Rep (13th Parliament) Party (ODM),Masito Fatuma,MAS--- FAT---,Masito Fatuma was Kwale - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Maduhna Esile] :- May 2023 Kakamega - County Woman Rep (13th Parliament) Party (ODM),Muhanda Elsie,MUH--- ELS---,Muhanda Elsie was Kakamega - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Mjyaanwne Greudtre] :- May 2023 Kilifi - County Woman Rep (13th Parliament) Party (ODM),Mwanyanje Gertrude,MWA--- GER---,Mwanyanje Gertrude was Kilifi - County Woman Rep (13th Parliament) - ODM,3,kenyan_cwr,TRUE
+Re-arrange [Ouodr Chintisre] :- May 2023 Siaya - County Woman Rep (13th Parliament) Party (ODM),Oduor Christine,ODU--- CHR---,Oduor Christine was Siaya - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Omnyao Cnhtraiee] :- May 2023 Busia - County Woman Rep (13th Parliament) Party (ODM),Omanyo Catherine,OMA--- CAT---,Omanyo Catherine was Busia - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Oogso Budensa] :- May 2023 Homa Bay - County Woman Rep (13th Parliament) Party (ODM),Osogo Bensuda,OSO--- BEN---,Osogo Bensuda was Homa Bay - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Pasaisrs Estehr] :- May 2023 Nairobi City - County Woman Rep (13th Parliament) Party (ODM),Passaris Esther,PAS--- EST---,Passaris Esther was Nairobi City - County Woman Rep (13th Parliament) - ODM,2,kenyan_cwr,TRUE
+Re-arrange [Chlleue Liza] :- May 2023 Nakuru - County Woman Rep (13th Parliament) Party (UDA),Chelule Liza,CHE--- LIZ---,Chelule Liza was Nakuru - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Cephiorkr Lenit] :- May 2023 Bomet - County Woman Rep (13th Parliament) Party (UDA),Chepkorir Linet,CHE--- LIN---,Chepkorir Linet was Bomet - County Woman Rep (13th Parliament) - UDA,3,kenyan_cwr,TRUE
+Re-arrange [Duolbe Paemla] :- May 2023 Embu - County Woman Rep (13th Parliament) Party (UDA),Double Pamela,DOU--- PAM---,Double Pamela was Embu - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Gitau Ftiah] :- May 2023 Nyandarua - County Woman Rep (13th Parliament) Party (UDA),Gitau Faith,GIT--- FAI---,Gitau Faith was Nyandarua - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Krigai Jane] :- May 2023 Laikipia - County Woman Rep (13th Parliament) Party (UDA),Kagiri Jane,KAG--- JAN---,Kagiri Jane was Laikipia - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Kimelaa Eilz] :- May 2023 Meru - County Woman Rep (13th Parliament) Party (UDA),Kailema Eliz,KAI--- ELI---,Kailema Eliz was Meru - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Kemei Bctaiere] :- May 2023 Kericho - County Woman Rep (13th Parliament) Party (UDA),Kemei Beatrice,KEM--- BEA---,Kemei Beatrice was Kericho - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Piaunle Lnuiregs] :- May 2023 Samburu - County Woman Rep (13th Parliament) Party (UDA),Pauline Lenguris,PAU--- LEN---,Pauline Lenguris was Samburu - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Mihigzi Liyda] :- May 2023 Taita Taveta - County Woman Rep (13th Parliament) Party (UDA),Mizighi Lydia,MIZ--- LYD---,Mizighi Lydia was Taita Taveta - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Mgue Cnihyta] :- May 2023 Nandi - County Woman Rep (13th Parliament) Party (UDA),Muge Cynthia,MUG--- CYN---,Muge Cynthia was Nandi - County Woman Rep (13th Parliament) - UDA,1,kenyan_cwr,TRUE
+Re-arrange [Mrauhta Anne] :- May 2023 Kiambu - County Woman Rep (13th Parliament) Party (UDA),Muratha Anne,MUR--- ANN---,Muratha Anne was Kiambu - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Nigitt Cliecia] :- May 2023 Turkana - County Woman Rep (13th Parliament) Party (UDA),Ngitit Cecilia,NGI--- CEC---,Ngitit Cecilia was Turkana - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Sakairne Leah] :- May 2023 Kajiado - County Woman Rep (13th Parliament) Party (UDA),Sankaire Leah,SAN--- LEA---,Sankaire Leah was Kajiado - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Seogrn Flnorwece] :- May 2023 Baringo - County Woman Rep (13th Parliament) Party (UDA),Sergon Flowrence,SER--- FLO---,Sergon Flowrence was Baringo - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Sheloli Gldays] :- May 2023 Uasin Gishu - County Woman Rep (13th Parliament) Party (UDA),Shollei Gladys,SHO--- GLA---,Shollei Gladys was Uasin Gishu - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Soiyi Liallin] :- May 2023 Trans Nzoia - County Woman Rep (13th Parliament) Party (UDA),Siyoi Lillian,SIY--- LIL---,Siyoi Lillian was Trans Nzoia - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Toneki Rceceba] :- May 2023 Narok - County Woman Rep (13th Parliament) Party (UDA),Tonkei Rebecca,TON--- REB---,Tonkei Rebecca was Narok - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Wrhacia Raahb] :- May 2023 Nyeri - County Woman Rep (13th Parliament) Party (UDA),Wachira Rahab,WAC--- RAH---,Wachira Rahab was Nyeri - County Woman Rep (13th Parliament) - UDA,2,kenyan_cwr,TRUE
+Re-arrange [Waqo Nomai] :- May 2023 Marsabit - County Woman Rep (13th Parliament) Party (UDA),Waqo Naomi,WAQ--- NAO---,Waqo Naomi was Marsabit - County Woman Rep (13th Parliament) - UDA,1,kenyan_cwr,TRUE
+Re-arrange [Seikhh Uuml] :- May 2023 Mandera - County Woman Rep (13th Parliament) Party (UDM),Sheikh Umul,SHE--- UMU---,Sheikh Umul was Mandera - County Woman Rep (13th Parliament) - UDM,2,kenyan_cwr,TRUE
+Re-arrange [Aubri Don] :- May 2023 Kisii - County Woman Rep (13th Parliament) Party (WDM),Aburi Don,ABU--- DON---,Aburi Don was Kisii - County Woman Rep (13th Parliament) - WDM,2,kenyan_cwr,TRUE
+Re-arrange [Kamene Jocye] :- May 2023 Machakos - County Woman Rep (13th Parliament) Party (WDM),Kamene Joyce,KAM--- JOY---,Kamene Joyce was Machakos - County Woman Rep (13th Parliament) - WDM,2,kenyan_cwr,TRUE
+Re-arrange [Ksaalu Irene] :- May 2023 Kitui - County Woman Rep (13th Parliament) Party (WDM),Kasalu Irene,KAS--- IRE---,Kasalu Irene was Kitui - County Woman Rep (13th Parliament) - WDM,2,kenyan_cwr,TRUE
+Re-arrange [Mumo Rose] :- May 2023 Makueni - County Woman Rep (13th Parliament) Party (WDM),Mumo Rose,MUM--- ROS---,Mumo Rose was Makueni - County Woman Rep (13th Parliament) - WDM,1,kenyan_cwr,TRUE
+Re-arrange [Daenr Jospeh] :- May 2023 ANC Party Nominated MP,Denar Joseph,DEN--- JOS---,Denar Joseph was nominated by ANC Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Cgehe Sniaba] :- May 2023 JP Party Nominated MP,Chege Sabina,CHE--- SAB---,Chege Sabina was nominated by JP Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Maakya Irene] :- May 2023 ODM Party Nominated MP,Mayaka Irene,MAY--- IRE---,Mayaka Irene was nominated by ODM Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Mehoamd Ukehumlr] :- May 2023 ODM Party Nominated MP,Mohamed Umulkher,MOH--- UMU---,Mohamed Umulkher was nominated by ODM Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Ali Absdriait] :- May 2023 UDA Party Nominated MP,Ali Abdisirat,ALI--- ABD---,Ali Abdisirat was nominated by UDA Party in the 13th Parliament.,1,kenyan_nominated_mp,TRUE
+Re-arrange [Iairka Droothy] :- May 2023 UDA Party Nominated MP,Ikiara Dorothy,IKI--- DOR---,Ikiara Dorothy was nominated by UDA Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Iyraa Jospeh] :- May 2023 UDA Party Nominated MP,Iraya Joseph,IRA--- JOS---,Iraya Joseph was nominated by UDA Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Ksogei Jckason] :- May 2023 UDA Party Nominated MP,Kosgei Jackson,KOS--- JAC---,Kosgei Jackson was nominated by UDA Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Magnwi Triseea] :- May 2023 UDA Party Nominated MP,Mwangi Teresia,MWA--- TER---,Mwangi Teresia was nominated by UDA Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Minaa Jane] :- May 2023 UDA Party Nominated MP,Maina Jane,MAI--- JAN---,Maina Jane was nominated by UDA Party in the 13th Parliament.,2,kenyan_nominated_mp,TRUE
+Re-arrange [Gmsioe Crlhaes] :- ANC MP for Hamisi Constituency as by May 2023,Gimose Charles,GIM--- CHA---,Gimose Charles was ANC MP for Hamisi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Iakna Firreecdk] :- ANC MP for Shinyalu Constituency as by May 2023,Ikana Frederick,IKA--- FRE---,Ikana Frederick was ANC MP for Shinyalu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Inednji Moess] :- ANC MP for Malava Constituency as by May 2023,Injendi Moses,INJ--- MOS---,Injendi Moses was ANC MP for Malava Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kagsei Kiavi] :- ANC MP for Vihiga Constituency as by May 2023,Kagesi Kivai,KAG--- KIV---,Kagesi Kivai was ANC MP for Vihiga Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Okmobo Mlbiema] :- ANC MP for Emuhaya Constituency as by May 2023,Omboko Milemba,OMB--- MIL---,Omboko Milemba was ANC MP for Emuhaya Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Tanzada Ksiasm] :- ANC MP for Matuga Constituency as by May 2023,Tandaza Kassim,TAN--- KAS---,Tandaza Kassim was ANC MP for Matuga Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kceoh Vcitor] :- CCM MP for Chepalungu Constituency as by May 2023,Koech Victor,KOE--- VIC---,Koech Victor was CCM MP for Chepalungu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ruku Geoffrey] :- DP MP for Mbeere North Constituency as by May 2023,Ruku Geoffrey,RUK--- GEO---,Ruku Geoffrey was DP MP for Mbeere North Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Mlui Fabain] :- GDDP MP for Kangundo Constituency as by May 2023,Muli Fabian,MUL--- FAB---,Muli Fabian was GDDP MP for Kangundo Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Aubdl Rhiam] :- Independent MP for North Imenti Constituency as by May 2023,Abdul Rahim,ABD--- RAH---,Abdul Rahim was Independent MP for North Imenti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Amhed Sakheel] :- Independent MP for Kisumu East Constituency as by May 2023,Ahmed Shakeel,AHM--- SHA---,Ahmed Shakeel was Independent MP for Kisumu East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Karauri Ralnod] :- Independent MP for Kasarani Constituency as by May 2023,Karauri Ronald,KAR--- RON---,Karauri Ronald was Independent MP for Kasarani Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kliitai Ole] :- Independent MP for Narok South Constituency as by May 2023,Kitilai Ole,KIT--- OLE---,Kitilai Ole was Independent MP for Narok South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kurriua Eajilh] :- Independent MP for Gatundu North Constituency as by May 2023,Kururia Elijah,KUR--- ELI---,Kururia Elijah was Independent MP for Gatundu North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Myunala Geoffrey] :- Independent MP for Nambale Constituency as by May 2023,Mulanya Geoffrey,MUL--- GEO---,Mulanya Geoffrey was Independent MP for Nambale Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mlwayo Jos] :- Independent MP for Masinga Constituency as by May 2023,Mwalyo Jos,MWA--- JOS---,Mwalyo Jos was Independent MP for Masinga Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nberat Bearrnd] :- Independent MP for Mbeere South Constituency as by May 2023,Nebart Bernard,NEB--- BER---,Nebart Bernard was Independent MP for Mbeere South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Toitcroih Thmioty] :- Independent MP for Marakwet West Constituency as by May 2023,Toroitich Timothy,TOR--- TIM---,Toroitich Timothy was Independent MP for Marakwet West Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Arahbimdan Mehoamd] :- JP MP for Lafey Constituency as by May 2023,Abdirahman Mohamed,ABD--- MOH---,Abdirahman Mohamed was JP MP for Lafey Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Amraa Smeual] :- JP MP for Nakuru Town West Constituency as by May 2023,Arama Samuel,ARA--- SAM---,Arama Samuel was JP MP for Nakuru Town West Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Haassn Abdi] :- JP MP for Kamkunji Constituency as by May 2023,Hassan Abdi,HAS--- ABD---,Hassan Abdi was JP MP for Kamkunji Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sahrcadk Mwiti] :- JP MP for South Imenti Constituency as by May 2023,Shadrack Mwiti,SHA--- MWI---,Shadrack Mwiti was JP MP for South Imenti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Khatiro Kiili] :- JP MP for Igembe Central Constituency as by May 2023,Karitho Kiili,KAR--- KII---,Karitho Kiili was JP MP for Igembe Central Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kaahrio Daivd] :- JP MP for Ol Kalou Constituency as by May 2023,Kiaraho David,KIA--- DAV---,Kiaraho David was JP MP for Ol Kalou Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kerore Sraah] :- JP MP for laikipia North Constituency as by May 2023,Korere Sarah,KOR--- SAR---,Korere Sarah was JP MP for laikipia North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kyoi John] :- JP MP for Sirisia Constituency as by May 2023,Koyi John,KOY--- JOH---,Koyi John was JP MP for Sirisia Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Kyewna Thuku] :- JP MP for Kinangop Constituency as by May 2023,Kwenya Thuku,KWE--- THU---,Kwenya Thuku was JP MP for Kinangop Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lomwa Jospeh] :- JP MP for Isiolo North Constituency as by May 2023,Lomwa Joseph,LOM--- JOS---,Lomwa Joseph was JP MP for Isiolo North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Minaa Mgwao] :- JP MP for Starehe Constituency as by May 2023,Maina Mwago,MAI--- MWA---,Maina Mwago was JP MP for Starehe Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Magoka Shepetn] :- JP MP for West Mugirango Constituency as by May 2023,Mogaka Stephen,MOG--- STE---,Mogaka Stephen was JP MP for West Mugirango Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mehoamd Aden] :- JP MP for Wajir East Constituency as by May 2023,Mohamed Aden,MOH--- ADE---,Mohamed Aden was JP MP for Wajir East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mbmreo Irene] :- JP MP for Bahati Constituency as by May 2023,Mrembo Irene,MRE--- IRE---,Mrembo Irene was JP MP for Bahati Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mruuiri Mhtumaa] :- JP MP for Lamu West Constituency as by May 2023,Muiruri Muthama,MUI--- MUT---,Muiruri Muthama was JP MP for Lamu West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mewnje Mark] :- JP MP for Embakasi West Constituency as by May 2023,Mwenje Mark,MWE--- MAR---,Mwenje Mark was JP MP for Embakasi West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nlkoingog Nhlcaios] :- JP MP for Turkana East Constituency as by May 2023,Ngikolong Nicholas,NGI--- NIC---,Ngikolong Nicholas was JP MP for Turkana East Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Nyaami Rhaceal] :- JP MP for Kitui South Constituency as by May 2023,Nyamai Rachael,NYA--- RAC---,Nyamai Rachael was JP MP for Kitui South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Obo Rwiedua] :- JP MP for Lamu East Constituency as by May 2023,Obo Ruweida,OBO--- RUW---,Obo Ruweida was JP MP for Lamu East Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Pariyeo Aengs] :- JP MP for Narok North Constituency as by May 2023,Pareiyo Agnes,PAR--- AGN---,Pareiyo Agnes was JP MP for Narok North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sakhe Peetr] :- JP MP for Mwatate Constituency as by May 2023,Shake Peter,SHA--- PET---,Shake Peter was JP MP for Mwatate Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Srhuie Abdi] :- JP MP for Balambala Constituency as by May 2023,Shurie Abdi,SHU--- ABD---,Shurie Abdi was JP MP for Balambala Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Tubi Bidu] :- JP MP for Isiolo South Constituency as by May 2023,Tubi Bidu,TUB--- BID---,Tubi Bidu was JP MP for Isiolo South Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Guyo Ahde] :- KANU MP for North Horr Constituency as by May 2023,Guyo Adhe,GUY--- ADH---,Guyo Adhe was KANU MP for North Horr Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Kaassit Wliliam] :- KANU MP for Tiaty Constituency as by May 2023,Kassait William,KAS--- WIL---,Kassait William was KANU MP for Tiaty Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lninjooeti Jckason] :- KANU MP for Samburu East Constituency as by May 2023,Lentoijoni Jackson,LEN--- JAC---,Lentoijoni Jackson was KANU MP for Samburu East Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Lsuueda Jeopnsihe] :- KANU MP for Samburu West Constituency as by May 2023,Lesuuda Josephine,LES--- JOS---,Lesuuda Josephine was KANU MP for Samburu West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Snkluui Juiuls] :- KANU MP for Kilgoris Constituency as by May 2023,Sunkuli Julius,SUN--- JUL---,Sunkuli Julius was KANU MP for Kilgoris Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Pnksiog Dvai] :- KUP MP for Pokot South Constituency as by May 2023,Pkosing Davi,PKO--- DAV---,Pkosing Davi was KUP MP for Pokot South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Tuits Lotee] :- KUP MP for Kacheliba Constituency as by May 2023,Titus Lotee,TIT--- LOT---,Titus Lotee was KUP MP for Kacheliba Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mlue Caelb] :- MCCP MP for Machakos Town Constituency as by May 2023,Mule Caleb,MUL--- CAL---,Mule Caleb was MCCP MP for Machakos Town Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Mtuuse Ekcmaos] :- MCCP MP for Kibwezi West Constituency as by May 2023,Mutuse Eckomas,MUT--- ECK---,Mutuse Eckomas was MCCP MP for Kibwezi West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oiehcng Daivd] :- MDG MP for Ugenya Constituency as by May 2023,Ochieng David,OCH--- DAV---,Ochieng David was MDG MP for Ugenya Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Aubri Learcwne] :- NOPEU MP for Tigania East Constituency as by May 2023,Aburi Lawrence,ABU--- LAW---,Aburi Lawrence was NOPEU MP for Tigania East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Aubor Paul] :- ODM MP for Rongo Constituency as by May 2023,Abuor Paul,ABU--- PAU---,Abuor Paul was ODM MP for Rongo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Aodw Mehoamd] :- ODM MP for Wajir South Constituency as by May 2023,Adow Mohamed,ADO--- MOH---,Adow Mohamed was ODM MP for Wajir South Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Allmoo Paul] :- ODM MP for Rarieda Constituency as by May 2023,Amollo Paul,AMO--- PAU---,Amollo Paul was ODM MP for Rarieda Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Smeual Onngua] :- ODM MP for Alego Usonga Constituency as by May 2023,Samuel Onunga,SAM--- ONU---,Samuel Onunga was ODM MP for Alego Usonga Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Bday Bday] :- ODM MP for Jomvu Constituency as by May 2023,Bady Bady,BAD--- BAD---,Bady Bady was ODM MP for Jomvu Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Bargono Nasfooln] :- ODM MP for Bomachoge Borabu Constituency as by May 2023,Barongo Nolfason,BAR--- NOL---,Barongo Nolfason was ODM MP for Bomachoge Borabu Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Buyu Rzaoah] :- ODM MP for Kisumu West Constituency as by May 2023,Buyu Rozaah,BUY--- ROZ---,Buyu Rozaah was ODM MP for Kisumu West Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Elahci Bctaiere] :- ODM MP for Dagoretti North Constituency as by May 2023,Elachi Beatrice,ELA--- BEA---,Elachi Beatrice was ODM MP for Dagoretti North Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Fraah Yususf] :- ODM MP for Wajir West Constituency as by May 2023,Farah Yussuf,FAR--- YUS---,Farah Yussuf was ODM MP for Wajir West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Facnirs Kajwnag'] :- ODM MP for Ruaraka Constituency as by May 2023,Francis Kajwang',FRA--- KAJ---,Francis Kajwang' was ODM MP for Ruaraka Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Giirsao Cvile] :- ODM MP for Kitutu Masaba Constituency as by May 2023,Gisairo Clive,GIS--- CLI---,Gisairo Clive was ODM MP for Kitutu Masaba Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ggoo Laiiln] :- ODM MP for Rangwe Constituency as by May 2023,Gogo Lilian,GOG--- LIL---,Gogo Lilian was ODM MP for Rangwe Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Guyo Ali] :- ODM MP for Garsen Constituency as by May 2023,Guyo Ali,GUY--- ALI---,Guyo Ali was ODM MP for Garsen Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Haismi Ktkaua] :- ODM MP for Kajiado East Constituency as by May 2023,Hamisi Kakuta,HAM--- KAK---,Hamisi Kakuta was ODM MP for Kajiado East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Haiirbe Siad] :- ODM MP for Galole Constituency as by May 2023,Hiribae Said,HIR--- SAI---,Hiribae Said was ODM MP for Galole Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Klmuaa Gogere] :- ODM MP for Homa Bay Town Constituency as by May 2023,Kaluma George,KAL--- GEO---,Kaluma George was ODM MP for Homa Bay Town Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Korhnacy Eajilh] :- ODM MP for Kajiado Central Constituency as by May 2023,Kanchory Elijah,KAN--- ELI---,Kanchory Elijah was ODM MP for Kajiado Central Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Knataa Paul] :- ODM MP for Kaloleni Constituency as by May 2023,Katana Paul,KAT--- PAU---,Katana Paul was ODM MP for Kaloleni Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kohhde Pelihx] :- ODM MP for Langata Constituency as by May 2023,Khodhe Phelix,KHO--- PHE---,Khodhe Phelix was ODM MP for Langata Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kineadgbi Aonteny] :- ODM MP for Kitutu Chache South Constituency as by May 2023,Kibagendi Antoney,KIB--- ANT---,Kibagendi Antoney was ODM MP for Kitutu Chache South Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Ktii Rihcard] :- ODM MP for Kilifi South Constituency as by May 2023,Kiti Richard,KIT--- RIC---,Kiti Richard was ODM MP for Kilifi South Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Kbome Hsiraron] :- ODM MP for Magarini Constituency as by May 2023,Kombe Harrison,KOM--- HAR---,Kombe Harrison was ODM MP for Magarini Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lyuai Caelb] :- ODM MP for Saboti Constituency as by May 2023,Luyai Caleb,LUY--- CAL---,Luyai Caleb was ODM MP for Saboti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mlceahe Mehoamd] :- ODM MP for Mvita Constituency as by May 2023,Machele Mohamed,MAC--- MOH---,Machele Mohamed was ODM MP for Mvita Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mnaduku Dieanl] :- ODM MP for Nyaribari Masaba Constituency as by May 2023,Manduku Daniel,MAN--- DAN---,Manduku Daniel was ODM MP for Nyaribari Masaba Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Marasa Peetr] :- ODM MP for Suna West Constituency as by May 2023,Masara Peter,MAS--- PET---,Masara Peter was ODM MP for Suna West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mkobo Mishi] :- ODM MP for Likoni Constituency as by May 2023,Mboko Mishi,MBO--- MIS---,Mboko Mishi was ODM MP for Likoni Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mehoamd Abaidkidr] :- ODM MP for Lagdera Constituency as by May 2023,Mohamed Abdikadir,MOH--- ABD---,Mohamed Abdikadir was ODM MP for Lagdera Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mehoamd Juent] :- ODM MP for Suna East Constituency as by May 2023,Mohamed Junet,MOH--- JUN---,Mohamed Junet was ODM MP for Suna East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mbague Inonenct] :- ODM MP for Likuyani Constituency as by May 2023,Mugabe Innocent,MUG--- INN---,Mugabe Innocent was ODM MP for Likuyani Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mkuahnwa Tuits] :- ODM MP for Lurambi Constituency as by May 2023,Mukhwana Titus,MUK--- TIT---,Mukhwana Titus was ODM MP for Lurambi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mlwae Nhlcaios] :- ODM MP for Butere Constituency as by May 2023,Mwale Nicholas,MWA--- NIC---,Mwale Nicholas was ODM MP for Butere Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mzyani Anmia] :- ODM MP for Malindi Constituency as by May 2023,Mnyazi Amina,MNY--- AMI---,Mnyazi Amina was ODM MP for Malindi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nbaii Nreawba] :- ODM MP for Lugari Constituency as by May 2023,Nabii Nabwera,NAB--- NAB---,Nabii Nabwera was ODM MP for Lugari Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ndalunibo Peetr] :- ODM MP for Matungu Constituency as by May 2023,Nabulindo Peter,NAB--- PET---,Nabulindo Peter was ODM MP for Matungu Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Nabuin Paul] :- ODM MP for Turkana North Constituency as by May 2023,Naibun Paul,NAI--- PAU---,Naibun Paul was ODM MP for Turkana North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ncacia Johosnn] :- ODM MP for Mumias West Constituency as by May 2023,Naicca Johnson,NAI--- JOH---,Naicca Johnson was ODM MP for Mumias West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nmiaot John] :- ODM MP for Turkana South Constituency as by May 2023,Namoit John,NAM--- JOH---,Namoit John was ODM MP for Turkana South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ntimaya Mark] :- ODM MP for Uriri Constituency as by May 2023,Nyamita Mark,NYA--- MAR---,Nyamita Mark was ODM MP for Uriri Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Naikyl Jaems] :- ODM MP for Seme Constituency as by May 2023,Nyikal James,NYI--- JAM---,Nyikal James was ODM MP for Seme Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oraba Eve] :- ODM MP for Kabondo Kasipul Constituency as by May 2023,Obara Eve,OBA--- EVE---,Obara Eve was ODM MP for Kabondo Kasipul Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Oadnga Geoffrey] :- ODM MP for Matayos Constituency as by May 2023,Odanga Geoffrey,ODA--- GEO---,Odanga Geoffrey was ODM MP for Matayos Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ogdee Tom] :- ODM MP for Nyatike Constituency as by May 2023,Odege Tom,ODE--- TOM---,Odege Tom was ODM MP for Nyatike Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Odimbaho Eshila] :- ODM MP for Gem Constituency as by May 2023,Odhiambo Elisha,ODH--- ELI---,Odhiambo Elisha was ODM MP for Gem Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Odimbaho Mlilie] :- ODM MP for Suba North Constituency as by May 2023,Odhiambo Millie,ODH--- MIL---,Odhiambo Millie was ODM MP for Suba North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Odoyo Oleklo] :- ODM MP for Nyando Constituency as by May 2023,Odoyo Okello,ODO--- OKE---,Odoyo Okello was ODM MP for Nyando Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oglloa Gideon] :- ODM MP for Bondo Constituency as by May 2023,Ogolla Gideon,OGO--- GID---,Ogolla Gideon was ODM MP for Bondo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oku Ewrdad] :- ODM MP for Teso North Constituency as by May 2023,Oku Edward,OKU--- EDW---,Oku Edward was ODM MP for Teso North Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Okomue Arnedw] :- ODM MP for Karachuonyo Constituency as by May 2023,Okuome Andrew,OKU--- AND---,Okuome Andrew was ODM MP for Karachuonyo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Olcuoh Annhoty] :- ODM MP for Mathare Constituency as by May 2023,Oluoch Anthony,OLU--- ANT---,Oluoch Anthony was ODM MP for Mathare Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Omdnoi Colrai] :- ODM MP for Suba South Constituency as by May 2023,Omondi Caroli,OMO--- CAR---,Omondi Caroli was ODM MP for Suba South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oemrwa Gogere] :- ODM MP for Makadara Constituency as by May 2023,Omwera George,OMW--- GEO---,Omwera George was ODM MP for Makadara Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oginli Bbau] :- ODM MP for Embakasi East Constituency as by May 2023,Ongili Babu,ONG--- BAB---,Ongili Babu was ODM MP for Embakasi East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Peetr Orreo] :- ODM MP for Kibra Constituency as by May 2023,Peter Orero,PET--- ORE---,Peter Orero was ODM MP for Kibra Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oron Jsuhoa] :- ODM MP for Kisumu Central Constituency as by May 2023,Oron Joshua,ORO--- JOS---,Oron Joshua was ODM MP for Kisumu Central Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Oerso Ptriack] :- ODM MP for Borabu Constituency as by May 2023,Osero Patrick,OSE--- PAT---,Osero Patrick was ODM MP for Borabu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Onduo Wlciboerrfe] :- ODM MP for Funyula Constituency as by May 2023,Oundo Wilberforce,OUN--- WIL---,Oundo Wilberforce was ODM MP for Funyula Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ownio John] :- ODM MP for Awendo Constituency as by May 2023,Owino John,OWI--- JOH---,Owino John was ODM MP for Awendo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ownio Mtiarn] :- ODM MP for Ndhiwa Constituency as by May 2023,Owino Martin,OWI--- MAR---,Owino Martin was ODM MP for Ndhiwa Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ouowr Jsuhoa] :- ODM MP for Nyakach Constituency as by May 2023,Owuor Joshua,OWU--- JOS---,Owuor Joshua was ODM MP for Nyakach Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oyoo Jaems] :- ODM MP for Muhoroni Constituency as by May 2023,Oyoo James,OYO--- JAM---,Oyoo James was ODM MP for Muhoroni Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Oluya Jospeh] :- ODM MP for Butula Constituency as by May 2023,Oyula Joseph,OYU--- JOS---,Oyula Joseph was ODM MP for Butula Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sbimkaa Phriansaa] :- ODM MP for Kajiado South Constituency as by May 2023,Sakimba Parashina,SAK--- PAR---,Sakimba Parashina was ODM MP for Kajiado South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Siwmbha Omar] :- ODM MP for Changamwe Constituency as by May 2023,Shimbwa Omar,SHI--- OMA---,Shimbwa Omar was ODM MP for Changamwe Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Slhinai Bren] :- ODM MP for Ikolomani Constituency as by May 2023,Shinali Bern,SHI--- BER---,Shinali Bern was ODM MP for Ikolomani Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Waaydni Jaems] :- ODM MP for Ugunja Constituency as by May 2023,Wandayi James,WAN--- JAM---,Wandayi James was ODM MP for Ugunja Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Wgnayaa Creothhpsir] :- ODM MP for Khwisero Constituency as by May 2023,Wangaya Christopher,WAN--- CHR---,Wangaya Christopher was ODM MP for Khwisero Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Wwagne Eunmmael] :- ODM MP for Navakholo Constituency as by May 2023,Wangwe Emmanuel,WAN--- EMM---,Wangwe Emmanuel was ODM MP for Navakholo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Waljnaa Rehaapl] :- ODM MP for Budalangi Constituency as by May 2023,Wanjala Raphael,WAN--- RAP---,Wanjala Raphael was ODM MP for Budalangi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Were Crlhaes] :- ODM MP for Kasipul Constituency as by May 2023,Were Charles,WER--- CHA---,Were Charles was ODM MP for Kasipul Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Watglunea Thmioty] :- ODM MP for Westlands Constituency as by May 2023,Wetangula Timothy,WET--- TIM---,Wetangula Timothy was ODM MP for Westlands Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Mpue Annhoty] :- PAA MP for Rabai Constituency as by May 2023,Mupe Anthony,MUP--- ANT---,Mupe Anthony was PAA MP for Rabai Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Rai Smeual] :- PAA MP for Kinango Constituency as by May 2023,Rai Samuel,RAI--- SAM---,Rai Samuel was PAA MP for Kinango Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Tlunuge Chrao] :- PAA MP for Ganze Constituency as by May 2023,Tungule Charo,TUN--- CHA---,Tungule Charo was PAA MP for Ganze Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kunrjuii Festus] :- TSP MP for Laikipia East Constituency as by May 2023,Kiunjuri Festus,KIU--- FES---,Kiunjuri Festus was TSP MP for Laikipia East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Akjua Prtuos] :- UDA MP for Loima Constituency as by May 2023,Akuja Protus,AKU--- PRO---,Akuja Protus was UDA MP for Loima Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Aflah Mkirua] :- UDA MP for Bomachoge Chache Constituency as by May 2023,Alfah Miruka,ALF--- MIR---,Alfah Miruka was UDA MP for Bomachoge Chache Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Bedar Slaim] :- UDA MP for Msambweni Constituency as by May 2023,Bader Salim,BAD--- SAL---,Bader Salim was UDA MP for Msambweni Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Brrae Heuissn] :- UDA MP for Tarbaj Constituency as by May 2023,Barre Hussein,BAR--- HUS---,Barre Hussein was UDA MP for Tarbaj Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Braorw Dkoew] :- UDA MP for Garissa Township Constituency as by May 2023,Barrow Dekow,BAR--- DEK---,Barrow Dekow was UDA MP for Garissa Township Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Borato Phlyis] :- UDA MP for Moiben Constituency as by May 2023,Bartoo Phylis,BAR--- PHY---,Bartoo Phylis was UDA MP for Moiben Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Byaa Owen] :- UDA MP for Kilifi North Constituency as by May 2023,Baya Owen,BAY--- OWE---,Baya Owen was UDA MP for Kilifi North Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Biego Paul] :- UDA MP for Chesumei Constituency as by May 2023,Biego Paul,BIE--- PAU---,Biego Paul was UDA MP for Chesumei Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Bweon Daivd] :- UDA MP for Marakwet East Constituency as by May 2023,Bowen David,BOW--- DAV---,Bowen David was UDA MP for Marakwet East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Cbheor Paul] :- UDA MP for Rongai Constituency as by May 2023,Chebor Paul,CHE--- PAU---,Chebor Paul was UDA MP for Rongai Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Cgehe John] :- UDA MP for Limuru Constituency as by May 2023,Chege John,CHE--- JOH---,Chege John was UDA MP for Limuru Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Cghoenpka Knroipo] :- UDA MP for Ainabkoi Constituency as by May 2023,Chepkonga Kiprono,CHE--- KIP---,Chepkonga Kiprono was UDA MP for Ainabkoi Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Cnphkowey Cthairy] :- UDA MP for Njoro Constituency as by May 2023,Chepkwony Charity,CHE--- CHA---,Chepkwony Charity was UDA MP for Njoro Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Jospeh Kamtuii] :- UDA MP for Kipkelion East Constituency as by May 2023,Joseph Kimutai,JOS--- KIM---,Joseph Kimutai was UDA MP for Kipkelion East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Cesehbe Fred] :- UDA MP for Mt. Elgon Constituency as by May 2023,Chesebe Fred,CHE--- FRE---,Chesebe Fred was UDA MP for Mt. Elgon Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ceumhl Smeawl] :- UDA MP for Kapenguria Constituency as by May 2023,Chumel Samwel,CHU--- SAM---,Chumel Samwel was UDA MP for Kapenguria Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Etahme Jospeh] :- UDA MP for Turkana Central Constituency as by May 2023,Emathe Joseph,EMA--- JOS---,Emathe Joseph was UDA MP for Turkana Central Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Gachuaga Goerg] :- UDA MP for Ndaragwa Constituency as by May 2023,Gachagua Georg,GAC--- GEO---,Gachagua Georg was UDA MP for Ndaragwa Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Gcaobhe Smeual] :- UDA MP for Subukia Constituency as by May 2023,Gachobe Samuel,GAC--- SAM---,Gachobe Samuel was UDA MP for Subukia Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Gauyka Jaems] :- UDA MP for Embakasi North Constituency as by May 2023,Gakuya James,GAK--- JAM---,Gakuya James was UDA MP for Embakasi North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Gihrtau Mndjajoek] :- UDA MP for Embakasi Central Constituency as by May 2023,Gathiru Mejjadonk,GAT--- MEJ---,Gathiru Mejjadonk was UDA MP for Embakasi Central Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Ghochii Khiucgaa] :- UDA MP for Mukurweini Constituency as by May 2023,Gichohi Kaguchia,GIC--- KAG---,Gichohi Kaguchia was UDA MP for Mukurweini Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Gickhui Ediwn] :- UDA MP for Mathioya Constituency as by May 2023,Gichuki Edwin,GIC--- EDW---,Gichuki Edwin was UDA MP for Mathioya Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Giarkia Daivd] :- UDA MP for Nakuru Town East Constituency as by May 2023,Gikaria David,GIK--- DAV---,Gikaria David was UDA MP for Nakuru Town East Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Griati Jospeh] :- UDA MP for KirinyagaCentral Constituency as by May 2023,Gitari Joseph,GIT--- JOS---,Gitari Joseph was UDA MP for KirinyagaCentral Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Gnihtiji Rroebt] :- UDA MP for Gichugu Constituency as by May 2023,Githinji Robert,GIT--- ROB---,Githinji Robert was UDA MP for Gichugu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [GK Gogere] :- UDA MP for Ndia Constituency as by May 2023,GK George,GK --- GEO---,GK George was UDA MP for Ndia Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Ihncug'wah] :- UDA MP for Kikuyu Constituency as by May 2023,Ichung'wah,ICH--- ICH---,Ichung'wah was UDA MP for Kikuyu Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Jdhana Zaheer] :- UDA MP for Nyaribari Chache Constituency as by May 2023,Jhanda Zaheer,JHA--- ZAH---,Jhanda Zaheer was UDA MP for Nyaribari Chache Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Kgbomae Garibel] :- UDA MP for Gatundu South Constituency as by May 2023,Kagombe Gabriel,KAG--- GAB---,Kagombe Gabriel was UDA MP for Gatundu South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kaharnaga Jospeh] :- UDA MP for Lari Constituency as by May 2023,Kahangara Joseph,KAH--- JOS---,Kahangara Joseph was UDA MP for Lari Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Kgauhu Eric] :- UDA MP for Mathira Constituency as by May 2023,Kahugu Eric,KAH--- ERI---,Kahugu Eric was UDA MP for Mathira Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Keamurn Crlhaes] :- UDA MP for Baringo South Constituency as by May 2023,Kamuren Charles,KAM--- CHA---,Kamuren Charles was UDA MP for Baringo South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kidane Jsuhoa] :- UDA MP for Baringo Central Constituency as by May 2023,Kandie Joshua,KAN--- JOS---,Kandie Joshua was UDA MP for Baringo Central Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Knarai Shepetn] :- UDA MP for Laikipia West Constituency as by May 2023,Karani Stephen,KAR--- STE---,Karani Stephen was UDA MP for Laikipia West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kerbmaa Eric] :- UDA MP for Runyenjes Constituency as by May 2023,Karemba Eric,KAR--- ERI---,Karemba Eric was UDA MP for Runyenjes Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kemei  Kipsnag] :- UDA MP for Sigowet/Soin Constituency as by May 2023,Kemei  Kipsang,KEM--- KIP---,Kemei  Kipsang was UDA MP for Sigowet/Soin Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Kemero Mrsaoii] :- UDA MP for Kuria East Constituency as by May 2023,Kemero Maisori,KEM--- MAI---,Kemero Maisori was UDA MP for Kuria East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kriaha Jayne] :- UDA MP for Naivasha Constituency as by May 2023,Kihara Jayne,KIH--- JAY---,Kihara Jayne was UDA MP for Naivasha Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Khiugni Peetr] :- UDA MP for Kangema Constituency as by May 2023,Kihungi Peter,KIH--- PET---,Kihungi Peter was UDA MP for Kangema Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kliel Rihcard] :- UDA MP for Bomet Central Constituency as by May 2023,Kilel Richard,KIL--- RIC---,Kilel Richard was UDA MP for Bomet Central Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kmiani Facnirs] :- UDA MP for Molo Constituency as by May 2023,Kimani Francis,KIM--- FRA---,Kimani Francis was UDA MP for Molo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kngraia Simo] :- UDA MP for Ruiru Constituency as by May 2023,Kingara Simo,KIN--- SIM---,Kingara Simo was UDA MP for Ruiru Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kiwobipt Juiuls] :- UDA MP for Tinderet Constituency as by May 2023,Kipbiwot Julius,KIP--- JUL---,Kipbiwot Julius was UDA MP for Tinderet Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kpgnior Rebeun] :- UDA MP for Mogotio Constituency as by May 2023,Kipgnor Reuben,KIP--- REU---,Kipgnor Reuben was UDA MP for Mogotio Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kekociph Gideon] :- UDA MP for Keiyo South Constituency as by May 2023,Kipkoech Gideon,KIP--- GID---,Kipkoech Gideon was UDA MP for Keiyo South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kopirkos Jospeh] :- UDA MP for Baringo North Constituency as by May 2023,Kipkoros Joseph,KIP--- JOS---,Kipkoros Joseph was UDA MP for Baringo North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kiplaagt Daivd] :- UDA MP for Soy Constituency as by May 2023,Kiplagat David,KIP--- DAV---,Kiplagat David was UDA MP for Soy Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Knroipo Mauti] :- UDA MP for Kuresoi North Constituency as by May 2023,Kiprono Mutai,KIP--- MUT---,Kiprono Mutai was UDA MP for Kuresoi North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kioyegpn Jnhaoa] :- UDA MP for Emurua Dikirr Constituency as by May 2023,Kipyegon Johana,KIP--- JOH---,Kipyegon Johana was UDA MP for Emurua Dikirr Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kmiria Moess] :- UDA MP for Central Imenti Constituency as by May 2023,Kirima Moses,KIR--- MOS---,Kirima Moses was UDA MP for Central Imenti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kiwra Aaarbhm] :- UDA MP for Mosop Constituency as by May 2023,Kirwa Abraham,KIR--- ABR---,Kirwa Abraham was UDA MP for Mosop Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kntiay Minanare] :- UDA MP for Aldai Constituency as by May 2023,Kitany Marianne,KIT--- MAR---,Kitany Marianne was UDA MP for Aldai Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kitur Bearrnd] :- UDA MP for NandiHills Constituency as by May 2023,Kitur Bernard,KIT--- BER---,Kitur Bernard was UDA MP for NandiHills Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kceoh Nelson] :- UDA MP for Belgut Constituency as by May 2023,Koech Nelson,KOE--- NEL---,Koech Nelson was UDA MP for Belgut Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kigmnooi Kiebt] :- UDA MP for Bureti Constituency as by May 2023,Komingoi Kibet,KOM--- KIB---,Komingoi Kibet was UDA MP for Bureti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kiror Admas] :- UDA MP for Keiyo North Constituency as by May 2023,Korir Adams,KOR--- ADA---,Korir Adams was UDA MP for Keiyo North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ksogei Harliy] :- UDA MP for Kipkelion West Constituency as by May 2023,Kosgei Hilary,KOS--- HIL---,Kosgei Hilary was UDA MP for Kipkelion West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lagnat Beminjan] :- UDA MP for Ainamoi Constituency as by May 2023,Langat Benjamin,LAN--- BEN---,Langat Benjamin was UDA MP for Ainamoi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lmilneget Josess] :- UDA MP for Emgwen Constituency as by May 2023,Lelmengit Josses,LEL--- JOS---,Lelmengit Josses was UDA MP for Emgwen Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Lekeamnn Araamt] :- UDA MP for Narok East Constituency as by May 2023,Lemanken Aramat,LEM--- ARA---,Lemanken Aramat was UDA MP for Narok East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lileipta Diimonc] :- UDA MP for Samburu North Constituency as by May 2023,Letipila Dominic,LET--- DOM---,Letipila Dominic was UDA MP for Samburu North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Lonphcaokag Peetr] :- UDA MP for Sigor Constituency as by May 2023,Lochakapong Peter,LOC--- PET---,Lochakapong Peter was UDA MP for Sigor Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Lgovoa Syola] :- UDA MP for Sabatia Constituency as by May 2023,Logova Sloya,LOG--- SLO---,Logova Sloya was UDA MP for Sabatia Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mngaii Mray] :- UDA MP for Mwea Constituency as by May 2023,Maingi Mary,MAI--- MAR---,Maingi Mary was UDA MP for Mwea Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mgenthae Dnucan] :- UDA MP for Nyeri Town Constituency as by May 2023,Mathenge Duncan,MAT--- DUN---,Mathenge Duncan was UDA MP for Nyeri Town Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mabi Norimd] :- UDA MP for Kitui East Constituency as by May 2023,Mbai Nimrod,MBA--- NIM---,Mbai Nimrod was UDA MP for Kitui East Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Mbukii Jhaept] :- UDA MP for Maara Constituency as by May 2023,Mbiuki Japhet,MBI--- JAP---,Mbiuki Japhet was UDA MP for Maara Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mehoamd Mehoamd] :- UDA MP for Nyali Constituency as by May 2023,Mohamed Mohamed,MOH--- MOH---,Mohamed Mohamed was UDA MP for Nyali Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mkyoaa Ndnkauyi] :- UDA MP for Kitutu Chache North Constituency as by May 2023,Mokaya Nyakundi,MOK--- NYA---,Mokaya Nyakundi was UDA MP for Kitutu Chache North Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Mihruca Meciahl] :- UDA MP for Ol Jorok Constituency as by May 2023,Muchira Michael,MUC--- MIC---,Muchira Michael was UDA MP for Ol Jorok Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Muiha Wijaknu] :- UDA MP for Kipipiri Constituency as by May 2023,Muhia Wanjiku,MUH--- WAN---,Muhia Wanjiku was UDA MP for Kipipiri Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Munujki John] :- UDA MP for Manyatta Constituency as by May 2023,Mukunji John,MUK--- JOH---,Mukunji John was UDA MP for Manyatta Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mouynro Jospeh] :- UDA MP for Kigumo Constituency as by May 2023,Munyoro Joseph,MUN--- JOS---,Munyoro Joseph was UDA MP for Kigumo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Muiru Wiakli] :- UDA MP for Gatanga Constituency as by May 2023,Muriu Wakili,MUR--- WAK---,Muriu Wakili was UDA MP for Gatanga Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mgraurua Gogere] :- UDA MP for Tharaka Constituency as by May 2023,Murugara George,MUR--- GEO---,Murugara George was UDA MP for Tharaka Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mihurainwta Rnikdriii] :- UDA MP for Buuri Constituency as by May 2023,Murwithania Rindikiri,MUR--- RIN---,Murwithania Rindikiri was UDA MP for Buuri Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Musau Vnniect] :- UDA MP for Mwala Constituency as by May 2023,Musau Vincent,MUS--- VIN---,Musau Vincent was UDA MP for Mwala Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Muuta Ddiums] :- UDA MP for Kimilili Constituency as by May 2023,Mutua Didmus,MUT--- DID---,Mutua Didmus was UDA MP for Kimilili Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mnuutga John] :- UDA MP for Tigania West Constituency as by May 2023,Mutunga John,MUT--- JOH---,Mutunga John was UDA MP for Tigania West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mkarwfia Anituusge] :- UDA MP for Royasambu Constituency as by May 2023,Mwafrika Augustine,MWA--- AUG---,Mwafrika Augustine was UDA MP for Royasambu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Magnwi Geoffrey] :- UDA MP for Tetu Constituency as by May 2023,Mwangi Geoffrey,MWA--- GEO---,Mwangi Geoffrey was UDA MP for Tetu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mirinwg John] :- UDA MP for Igembe South Constituency as by May 2023,Mwiring John,MWI--- JOH---,Mwiring John was UDA MP for Igembe South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nnaok Dieanl] :- UDA MP for Turkana West Constituency as by May 2023,Nanok Daniel,NAN--- DAN---,Nanok Daniel was UDA MP for Turkana West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nugro Omsuens] :- UDA MP for Kajiado North Constituency as by May 2023,Nguro Onesmus,NGU--- ONE---,Nguro Onesmus was UDA MP for Kajiado North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nojorge Mray] :- UDA MP for Maragwa Constituency as by May 2023,Njoroge Mary,NJO--- MAR---,Njoroge Mary was UDA MP for Maragwa Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Njugnua Cgehe] :- UDA MP for Kandara Constituency as by May 2023,Njuguna Chege,NJU--- CHE---,Njuguna Chege was UDA MP for Kandara Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Nkymaoo Josah] :- UDA MP for North Mugirango Constituency as by May 2023,Nyamoko Joash,NYA--- JOA---,Nyamoko Joash was UDA MP for North Mugirango Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Nyoro Smsaon] :- UDA MP for Kiharu Constituency as by May 2023,Nyoro Samson,NYO--- SAM---,Nyoro Samson was UDA MP for Kiharu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ogneiyo Svuialns] :- UDA MP for South Mugirango Constituency as by May 2023,Onyiego Silvanus,ONY--- SIL---,Onyiego Silvanus was UDA MP for South Mugirango Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Outcho Mray] :- UDA MP for Teso South Constituency as by May 2023,Otucho Mary,OTU--- MAR---,Otucho Mary was UDA MP for Teso South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Poukse Rroebt] :- UDA MP for Endebess Constituency as by May 2023,Pukose Robert,PUK--- ROB---,Pukose Robert was UDA MP for Endebess Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Rsao Dido] :- UDA MP for Saku Constituency as by May 2023,Raso Dido,RAS--- DID---,Raso Dido was UDA MP for Saku Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Rsia Skniyuua] :- UDA MP for Kajiado West Constituency as by May 2023,Risa Sunkuiya,RIS--- SUN---,Risa Sunkuiya was UDA MP for Kajiado West Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Rboi Mathias] :- UDA MP for Kuria West Constituency as by May 2023,Robi Mathias,ROB--- MAT---,Robi Mathias was UDA MP for Kuria West Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Rttuo Juli] :- UDA MP for Kesses Constituency as by May 2023,Rutto Juli,RUT--- JUL---,Rutto Juli was UDA MP for Kesses Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sneay Iihrabm] :- UDA MP for Wajir North Constituency as by May 2023,Saney Ibrahim,SAN--- IBR---,Saney Ibrahim was UDA MP for Wajir North Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sgeii Facnirs] :- UDA MP for Sotik Constituency as by May 2023,Sigei Francis,SIG--- FRA---,Sigei Francis was UDA MP for Sotik Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sirma Msua] :- UDA MP for Eldama Ravine Constituency as by May 2023,Sirma Musa,SIR--- MUS---,Sirma Musa was UDA MP for Eldama Ravine Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sittai Dieanl] :- UDA MP for Webuye West Constituency as by May 2023,Sitati Daniel,SIT--- DAN---,Sitati Daniel was UDA MP for Webuye West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Steeniii Jnaet] :- UDA MP for Turbo Constituency as by May 2023,Sitienei Janet,SIT--- JAN---,Sitienei Janet was UDA MP for Turbo Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Sudi Ocasr] :- UDA MP for Kapseret Constituency as by May 2023,Sudi Oscar,SUD--- OSC---,Sudi Oscar was UDA MP for Kapseret Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Tynogoo Garibel] :- UDA MP for Narok West Constituency as by May 2023,Tongoyo Gabriel,TON--- GAB---,Tongoyo Gabriel was UDA MP for Narok West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Tonui Jospeh] :- UDA MP for Kuresoi South Constituency as by May 2023,Tonui Joseph,TON--- JOS---,Tonui Joseph was UDA MP for Kuresoi South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Waanniia Annoty] :- UDA MP for Kieni Constituency as by May 2023,Wainaina Antony,WAI--- ANT---,Wainaina Antony was UDA MP for Kieni Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Waanniia Meciahl] :- UDA MP for Othaya Constituency as by May 2023,Wainaina Michael,WAI--- MIC---,Wainaina Michael was UDA MP for Othaya Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Wiatahka John] :- UDA MP for Kiambu Constituency as by May 2023,Waithaka John,WAI--- JOH---,Waithaka John was UDA MP for Kiambu Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Wucarukamu Jaems] :- UDA MP for Kabete Constituency as by May 2023,Wamacukuru James,WAM--- JAM---,Wamacukuru James was UDA MP for Kabete Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Wbmuomhaca Ghnotai] :- UDA MP for Githunguri Constituency as by May 2023,Wamuchomba Gathoni,WAM--- GAT---,Wamuchomba Gathoni was UDA MP for Githunguri Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [John Njugnua] :- UDA MP for Kiambaa Constituency as by May 2023,John Njuguna,JOH--- NJU---,John Njuguna was UDA MP for Kiambaa Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Wnirjaa Mhtraa] :- UDA MP for Gilgil Constituency as by May 2023,Wanjira Martha,WAN--- MAR---,Wanjira Martha was UDA MP for Gilgil Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Wewaru John] :- UDA MP for Dagoretti South Constituency as by May 2023,Waweru John,WAW--- JOH---,Waweru John was UDA MP for Dagoretti South Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Yakub Fraah] :- UDA MP for Fafi Constituency as by May 2023,Yakub Farah,YAK--- FAR---,Yakub Farah was UDA MP for Fafi Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Yegon Btgohirn] :- UDA MP for Konoin Constituency as by May 2023,Yegon Brighton,YEG--- BRI---,Yegon Brighton was UDA MP for Konoin Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Yegon Rihcard] :- UDA MP for Momet East Constituency as by May 2023,Yegon Richard,YEG--- RIC---,Yegon Richard was UDA MP for Momet East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Alulbadhi Bhsiar] :- UDM MP for Mandera North Constituency as by May 2023,Abdullahi Bashir,ABD--- BAS---,Abdullahi Bashir was UDM MP for Mandera North Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Coiohfmdoro Mgnlaae] :- UDM MP for Lungalunga Constituency as by May 2023,Chiforomodo Mangale,CHI--- MAN---,Chiforomodo Mangale was UDM MP for Lungalunga Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Hrao Aubdl] :- UDM MP for Mandera South Constituency as by May 2023,Haro Abdul,HAR--- ABD---,Haro Abdul was UDM MP for Mandera South Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Lotkuen Jospeh] :- UDM MP for Laisamis Constituency as by May 2023,Lekuton Joseph,LEK--- JOS---,Lekuton Joseph was UDM MP for Laisamis Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Yususf Aadn] :- UDM MP for Mandera West Constituency as by May 2023,Yussuf Adan,YUS--- ADA---,Yussuf Adan was UDM MP for Mandera West Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Oconhke Crlhaes] :- UPA MP for Bonchari Constituency as by May 2023,Onchoke Charles,ONC--- CHA---,Onchoke Charles was UPA MP for Bonchari Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Jeaslda Guyo] :- UPIA MP for Moyale Constituency as by May 2023,Jaldesa Guyo,JAL--- GUY---,Jaldesa Guyo was UPIA MP for Moyale Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Yakub Aodw] :- UPIA MP for Bura Constituency as by May 2023,Yakub Adow,YAK--- ADO---,Yakub Adow was UPIA MP for Bura Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Abdi Kahims] :- WDM MP for Voi Constituency as by May 2023,Abdi Khamis,ABD--- KHA---,Abdi Khamis was WDM MP for Voi Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Baisl Rroebt] :- WDM MP for Yatta Constituency as by May 2023,Basil Robert,BAS--- ROB---,Basil Robert was WDM MP for Yatta Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Birwe John] :- WDM MP for Taveta Constituency as by May 2023,Bwire John,BWI--- JOH---,Bwire John was WDM MP for Taveta Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Kmiaba Sanznue] :- WDM MP for Makueni Constituency as by May 2023,Kiamba Suzanne,KIA--- SUZ---,Kiamba Suzanne was WDM MP for Makueni Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Klmiiu Jsuhoa] :- WDM MP for Kaiti Constituency as by May 2023,Kimilu Joshua,KIM--- JOS---,Kimilu Joshua was WDM MP for Kaiti Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Ptriack Mkaau] :- WDM MP for Mavoko Constituency as by May 2023,Patrick Makau,PAT--- MAK---,Patrick Makau was WDM MP for Mavoko Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Maalim Fraah] :- WDM MP for Dadaab Constituency as by May 2023,Maalim Farah,MAA--- FAR---,Maalim Farah was WDM MP for Dadaab Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mawhate Juiuls] :- WDM MP for Embakasi South Constituency as by May 2023,Mawathe Julius,MAW--- JUL---,Mawathe Julius was WDM MP for Embakasi South Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mlbau Jesscia] :- WDM MP for Kibwezi East Constituency as by May 2023,Mbalu Jessica,MBA--- JES---,Mbalu Jessica was WDM MP for Kibwezi East Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mboni Daivd] :- WDM MP for Kitui Rural Constituency as by May 2023,Mboni David,MBO--- DAV---,Mboni David was WDM MP for Kitui Rural Constituency as by May 2023,2,kenyan_mp,TRUE
+Re-arrange [Mbui Rroebt] :- WDM MP for Kathiani Constituency as by May 2023,Mbui Robert,MBU--- ROB---,Mbui Robert was WDM MP for Kathiani Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Momnyai Inonenct] :- WDM MP for Bomachoge Borabu Constituency as by May 2023,Momanyi Innocent,MOM--- INN---,Momanyi Innocent was WDM MP for Bomachoge Borabu Constituency as by May 2023,3,kenyan_mp,TRUE
+Re-arrange [Mlue Ste] :- WDM MP for Matungulu Constituency as by May 2023,Mule Ste,MUL--- STE---,Mule Ste was WDM MP for Matungulu Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Mluu Mkaali] :- WDM MP for Kitui Central Constituency as by May 2023,Mulu Makali,MUL--- MAK---,Mulu Makali was WDM MP for Kitui Central Constituency as by May 2023,1,kenyan_mp,TRUE
+Re-arrange [Mlngyuui Gideon] :- WDM MP for Mwingi Central Constituency as by May 2023,Mulyungi Gideon,MUL--- GID---,Mulyungi Gideon was WDM MP for Mwingi Central Constituency as by May 2023,2,kenyan_mp,TRUE

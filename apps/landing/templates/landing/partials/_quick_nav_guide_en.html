@@ -1,0 +1,11 @@
+{% comment %}Quick jump navigation for Friendly Guide – used on friendly_guide_en.html{% endcomment %}
+{% if items %}
+  <nav aria-label="{{ nav_label }}" class="flex flex-wrap justify-center gap-2 my-6">
+    {% for item in items %}
+      <a href="#{{ item.id }}"
+         class="bg-gray-100 hover:bg-green-100 text-sm font-medium text-green-800 px-3 py-1 rounded-full transition">
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </nav>
+{% endif %}

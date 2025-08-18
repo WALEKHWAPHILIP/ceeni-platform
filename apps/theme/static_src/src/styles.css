@@ -15,7 +15,7 @@
 
 
 /* =========================================
-   ✅ Typography & Hero Sections
+   Typography & Hero Sections
    ========================================= */
 
 /* 🇰🇪 Gradient Header (Black → Red → Green) for Civic Hero Titles */
@@ -25,7 +25,7 @@
 
 
 /* =========================================
-   ✅ Custom Animations
+   Custom Animations
    ========================================= */
 
 /* Fade-in animation for subtle, elegant entry */
@@ -40,7 +40,7 @@
 
 
 /* =========================================
-   ✅ Logo Elements
+   Logo Elements
    ========================================= */
 
 .ceeni-logo-wrapper {
@@ -60,3 +60,58 @@
 .ceeni-flag-black { @apply bg-black h-1/3 w-full; }
 .ceeni-flag-red { @apply bg-red-700 h-1/3 w-full; }
 .ceeni-flag-green { @apply bg-green-700 h-1/3 w-full; }
+
+
+/* =========================================
+   Quick Navigation Links
+   -----------------------------------------
+   - Used for narrative quick links
+   - Consistent green styling across all screen sizes
+   - Responsive layout handled via Tailwind grid classes
+   ========================================= */
+
+.quick-nav-link {
+  @apply block rounded-full border border-green-600 px-3 py-2 
+         text-sm text-green-700 hover:bg-green-50 
+         focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600/60;
+}
+
+
+/* =========================================
+   Narrative Cards
+   -----------------------------------------
+   - Standardized card format for 9 narratives
+   - Kenya flag colored side rail
+   - Variants: green, red, black
+   ========================================= */
+
+.narrative-card {
+  @apply relative block rounded-xl border shadow-sm transition
+         hover:shadow-md focus:outline-none focus-visible:ring-2
+         focus-visible:ring-offset-2;
+}
+
+.kenya-left-green { @apply border-l-4 border-green-700; }
+.kenya-left-red   { @apply border-l-4 border-red-700; }
+.kenya-left-black { @apply border-l-4 border-black; }
+
+.narrative-card--tint-green { @apply bg-green-50; }
+.narrative-card--tint-red   { @apply bg-red-50; }
+.narrative-card--tint-black { @apply bg-gray-50; }
+.narrative-card--white      { @apply bg-white; }
+
+.narrative-card--compact  { @apply p-4; }
+.narrative-card--roomy    { @apply p-6; }
+
+.narrative-card__title   { @apply text-xl font-bold text-black; }
+.narrative-card__meta    { @apply text-xs text-gray-500 mt-1; }
+.narrative-card__excerpt { @apply text-sm text-gray-700 mt-2 leading-relaxed; }
+
+.narrative-card__icon    { @apply w-5 h-5 shrink-0 mr-2; }
+.narrative-card__actions { @apply mt-4 flex items-center gap-2 text-sm font-semibold text-green-800; }
+.narrative-card__chevron { @apply h-4 w-4 ml-1; }
+
+.kenya-left-green.narrative-card { @apply focus-visible:ring-green-700; }
+.kenya-left-red.narrative-card   { @apply focus-visible:ring-red-700; }
+.kenya-left-black.narrative-card { @apply focus-visible:ring-gray-800; }
+

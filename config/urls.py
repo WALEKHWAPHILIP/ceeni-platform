@@ -22,57 +22,54 @@ urlpatterns = [
     # --------------------------------------------------------------------------
     # Django Admin Panel
     # --------------------------------------------------------------------------
-    # Admin interface for superusers to manage the platform
     path('admin/', admin.site.urls),
 
     # --------------------------------------------------------------------------
     # User Profile Autocomplete Routing
     # --------------------------------------------------------------------------
-    # AJAX autocomplete views (e.g. country ➝ region ➝ district ➝ location)
-    # Used in user profile forms via Select2 widgets
     path("profiles/autocomplete/", include("apps.user_profiles.urls_autocomplete")),
 
     # --------------------------------------------------------------------------
     # HTMX User Profiles Routing
     # --------------------------------------------------------------------------
-    # Handles HTMX-based endpoints for user profile interactivity (e.g. inline
-    # updates, conditional field rendering, async validation, etc.)
     path("profile/", include("apps.user_profiles.urls_htmx")),
 
+    # --------------------------------------------------------------------------
+    # HTMX Captcha Reload Routing
+    # --------------------------------------------------------------------------
+    # Handles HTMX partial reloads of civic captcha questions (for verification)
+    path("htmx/captcha/", include("apps.ceeni_captcha.urls_htmx", namespace="ceeni_captcha")),
 
     # --------------------------------------------------------------------------
     # User Accounts App Routing
     # --------------------------------------------------------------------------
-    # Handles user registration, login, logout, password reset, etc.
     path("accounts/", include("apps.user_accounts.urls")),
 
     # --------------------------------------------------------------------------
     # Progressive User Profile Registration Routing
     # --------------------------------------------------------------------------
-    # Handles screen-by-screen progressive profile creation
-    # Step 1–6: basic-info ➝ location ➝ origin ➝ civic-interests ➝ etc.
     path("profile/register/", include("apps.user_profiles.urls")),
+
+    # --------------------------------------------------------------------------
+    # CEENI Documents App Routing
+    # --------------------------------------------------------------------------
+    # Routes all URLs starting with /documents/ to the ceeni_documents app.
+    # This handles document ingestion, retrieval, search, etc.
+    path("documents/", include("apps.ceeni_documents.urls", namespace="ceeni_documents")),
 
     # --------------------------------------------------------------------------
     # Landing Page App Routing
     # --------------------------------------------------------------------------
-    # Routes root domain (`/`) to the public-facing landing app
-    # Example: homepage, about, contact, etc.
     path('', include("apps.landing.urls")),
-    
-    
-    
 
-    
-    
+    # --------------------------------------------------------------------------
+    # Dashboard App Routing
+    # --------------------------------------------------------------------------
     path('dashboard/', include('apps.dashboard.urls', namespace='dashboard')),
 ]
 
 # ==============================================================================
 # MEDIA FILES IN DEVELOPMENT
 # ==============================================================================
-# This allows media (e.g., uploaded profile pictures) to be served directly
-# via Django's dev server. Not suitable for production use.
-# ------------------------------------------------------------------------------
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

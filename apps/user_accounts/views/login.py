@@ -10,7 +10,7 @@ Redirects user based on profile completion status.
 # =============================================================
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
-from ..forms.forms_auth import LoginForm
+from ..forms.auth_login import LoginForm
 
 
 class CustomLoginView(LoginView):

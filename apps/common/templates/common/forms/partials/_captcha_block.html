@@ -1,0 +1,68 @@
+{# apps/common/templates/common/forms/partials/_captcha_block.html #}
+
+<fieldset class="card bg-green-50 border-l-4 border-green-600 shadow p-4 space-y-4">
+  <div class="flex justify-between items-center">
+    <legend class="text-base font-bold text-green-800 flex items-center gap-2">
+      {% include "common/icons/_icon_notification_bell.html" %}
+      <span>Quick Civic Check CAPTCHA</span>
+    </legend>
+    {% include "common/partials/_kenya_flag_pill.html" %}
+  </div>
+
+
+
+  <p class="text-sm text-gray-700 leading-snug space-y-1">
+    Prove you're human &amp; not a bot - by solving a quick Kenyan puzzle.
+    <br />
+    <span class="text-gray-600">
+      Everyone on CEENI does this before joining the Platform.
+    </span>
+    <br />
+    <span class="text-xs flex items-center gap-1 mt-1">
+      {% include "common/icons/signup/_icon_origin_pool.html" %}
+      <span class="text-red-600 font-medium">Knowledge Base:</span>
+      <strong class="text-green-700">
+        {{ captcha_model_label|default:"CEENI Knowledge Pool" }}
+      </strong>
+    </span>
+  </p>
+
+
+  {{ form.captcha_slug }}
+
+  <div class="space-y-2">
+    <label for="{{ form.captcha_response.id_for_label }}" class="block text-sm font-semibold text-gray-700">
+      {{ form.captcha_response.label }}
+    </label>
+
+    {{ form.captcha_response }}
+
+    {% if form.captcha_response.help_text %}
+      <p class="text-sm">
+        <span class="font-semibold text-gray-700">Hint:</span>
+        <span class="text-green-700">{{ form.captcha_response.help_text|cut:"Hint: " }}</span>
+      </p>
+    {% endif %}
+
+    {% if form.captcha_response.errors %}
+      <p class="text-sm text-error">
+        {{ form.captcha_response.errors.0 }}
+      </p>
+    {% endif %}
+  </div>
+
+  {# HTMX-enabled link to dynamically reload a new captcha question and re-render this fieldset block #}
+  <div class="text-right">
+    <button
+      type="button"
+      hx-get="{% url 'ceeni_captcha:captcha_reload' %}"
+      hx-target="closest fieldset"
+      hx-swap="outerHTML"
+      class="text-sm font-semibold text-green-700 hover:text-red-700 hover:underline flex items-center gap-1 transition-colors"
+    >
+      {% include "common/icons/_icon_refresh.html" %}
+      Try a different question
+    </button>
+
+  </div>
+</fieldset>

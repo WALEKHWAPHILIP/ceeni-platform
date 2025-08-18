@@ -56,6 +56,10 @@ INSTALLED_APPS = [
     'user_profiles.apps.UserProfilesConfig',     # Manages user profile data (e.g. bio, avatar, preferences, demographics)
     'landing.apps.LandingConfig',                # Landing page views, templates, public homepage, and static content
     'dashboard.apps.DashboardConfig',            # Dashboard landing & post-onboarding views
+    'ceeni_captcha.apps.CeeniCaptchaConfig',     # Custom CAPTCHA system for civic validation
+    'ceeni_documents.apps.CeeniDocumentsConfig',  # Document management app with modular models structure
+
+
 
 ]
 

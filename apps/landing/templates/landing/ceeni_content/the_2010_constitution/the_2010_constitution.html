@@ -1,0 +1,63 @@
+{% extends 'landing/base/landing_base.html' %}
+{% load static %}
+
+{% block title %}The Constitution of Kenya, 2010{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+
+  <!-- Hero Section -->
+  <header class="text-center space-y-2">
+    <h1 class="gradient-h1">The Supreme Law of the Land</h1>
+    <p class="text-sm text-gray-500">
+      The Constitution of Kenya, 2010 — Foundation of Justice, Equity, and Unity
+    </p>
+
+    <!-- Intro block (optional narrative/preamble) -->
+    <section class="relative bg-red-50 border border-red-200 rounded-lg shadow-sm py-8 px-6 my-12 pl-8 kenya-left-red">
+      <div class="prose prose-gray w-full">
+        <p class="font-semibold text-red-800">
+          <strong class="text-red-900">The 2010 Constitution transformed Kenya forever.</strong>
+          It laid the foundation for devolution, inclusion, justice, and accountable leadership. This page provides a summary and link to the full Constitution — so that every citizen can read, reflect, and uphold its vision.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Link to CEENI Documents List -->
+  <div class="text-center my-8">
+    {% url 'landing:docs_list' as ceeni_docs_url %}
+    {% include "common/buttons/_btn_ceeni_docs.html" with href=ceeni_docs_url label="Explore More CEENI Documents" %}
+  </div>
+
+  <!-- Section Header -->
+  <div id="constitution-section-header" class="scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-green-700 text-center mt-14 flex justify-center gap-3 text-left leading-snug">
+      <span class="mt-1.5 shrink-0">
+        {% include 'common/icons/landing/_icon_document_text.html' %}
+      </span>
+      <span class="inline-block">
+        Understanding the Constitution of Kenya, 2010
+      </span>
+    </h2>
+  </div>
+
+  <!-- Modular Sections Grid -->
+  <section class="space-y-10">
+    {% include "landing/ceeni_content/the_2010_constitution/partials/_all_the_2010_constitution_docs.html" %}
+  </section>
+
+  <!-- Document Link Navigation -->
+  <div id="more-ceeni-docs" class="mt-20">
+    {% include "landing/partials/_doc_links.html" with current_page='constitution_2010' %}
+  </div>
+
+  <!-- Auth-Gated CTA -->
+  {% include "landing/partials/_auth_gate_cta.html" %}
+
+  <div class="flex justify-center">
+    {% include 'common/buttons/_global_back_home_btn.html' %}
+  </div>
+
+</div>
+{% endblock %}

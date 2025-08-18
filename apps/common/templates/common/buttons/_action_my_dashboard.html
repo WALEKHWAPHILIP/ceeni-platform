@@ -1,0 +1,11 @@
+{# ========================================================== #}
+{# apps/common/templates/common/buttons/_action_my_dashboard.html #}
+{# Same style as _action_btn_dashboard.html but with custom label #}
+{# ========================================================== #}
+<a href="{% url 'dashboard:home' %}"
+   class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2"
+   aria-label="Go to your personal dashboard">
+  {% include 'common/icons/landing/_icon_presentation_chart.html' %}
+  My Dashboard
+  {% include 'common/partials/_kenya_flag_pill.html' %}
+</a>

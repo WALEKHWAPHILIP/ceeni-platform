@@ -15,4 +15,31 @@
       Go to Home
     </a>
   </div>
+
+
+  <form
+  class="flex gap-2 items-center"
+  hx-get="/documents/ui/search/"
+  hx-target="#doc-results"
+  hx-indicator="#doc-loading"
+  hx-trigger="submit"
+>
+  <input
+    class="input input-bordered w-full"
+    type="search"
+    name="q"
+    placeholder="Search the Constitution, the Bill, and briefs…"
+    required
+  />
+  <input type="hidden" name="k" value="5" />
+  <button class="btn btn-primary" type="submit">
+    Search
+  </button>
+  <span id="doc-loading" class="loading loading-spinner loading-sm hidden"></span>
+</form>
+
+<div id="doc-results" class="mt-4">
+  {% include "ceeni_documents/partials/_search_results.html" with results="" query="" k=5 %}
+</div>
+
 {% endblock %}

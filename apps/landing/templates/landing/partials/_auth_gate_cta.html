@@ -1,0 +1,15 @@
+{# Auth-aware CTA banner for Bill pages #}
+<div class="bg-green-700 text-white text-center p-6 rounded-lg shadow-md">
+  {% if request.user.is_authenticated %}
+    <p class="text-lg font-semibold">Hi, {{ ceeni_user.username|default:"Citizen" }}! It's time to take action</p>
+    <div class="mt-4 flex flex-col sm:flex-row sm:justify-center sm:space-x-4 gap-3 sm:gap-0">
+        {% include 'common/buttons/_action_my_dashboard.html' %}
+    </div>
+  {% else %}
+    <p class="text-lg font-semibold">Fairness is not a favor - it's a right.</p>
+    <div class="mt-4 flex flex-col sm:flex-row sm:justify-center sm:space-x-4 gap-3 sm:gap-0">
+      {% include 'common/buttons/_action_btn_signup.html' %}
+      {% include 'common/buttons/_action_btn_login.html' %}
+    </div>
+  {% endif %}
+</div>
