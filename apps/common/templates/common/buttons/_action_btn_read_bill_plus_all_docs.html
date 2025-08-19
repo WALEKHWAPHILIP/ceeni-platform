@@ -1,0 +1,10 @@
+{# apps/common/templates/common/partials/_action_btn_read_bill_plus_all_docs.html #}
+<a href="{% url 'landing:docs_list' %}"
+   aria-label="Access the Ethnic Equity Bill and supporting documents"
+   class="bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md transform transition hover:scale-105 flex items-center justify-center gap-2">
+  
+  {% include 'common/icons/_icon_documents.html' %}
+  
+  Access the Bill + Supporting Documents
+  {% include 'common/partials/_kenya_flag_pill.html' %}
+</a>
